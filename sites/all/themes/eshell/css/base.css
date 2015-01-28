@@ -89,13 +89,13 @@ input[type='search']:hover{
 
 /* Text and Fonts */
 p{
-  font-size: 1em;
+  font-size: 1.2vw;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   color: #333;
-  line-height: 2em;
+  line-height: 2;
   float: left;
-  margin: 1em 0;
+  margin: 1vw 0;
 }
 a{
   color: #4f7b84;
@@ -105,12 +105,16 @@ a:hover{
   border-bottom: 1px solid #4f7b84;
 }
 h1{
-  font-size: 2em;
+  font-size: 4vw;
   font-family: 'Lato', sans-serif;
   font-weight: 900;
   color: #333;
   margin: 0;
   padding: .5em 0 0;
+}
+a.highlight{
+  color: #e74c3c;
+  border-bottom: 1px solid #e74c3c;
 }
 #page-title{
   width: 100%;
@@ -263,11 +267,10 @@ h1{
 
 /* About Styles */
 #about{
-  padding: 2em 2em 1.8em;
+  padding: 3em 3vw 2.75vw;
   width: 100%;
   float: left;
   position: relative;
-  font-size: 1.5em;
   text-align: center;
   background: #ffffff; /* Old browsers */
   background: -moz-linear-gradient(top,  #ffffff 0%, #fcfcfc 100%); /* FF3.6+ */
@@ -292,15 +295,14 @@ h1{
   background: url(../images/ericshell.png);
 }
 #about p{
-  line-height: 2.5em;
+  line-height: 4.25vw;
+  font-size: 1.6vw;
   float: none;
 }
-#about a,
-a.highlight{
+#about a{
   color: #e74c3c;
 }
-#about a:hover,
-a.highlight:hover{
+#about a:hover{
   border-bottom: 1px solid #e74c3c;
 }
 
@@ -317,7 +319,7 @@ a.highlight:hover{
 .group-filters .field-item a{
   text-transform: uppercase;
   float: left;
-  margin-right: 1em;
+  margin-right: 1vw;
   border-bottom: 1px solid #4f7b84;
 }
 
@@ -334,23 +336,23 @@ a.highlight:hover{
 .node-type-article #page-title{
   width: calc(100% - 91px);
   padding-left: 20%;
-  font-size: 2.5em;
+  font-size: 2.75vw;
 }
 .node-article.view-mode-full .submitted {
   width: auto;
   float: right;
   position: absolute;
-  top: -3.5em;
+  top: -4.5vw;
   right: 0;
 }
 .node-article.view-mode-full p{
-  font-size: 1.2em;
+  font-size: 1.3vw;
   text-align: justify;
   padding: 0 20%;
 }
 .node-article.view-mode-full .group-filters{
-	padding: 2em 0 2em 20%;
-	margin-top: 1em;
+	padding: 2vw 0 2vw 20%;
+	margin-top: 1vw;
 }
 
 /* Article Teaser Styles */
@@ -368,7 +370,7 @@ a.highlight:hover{
 .node-article.node-teaser .node-title{
   float: right;
   width: 50%;
-  padding: 2em 0 .5em 2.5em;
+  padding: 3.5vw 0 1vw 4vw;
   margin: 0;
 }
 .node-article.node-teaser .node-title a{
@@ -376,23 +378,22 @@ a.highlight:hover{
   text-transform: uppercase;
   color: #000;
   font-weight: 900;
-  font-size: 1.5em;
+  font-size: 2.5vw;
   border: 0;
 }
 .node-article.node-teaser .submitted{
   position: absolute;
-  top: 2.5em;
+  top: 3.25vw;
   right: 0;
-  padding-right: 4em;
+  padding-right: 4.5vw;
   width: auto;
   text-transform: uppercase;
 }
 .node-article.node-teaser .field-name-body{
   float: left;
-  font-size: 1.1em;
   width: 100%;
   text-align: justify;
-  padding: 0 3.5em;
+  padding: 0 4vw;
 }
 .node-article.node-teaser .field-name-body p{
   margin: 0;
@@ -402,16 +403,17 @@ a.highlight:hover{
   float: left;
 }
 .node-article.node-teaser .group-filters{
-	position: absolute;
-	bottom: 3.5em;
-	width: 50%;
-	padding: 0 3.5em;
+  position: absolute;
+  bottom: 3.5vw;
+  width: 50%;
+  padding: 0 4vw;
+  font-size: 1.1vw;
 }
 
 /* Article Teaser Read More */
 .node-article.node-teaser .node-readmore{
   position: absolute;
-  padding: 1em;
+  padding: 0;
   margin: 0;
   bottom: 0;
   height: 100%;
@@ -425,11 +427,11 @@ a.highlight:hover{
 }
 .node-article.node-teaser .node-readmore a{
   opacity: 0;
-  padding-top:33%;
+  padding-top:30%;
   margin: 0;
   width: 100%;
   height: 100%;
-  font-size: 3em;
+  font-size: 4vw;
   font-weight: 900;
   text-transform: uppercase;
   float: left;
@@ -437,7 +439,6 @@ a.highlight:hover{
 }
 .node-article.node-teaser .node-readmore:hover{
   background: rgba(255,255,255,.9);
-  padding: 1em;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -457,11 +458,11 @@ a.highlight:hover{
 /* Taxonomy Pages */
 .page-taxonomy #page-title{
   text-align: center;
-  font-size: 3em;
+  font-size: 3.5vw;
   text-transform: uppercase;
   background: #4f7b84;
   color: #fff;
-  padding: .5em;
+  padding: 1.5vw;
 }
 
 /* Pagers */
@@ -510,6 +511,7 @@ a.highlight:hover{
 }
 .pager li a:hover{
   background: #e74c3c;
+  border: 0;
   color: #fff;
   -webkit-transition: all 0s ease;
   -moz-transition: all 0s ease;
@@ -519,16 +521,23 @@ a.highlight:hover{
 }
 
 /* Contact Styles */
-.page-node-1 .submitted,
-.page-node-1 #page-title{
+.page-node-1 .submitted{
   display: none;
 }
 .page-node-1 p{
-  font-size: 1.2em;
-  padding: 0 20%;
+  font-size: 1.3vw;
 }
 .page-node-1 .webform-client-form{
   float: left;
   width: 100%;
-  padding: 0 20% 5em;
+  padding: 0 20% 5vw;
+}
+.node-1{
+  float: left;
+  width: 80%;
+}
+.sidebar{
+  float: left;
+  width: 20%;
+  font-size: 1.3vw;
 }

@@ -1,50 +1,28 @@
-@media screen and (min-width: 900px) and (max-width: 1350px) {
-	#about p {
-		line-height: 1.5em;
-	}
-	/* Article Full Node Styles */
-	.node-type-article #page-title{
-	  width: calc(100% - 91px);
-	  padding-left: 20%;
-	  font-size: 2.5em;
-	}
-	.node-article.view-mode-full .submitted {
-	  width: auto;
-	  float: right;
-	  position: absolute;
-	  top: -3.5em;
-	  right: 0;
-	}
-
+@media screen and (min-width: 800px) and (max-width: 1100px) {
 	/* Article Teaser Styles */
 	.node-article.node-teaser .node-title{
-	  padding: 1em 0 0 1.5em;
-	}
-	.node-article.node-teaser .node-title a{
-	  font-size: 1.5em;
+		padding: 1.5vw 0 .5vw 2vw;
 	}
 	.node-article.node-teaser .submitted{
-		display: none;
+		padding-right: 2.5vw;
+		top: 1.7vw;
 	}
 	.node-article.node-teaser .field-name-body{
-	  font-size: 1em;
-	  padding: 0 2.333em;
+		padding: 0 2vw;
 	}
 	.node-article.node-teaser .field-name-body p{
-		line-height: 1.8;
+		font-size: 1.3vw;
 	}
 	.node-article.node-teaser .group-filters{
-		padding: 0 2em;
-		bottom: 2em;
+		padding: 0 2vw;
+		bottom: 2vw;
 	}
-}
-@media screen and (min-width: 900px) and (max-width: 1099px) {
-	/* Article Teaser Styles */
-	.node-article.node-teaser .node-title a {
-		font-size: 1.25em;
+
+	/* Article Full Node Styles */
+	.node-type-article #page-title{
+	  font-size: 3.5vw;
 	}
-	.node-article.node-teaser .field-name-body p{
-		line-height: 1.5;
-		font-size: .9em;
+	.node-article.view-mode-full p{
+		font-size: 1.5vw;
 	}
 }
