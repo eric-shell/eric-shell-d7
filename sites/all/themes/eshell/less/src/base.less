@@ -4,7 +4,7 @@
 * ==================================================
 */
 /* 
-* about 
+* base formatting
 -------------------------
 */
 *,
@@ -43,11 +43,11 @@ img{
 }
 ul{
   list-style: none;
-}
-ul li{
-  margin: auto;
-  list-style: none;
-  float: left;
+  li{
+    margin: auto;
+    list-style: none;
+    float: left;
+  }
 }
 input,
 button,
@@ -108,9 +108,13 @@ p{
 a{
   color: #4f7b84;
   text-decoration: none;
-}
-a:hover{
-  border-bottom: 1px solid #4f7b84;
+  &:hover{
+    border-bottom: 1px solid #4f7b84;
+  }
+  &.highlight{
+    color: #e74c3c;
+    border-bottom: 1px solid #e74c3c;
+  }
 }
 h1{
   font-size: 4vw;
@@ -120,24 +124,10 @@ h1{
   margin: 0;
   padding: .5em 0 0;
 }
-a.highlight{
-  color: #e74c3c;
-  border-bottom: 1px solid #e74c3c;
-}
 #page-title{
   width: 100%;
   float: left;
   text-transform: uppercase;
-}
-
-/* Page Wrapper */
-.wrapper{
-  width: 100%;
-  float: left;
-  padding: 0 4em;
-}
-#header .wrapper{
-  padding: 0 2em;
 }
 
 /* Site Structure Functionality */
@@ -153,6 +143,9 @@ a.highlight{
   background: url(../images/header.png) center;
   min-height: 100px;
   padding: 2em 0;
+  .wrapper{
+    padding: 0 2em;
+  }
 }
 #logo{
   width: 152px;
@@ -165,20 +158,25 @@ a.highlight{
   letter-spacing: -2px;
   line-height: .8;
   float: left;
-}
-#logo a:hover{
-  border: 0;
+  a:hover{
+    border: 0;
+  }
 }
 #main{
   width: 100%;
   float: left;
   background: #fff;
   padding: 0;
+  .content {
+    margin: auto;
+    max-width: 1200px;
+    float: none;
+  }
 }
-#main .content {
-  margin: auto;
-  max-width: 1200px;
-  float: none;
+.wrapper{
+  width: 100%;
+  float: left;
+  padding: 0 4em;
 }
 .front #main .content,
 .section-articles #main .content,
@@ -204,41 +202,49 @@ a.highlight{
   background: -o-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #ffffff 0%,#fcfcfc 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
+  li{
+    float: left;
+    &.pager-current{
+      background: #4f7b84;
+      color: #fff;
+    }
+    a{
+      display: block;
+      padding: 1.5em;
+      float: left;
+      -webkit-transition: all .2s ease;
+      -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease;
+    }
+    &:hover{
+      border: 0;
+      color: #fff;
+      background: #e74c3c;
+      -webkit-transition: all 0s ease;
+      -moz-transition: all 0s ease;
+      -ms-transition: all 0s ease;
+      -o-transition: all 0s ease;
+      transition: all 0s ease;
+    }
+  }
+  .pager-current{
+    display: block;
+    padding: 1.5em;
+    float: left;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+  }
 }
 .pager-next,
 .pager-previous{
   display: none;
 }
-.pager li{
-  float: left;
-}
 .pager-ellipsis{
   padding: 1.5em .5em;
   color: #4f7b84;
-}
-.pager .pager-current,
-.pager li a{
-  display: block;
-  padding: 1.5em;
-  float: left;
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -ms-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
-}
-.pager li.pager-current{
-  background: #4f7b84;
-  color: #fff;
-}
-.pager li a:hover{
-  background: #e74c3c;
-  border: 0;
-  color: #fff;
-  -webkit-transition: all 0s ease;
-  -moz-transition: all 0s ease;
-  -ms-transition: all 0s ease;
-  -o-transition: all 0s ease;
-  transition: all 0s ease;
 }
