@@ -405,6 +405,55 @@ a.highlight{
 	  clear: both;
 	}
 }
+
+/* 
+* Primary and secondary administration tabs
+-------------------------
+*/
+.tabs-primary{
+  float: left;
+  width: 100%;
+  ul{
+    margin-bottom: 1em;
+    float: left;
+  }
+  li{
+    float: left;
+    padding: 1em 0 0;
+    a{
+      float: left;
+      padding: .5em;
+      background: #efefef;
+      color: #4f7b84;
+      border: 0;
+      text-decoration: none;
+      -webkit-transition: all .2s ease;
+      -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease;
+      &:hover{
+        background: #e74c3c;
+        color: #fff;
+        -webkit-transition: all 0s ease;
+        -moz-transition: all 0s ease;
+        -ms-transition: all 0s ease;
+        -o-transition: all 0s ease;
+        transition: all 0s ease;
+      }
+    }
+    &.is-active a{
+      background: #4f7b84;
+      color: #fff;
+    }
+  }
+}
+.page-taxonomy .tabs-primary{
+  padding: 1em;
+  li{
+    padding: 0;
+  }
+}
 /*
 * article.less begin
 * Article content type styles
