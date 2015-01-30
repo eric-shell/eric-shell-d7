@@ -230,31 +230,6 @@ a.highlight {
   -o-transition: all 0s ease;
   transition: all 0s ease;
 }
-/* Messages */
-#messages {
-  float: left;
-  width: 100%;
-  padding: 1em;
-  background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #fcfcfc 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #fcfcfc));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #ffffff 0%, #fcfcfc 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #ffffff 0%, #fcfcfc 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #ffffff 0%, #fcfcfc 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #ffffff 0%, #fcfcfc 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fcfcfc', GradientType=0);
-  /* IE6-9 */
-}
-#messages li {
-  clear: both;
-}
 /* Pagers */
 .item-list {
   float: left;
@@ -346,8 +321,17 @@ a.highlight {
   /* IE10+ */
   background: linear-gradient(to bottom, #ffffff 0%, #fcfcfc 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fcfcfc', GradientType=0);
-  /* IE6-9 */
+}
+#about p {
+  line-height: 4.25vw;
+  font-size: 1.6vw;
+  float: none;
+}
+#about a {
+  color: #e74c3c;
+}
+#about a:hover {
+  border-bottom: 1px solid #e74c3c;
 }
 #me {
   opacity: 1;
@@ -362,26 +346,15 @@ a.highlight {
   -webkit-border-radius: 50%;
   background: url(../images/ericshell.png);
 }
-#about p {
-  line-height: 4.25vw;
-  font-size: 1.6vw;
-  float: none;
-}
-#about a {
-  color: #e74c3c;
-}
-#about a:hover {
-  border-bottom: 1px solid #e74c3c;
-}
 /* 
 * Contact page with about me and social link sidebar
 -------------------------
 */
-.page-node-1 .submitted {
-  display: none;
-}
 .page-node-1 p {
   font-size: 1.3vw;
+}
+.page-node-1 .submitted {
+  display: none;
 }
 .page-node-1 .webform-client-form {
   float: left;
