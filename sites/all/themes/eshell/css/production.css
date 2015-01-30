@@ -565,7 +565,15 @@ Article Teaser Display Mode Read More
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* Taxonomy Pages */
+/*
+* taxonomy.less begin
+* Taxonomy search result pages and content
+* ==================================================
+*/
+/* 
+* Taxonomy Page Title
+-------------------------
+*/
 .page-taxonomy #page-title {
   text-align: center;
   font-size: 3.5vw;
