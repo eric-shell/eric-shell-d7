@@ -430,16 +430,16 @@ a.highlight {
   float: left;
   width: 100%;
 }
-.group-lefthalf,
-.group-righthalf {
-  float: left;
-  width: 50%;
-}
 .group-filters .field-item a {
   text-transform: uppercase;
   float: left;
   margin-right: 1vw;
   border-bottom: 1px solid #4f7b84;
+}
+.group-lefthalf,
+.group-righthalf {
+  float: left;
+  width: 50%;
 }
 /* 
 * Article Full Display Mode 
@@ -459,17 +459,17 @@ a.highlight {
   padding-left: 20%;
   font-size: 2.75vw;
 }
+.node-article.view-mode-full p {
+  font-size: 1.3vw;
+  text-align: justify;
+  padding: 0 20%;
+}
 .node-article.view-mode-full .submitted {
   width: auto;
   float: right;
   position: absolute;
   top: -4.5vw;
   right: 0;
-}
-.node-article.view-mode-full p {
-  font-size: 1.3vw;
-  text-align: justify;
-  padding: 0 20%;
 }
 .node-article.view-mode-full .group-filters {
   padding: 2vw 0 2vw 20%;
