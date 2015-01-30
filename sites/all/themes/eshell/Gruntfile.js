@@ -4,10 +4,10 @@ module.exports = function(grunt) {
      concat: {
         main: {
            src: [
+              'css/normalize.css',
               'less/src/base.less',
               'less/src/regions/*.less',
               'less/src/media-queries/*.less',
-              'css/normalize.css',
            ],
            dest: 'less/production.less'
         }
