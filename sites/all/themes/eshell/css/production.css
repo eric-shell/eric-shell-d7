@@ -406,15 +406,43 @@ a.highlight {
 * Log in screen
 -------------------------
 */
-.page-user-login .description,
+.page-user-login #page-title,
 .page-user-login .tabs-primary,
-.page-user-login #page-title {
+.page-user-login .description {
   display: none;
 }
 #user-login {
   padding: 1em 0;
   margin: auto;
-  width: 600px;
+  width: 400px;
+}
+/* 
+* Display messages for all users
+-------------------------
+*/
+#messages {
+  float: left;
+  width: 100%;
+  padding: 1em;
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #fcfcfc 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #fcfcfc));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #fcfcfc 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%, #fcfcfc 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%, #fcfcfc 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #fcfcfc 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fcfcfc', GradientType=0);
+  /* IE6-9 */
+}
+#messages li {
+  clear: both;
 }
 /*
 * article.less begin
