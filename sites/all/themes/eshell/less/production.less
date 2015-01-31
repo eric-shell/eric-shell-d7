@@ -918,6 +918,11 @@ Article Teaser Display Mode Read More
 	.node-article.view-mode-full p{
 		font-size: 1.5vw;
 	}
+
+	/* Filter Change */
+	.group-filters .field-item a{
+		line-height: 1.2;
+	}
 }
 @media screen and (min-width: 481px) and (max-width: 799px) {
 	p.img{
@@ -929,7 +934,16 @@ Article Teaser Display Mode Read More
 		width: 100%;
 	}
 	.group-filters{
-  	background: #4f7b84;
+  	background: rgba(0,0,0,.8);
+	}
+	.pager{
+	.pager-current, 
+		li a {
+			padding: 4.5vw 3.5vw;
+		}
+	}
+	.pager-ellipsis{
+		padding: 4.5vw 1vw;
 	}
 
 	/* About */
@@ -939,14 +953,22 @@ Article Teaser Display Mode Read More
 	#about{
 		padding: 3em 3vw;
 		p{
-			font-size: 2.5vw;
+			font-size: 3.5vw;
+			line-height: 1.5;
 		}
 	}
 
 	/* Article Teaser Styles */
 	.node-article.node-teaser{
 		.node-title{
-	  	width: 100%;
+  		width: 100%;
+  		padding: 3vw;
+  		position: absolute;
+			top: 0;
+			background: rgba(255,255,255,.9);
+  		a{
+  			font-size: 5vw;
+  		}
 		}
 		.submitted,
 		.field-name-body{
@@ -955,6 +977,7 @@ Article Teaser Display Mode Read More
 		.group-filters{
 		  float: left;
 			width: 100%;
+			padding: 2vw 3vw;
 			left: auto;
 			bottom: auto;
 			position: relative;
@@ -987,6 +1010,8 @@ Article Teaser Display Mode Read More
 	.group-filters .field-item a{
 		color: #fff;
 		border-color: #fff;
+		font-size: 2vw;
+		line-height: 1.2;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -1003,9 +1028,12 @@ Article Teaser Display Mode Read More
 	}
 	.pager{
 		.pager-current, 
-		.pager li a {
-			padding: 2.5vw;
+		li a {
+			padding: 4.5vw 3.5vw;
 		}
+	}
+	.pager-ellipsis{
+		padding: 4.5vw 1vw;
 	}
 
 	/* About */
@@ -1015,7 +1043,7 @@ Article Teaser Display Mode Read More
 	#about{
 		padding: 2em 3vw;
 		p{
-			font-size: 6vw;
+			font-size: 5.5vw;
 			line-height: 1.5;
 		}
 	}
@@ -1023,7 +1051,14 @@ Article Teaser Display Mode Read More
 	/* Article Teaser Styles */
 	.node-article.node-teaser{
 		.node-title{
-	  	width: 100%;
+  		width: 100%;
+  		padding: 3vw;
+  		position: absolute;
+			top: 0;
+			background: rgba(255,255,255,.9);
+  		a{
+  			font-size: 6vw;
+  		}
 		}
 		.submitted,
 		.field-name-body{
@@ -1036,7 +1071,8 @@ Article Teaser Display Mode Read More
 			bottom: auto;
 			position: relative;
 		}
-		.node-readmore{
+		.node-readmore,
+		.group-filters{
 			display: none;
 		}
 	}

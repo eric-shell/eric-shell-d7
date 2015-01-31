@@ -12,9 +12,12 @@
 	}
 	.pager{
 		.pager-current, 
-		.pager li a {
-			padding: 2.5vw;
+		li a {
+			padding: 4.5vw 3.5vw;
 		}
+	}
+	.pager-ellipsis{
+		padding: 4.5vw 1vw;
 	}
 
 	/* About */
@@ -24,7 +27,7 @@
 	#about{
 		padding: 2em 3vw;
 		p{
-			font-size: 6vw;
+			font-size: 5.5vw;
 			line-height: 1.5;
 		}
 	}
@@ -32,7 +35,14 @@
 	/* Article Teaser Styles */
 	.node-article.node-teaser{
 		.node-title{
-	  	width: 100%;
+  		width: 100%;
+  		padding: 3vw;
+  		position: absolute;
+			top: 0;
+			background: rgba(255,255,255,.9);
+  		a{
+  			font-size: 6vw;
+  		}
 		}
 		.submitted,
 		.field-name-body{
@@ -45,7 +55,8 @@
 			bottom: auto;
 			position: relative;
 		}
-		.node-readmore{
+		.node-readmore,
+		.group-filters{
 			display: none;
 		}
 	}
