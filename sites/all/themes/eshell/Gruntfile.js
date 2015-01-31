@@ -31,6 +31,7 @@ module.exports = function(grunt) {
     */
      watch: {
         files: [
+          'css/normalize.css',
           'less/src/base.less',
           'less/src/media-queries/*.less',
           'less/src/regions/*.less',
