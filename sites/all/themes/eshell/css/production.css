@@ -982,6 +982,7 @@ Article Teaser Display Mode Read More
   .pager .pager-current,
   .pager li a {
     padding: 4.5vw 3.5vw;
+    font-size: 3.5vw;
   }
   .pager-ellipsis {
     padding: 4.5vw 1vw;
@@ -1011,13 +1012,6 @@ Article Teaser Display Mode Read More
   .node-article.node-teaser .submitted,
   .node-article.node-teaser .field-name-body {
     display: none;
-  }
-  .node-article.node-teaser .group-filters {
-    float: left;
-    width: 100%;
-    left: auto;
-    bottom: auto;
-    position: relative;
   }
   .node-article.node-teaser .node-readmore,
   .node-article.node-teaser .group-filters {
