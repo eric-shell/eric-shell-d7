@@ -470,7 +470,7 @@ h1 {
   -o-transition: all .2s ease;
   transition: all .2s ease;
 }
-.pager li:hover {
+.pager li a:hover {
   border: 0;
   color: #fff;
   background: #e74c3c;
