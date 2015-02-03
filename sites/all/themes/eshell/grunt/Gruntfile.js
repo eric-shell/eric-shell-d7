@@ -4,19 +4,18 @@ module.exports = function(grunt) {
      concat: {
         main: {
            src: [
-              'css/normalize.css',
-              'less/src/base.less',
-              'less/src/regions/*.less',
-              'less/src/media-queries/*.less',
+              '../css/src/base.less',
+              '../css/src/regions/*.less',
+              '../css/src/media-queries/*.less',
            ],
-           dest: 'less/production.less'
+           dest: '../css/production.less'
         }
      },
      less: {
         compile: {
            files: { 
               // format "target" : "source"
-              "css/production.css": "less/production.less"
+              "../css/production.css": "../css/production.less"
            }
         }
      },
@@ -31,10 +30,9 @@ module.exports = function(grunt) {
     */
      watch: {
         files: [
-          'css/normalize.css',
-          'less/src/base.less',
-          'less/src/media-queries/*.less',
-          'less/src/regions/*.less',
+          '../css/src/base.less',
+          '../css/src/media-queries/*.less',
+          '../css/src/regions/*.less',
         ],
         tasks: ['concat', 'less'] 
      }
