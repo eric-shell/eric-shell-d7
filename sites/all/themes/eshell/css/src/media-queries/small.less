@@ -1,6 +1,13 @@
 @media screen and (max-width: 480px) {
+	input, 
+	button, 
+	textarea{
+		font-size: 1em;
+		padding: 1em;
+		margin-bottom: .25em;
+	}
 	p.img{
-		max-width: calc(100% + 4em);
+		max-width: ~'calc(100% + 4em)';
 		margin-left: -2em;
 	}
 	.group-lefthalf,
@@ -78,5 +85,31 @@
 	.group-filters .field-item a{
 		color: #fff;
 		border-color: #fff;
+	}
+
+	/* About */
+	.page-node-1{
+		p{
+			font-size: 1em;
+			padding: 0 10%;
+		}
+		#main .content{
+			max-width: 100%;
+			padding: 4vw 0 0;
+		}
+		.sidebar{
+			display: none
+		}
+		.node-1{
+			width: 100%;
+		}
+		.webform-client-form {
+			padding: 1em 10% 4em;
+		}
+		.webform-component--email,
+		.webform-component--full-name {
+			width: 100%;
+			margin: 0 0 0.5vw;
+		}
 	}
 }

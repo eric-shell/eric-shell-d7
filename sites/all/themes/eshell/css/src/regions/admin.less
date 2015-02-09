@@ -5,7 +5,7 @@
 */
 /* 
 * Log in screen
--------------------------
+* -------------------------
 */
 .page-user-login{
 	#page-title,
@@ -22,7 +22,7 @@
 
 /* 
 * Display messages for all users
--------------------------
+* -------------------------
 */
 #messages{
   float: left;
@@ -32,18 +32,25 @@
   background: -moz-linear-gradient(top,  #ffffff 0%, #fcfcfc 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fcfcfc)); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #ffffff 0%,#fcfcfc 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
 	li{
 	  clear: both;
 	}
+  .messages.status{
+    p{
+      text-align: center;
+      background: #68c06d;
+      padding: 0 1em;
+      margin: 0;
+      float: left;
+      width: 100%;
+      color: #fff;
+    }
+  }
 }
-
 /* 
 * Primary and secondary administration tabs
--------------------------
+* -------------------------
 */
 .tabs-primary{
   float: left;
@@ -64,16 +71,12 @@
       text-decoration: none;
       -webkit-transition: all .2s ease;
       -moz-transition: all .2s ease;
-      -ms-transition: all .2s ease;
-      -o-transition: all .2s ease;
       transition: all .2s ease;
       &:hover{
         background: #e74c3c;
         color: #fff;
         -webkit-transition: all 0s ease;
         -moz-transition: all 0s ease;
-        -ms-transition: all 0s ease;
-        -o-transition: all 0s ease;
         transition: all 0s ease;
       }
     }
