@@ -7,9 +7,6 @@
 	.group-righthalf{
 		width: 100%;
 	}
-	.group-filters{
-  	background: rgba(0,0,0,.8);
-	}
 	.pager{
 	.pager-current, 
 		li a {
@@ -79,14 +76,20 @@
 			font-size: 2.2vw;
 			padding: 0 10%;
 		}
-	}
-
-	/* Filter Change */
-	.group-filters .field-item a{
-		color: #fff;
-		border-color: #fff;
-		font-size: 2vw;
-		line-height: 1.2;
+		.group-filters{
+			padding: 1em 10%;
+			margin-top: 1vw;
+			background: rgba(0, 0, 0, 0.8);
+			.field-item {
+				width: 100%;
+				float: left;
+				padding: .25em 0;
+				a{
+					color: #fff;
+					border-color: #fff;
+				}
+			}
+		}
 	}
 
 	/* About */

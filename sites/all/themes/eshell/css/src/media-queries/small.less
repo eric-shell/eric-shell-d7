@@ -14,9 +14,6 @@
 	.group-righthalf{
 		width: 100%;
 	}
-	.group-filters{
-  		background: #4f7b84;
-	}
 	.pager{
 		.pager-current, 
 		li a {
@@ -74,15 +71,24 @@
 		}
 		p{
 			font-size: 1em;
-			padding: 0 10%;
+			padding: 1em 10%;
+		}
+		.group-filters{
+			padding: 1em 10%;
+			margin-top: 1vw;
+			background: rgba(0, 0, 0, 0.8);
+			.field-item {
+				width: 100%;
+				float: left;
+				padding: .25em 0;
+				a{
+					color: #fff;
+					border-color: #fff;
+				}
+			}
 		}
 	}
 	
-	/* Filter Change */
-	.group-filters .field-item a{
-		color: #fff;
-		border-color: #fff;
-	}
 
 	/* About */
 	.page-node-1{
