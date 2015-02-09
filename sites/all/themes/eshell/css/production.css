@@ -611,6 +611,7 @@ span.platform {
   width: auto;
   float: right;
   position: absolute;
+  text-transform: uppercase;
   top: -4.5vw;
   right: 0;
 }
@@ -651,7 +652,7 @@ Article Teaser Display Mode
 }
 .node-article.node-teaser .submitted {
   position: absolute;
-  top: 3.25vw;
+  top: 2.75vw;
   right: 0;
   padding-right: 4.5vw;
   width: auto;
@@ -742,7 +743,7 @@ Article Teaser Display Mode Read More
   }
   .node-article.node-teaser .submitted {
     padding-right: 2.5vw;
-    top: 1.7vw;
+    top: 1vw;
   }
   .node-article.node-teaser .field-name-body {
     padding: 0 2vw;
@@ -833,6 +834,7 @@ Article Teaser Display Mode Read More
   .node-type-article #page-title {
     width: 100%;
     padding-left: 10%;
+    font-size: 5vw;
   }
   .node-article.view-mode-full .submitted {
     width: 100%;
@@ -931,13 +933,10 @@ Article Teaser Display Mode Read More
   .node-type-article #page-title {
     width: 100%;
     padding-left: 10%;
+    font-size: 1.8em;
   }
   .node-article.view-mode-full .submitted {
-    width: 100%;
-    float: left;
-    margin: 0;
-    position: relative;
-    top: 0;
+    display: none;
   }
   .node-article.view-mode-full p {
     font-size: 1em;
