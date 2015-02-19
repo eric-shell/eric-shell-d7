@@ -3,6 +3,7 @@ sites/*/files
 # Ignore configuration files that may contain sensitive information.
 sites/personal.local
 sites/sites.php
+sites/default/*settings.php
 sites/all/themes/*/css/production.less
 
 # OS generated files #
