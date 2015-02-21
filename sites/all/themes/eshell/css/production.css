@@ -154,7 +154,7 @@ h1 {
 #header {
   width: 100%;
   float: left;
-  background: url(../images/header.png) center;
+  background: url(../images/header.jpg) center;
   min-height: 100px;
   padding: 2em 0;
 }
@@ -888,6 +888,11 @@ Article Teaser Display Mode Read More
   .webform-component--full-name {
     width: 100%;
     margin: 0 0 0.5vw;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #header {
+    background: url(../images/headerx2.jpg) center;
   }
 }
 @media screen and (max-width: 480px) {
