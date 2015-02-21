@@ -579,6 +579,10 @@ span.platform {
   margin-right: 1vw;
   border-bottom: 1px solid #4f7b84;
 }
+.group-filters .field-item a:hover {
+  color: #222;
+  border-color: #222;
+}
 .group-lefthalf,
 .group-righthalf {
   float: left;
@@ -649,6 +653,10 @@ Article Teaser Display Mode
   font-weight: 900;
   font-size: 2.5vw;
   border: 0;
+}
+.node-article.node-teaser .node-title a:hover {
+  color: #222;
+  border-bottom: 2px solid #222;
 }
 .node-article.node-teaser .submitted {
   position: absolute;
@@ -820,9 +828,15 @@ Article Teaser Display Mode Read More
     float: left;
     width: 100%;
     padding: 2vw 3vw;
-    left: auto;
-    bottom: auto;
-    position: relative;
+    left: 0;
+    bottom: 0;
+    background: rgba(24, 24, 24, 0.8);
+  }
+  .node-article.node-teaser .group-filters a {
+    font-size: 2.75vw;
+    margin-right: 3vw;
+    color: #fff;
+    border-color: #fff;
   }
   .node-article.node-teaser .node-readmore {
     display: none;
