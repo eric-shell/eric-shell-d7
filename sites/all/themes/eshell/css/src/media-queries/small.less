@@ -15,14 +15,26 @@
 		width: 100%;
 	}
 	.pager{
-		.pager-current, 
-		li a {
-			padding: 4.5vw 3.5vw;
-			font-size: 3.5vw;
+		float: left;
+		width: 100%;
+		li{
+			display: none;
+			a{
+				padding: 6vw;
+			}
+			&.pager-next, 
+			&.pager-previous{
+				display: block;
+				font-size: 4.5vw;
+				padding: 0;
+			}
+			&.pager-next{
+				float: right;
+			}
+			&.pager-current{
+				display: none;
+			}
 		}
-	}
-	.pager-ellipsis{
-		padding: 4.5vw 1vw;
 	}
 
 	/* About */
@@ -121,4 +133,5 @@
 		font-size: 7vw;
 		padding: 4vw;
 	}
+
 }

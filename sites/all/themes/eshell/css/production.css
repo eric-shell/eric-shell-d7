@@ -237,7 +237,8 @@ h1 {
   -moz-transition: all .2s ease;
   transition: all .2s ease;
 }
-.pager li a:hover {
+.pager li a:hover,
+.pager li a:active {
   border: 0;
   color: #fff;
   background: #e74c3c;
@@ -916,13 +917,27 @@ Article Teaser Display Mode Read More
   .group-righthalf {
     width: 100%;
   }
-  .pager .pager-current,
-  .pager li a {
-    padding: 4.5vw 3.5vw;
-    font-size: 3.5vw;
+  .pager {
+    float: left;
+    width: 100%;
   }
-  .pager-ellipsis {
-    padding: 4.5vw 1vw;
+  .pager li {
+    display: none;
+  }
+  .pager li a {
+    padding: 6vw;
+  }
+  .pager li.pager-next,
+  .pager li.pager-previous {
+    display: block;
+    font-size: 4.5vw;
+    padding: 0;
+  }
+  .pager li.pager-next {
+    float: right;
+  }
+  .pager li.pager-current {
+    display: none;
   }
   /* About */
   #me {
