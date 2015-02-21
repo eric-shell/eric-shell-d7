@@ -889,6 +889,11 @@ Article Teaser Display Mode Read More
     width: 100%;
     margin: 0 0 0.5vw;
   }
+  /* Taxonomy Pages */
+  .page-taxonomy #page-title {
+    font-size: 6vw;
+    padding: 3vw;
+  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #header {
@@ -998,5 +1003,10 @@ Article Teaser Display Mode Read More
   .page-node-1 .webform-component--full-name {
     width: 100%;
     margin: 0 0 0.5vw;
+  }
+  /* Taxonomy Pages */
+  .page-taxonomy #page-title {
+    font-size: 7vw;
+    padding: 4vw;
   }
 }
