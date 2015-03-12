@@ -81,11 +81,12 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, minimum-scale=1, user-scalable=yes">
-    <meta name="description" content="Eric Shell | Digital Media Specialist | Eric.sh" />
-    <meta name="location" content="Eric Shell, San Luis Obispo, California" />
-    <meta name="author" content="Eric Shell of Eric.sh" />
-    <meta name="keywords" content="Eric Shell, Eric, Shell, e.shell, eshell, eric.sh, designs, design, eshelldesigns, desginer, developer, website, front-end, front, end, web, development, video, photo, videos, photos, cinematography, photography, flickr, vimeo, youtube, graphic, California, Lehigh, University">
   <meta http-equiv="cleartype" content="on">
+
+  <meta name="author" content="Eric Shell" />
+  <meta name="description" content="Eric Shell is Digital Media Specialist with a concentrated focus on Front-end Web Development, Photography, Cinematography and Grahpic Design." />
+  <meta name="keywords" content="Eric Shell, Eric, Shell, e.shell, eshell, eric.sh, designs, design, eshelldesigns, desginer, developer, website, front-end, front, end, web, development, video, photo, videos, photos, cinematography, photography, flickr, vimeo, youtube, graphic, California, Lehigh, University">
+  <meta name="location" content="Central Coast, California" />
 
   <?php print $styles; ?>
   <?php print $scripts; ?>
