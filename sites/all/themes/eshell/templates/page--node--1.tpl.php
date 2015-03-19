@@ -50,7 +50,7 @@
         </div>
 
 	      <ul>
-			    <li><a class="social-link" id="resume" href="../../../../resume.pdf">Download Resume</a></li>
+			    <li><a class="social-link" id="resume" href="../../../sites/default/files/resume.pdf">Download Resume</a></li>
 			    <li><a class="social-link" id="github" href="http://www.github.com/eric-shell"><span class="platform">Github</span></a></li>
 			    <li><a class="social-link" id="flickr" href="http://www.flickr.com/photos/e-shell"><span class="platform">Flickr</span></a></li>
 			    <li><a class="social-link" id="vimeo" href="http://www.vimeo.com/eshell"><span class="platform">Vimeo</span></a></li>
