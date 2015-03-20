@@ -32,7 +32,7 @@
 
     <div id="about"><!-- Start About-->
       <section class="content">
-        <a href="/ell">
+        <a class="exempt" href="/ell">
        		<div id="me">
            <img src="/sites/all/themes/eshell/images/eric-shell.jpg"> 
           </div>

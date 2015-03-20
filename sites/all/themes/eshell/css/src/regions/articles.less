@@ -3,21 +3,53 @@
 * Article content type styles
 * ==================================================
 */
+
 /* 
 * Field Groups
 * -------------------------
 */
-.group-filters {
+.group-filters{
   float: left;
   width: 100%;
-  .field-item a{
-    text-transform: uppercase;
+  .field-item{
     float: left;
     margin-right: 1vw;
-    border-bottom: 1px solid #4f7b84;
-    &:hover{
-      color: #222;
-      border-color: #222;
+    a{
+      line-height: 2;
+      text-transform: uppercase;
+      color: #4f7b84;
+      overflow: hidden;
+      font-weight: 500;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      vertical-align: bottom;
+      text-decoration: none;
+      &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 1px;
+        background: #4f7b84;
+        -webkit-transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+        -webkit-transform: scaleY(.5) translateX(-105%);
+        transform: scaleY(.5) translateX(-105%);
+      }
+      &::before,
+      &::after{
+        pointer-events: none;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      &:hover::before,
+      &:focus::before{
+        -webkit-transform: scaleY(1) translateX(0);
+        transform: scaleY(1) translateX(0);
+      }
     }
   }
 }
@@ -51,7 +83,7 @@
     text-align: justify;
     padding: 0 20%;
   }
-  .submitted {
+  .submitted{
     width: auto;
     float: right;
     position: absolute;
@@ -69,6 +101,13 @@
 Article Teaser Display Mode
 * -------------------------
 */
+article{
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 .node-article.node-teaser{
   position: relative;
   background: #ffffff; /* Old browsers */
@@ -82,15 +121,41 @@ Article Teaser Display Mode
     padding: 3.5vw 0 1vw 4vw;
     margin: 0;
     a{
-      margin: 0;
+      font-family: 'Lato', sans-serif;
       text-transform: uppercase;
-      color: #000;
       font-weight: 900;
       font-size: 2.5vw;
-      border: 0;
-      &:hover{
-        color: #222;
-        border-bottom: 2px solid #222;
+      color: #000;
+      overflow: hidden;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      vertical-align: bottom;
+      text-decoration: none;
+      &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        -webkit-transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+        -webkit-transform: scaleY(.5) translateX(-105%);
+        transform: scaleY(.5) translateX(-105%);
+      }
+      &::before,
+      &::after{
+        pointer-events: none;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      &:hover::before,
+      &:focus::before{
+        -webkit-transform: scaleY(1) translateX(0);
+        transform: scaleY(1) translateX(0);
       }
     }
   }
@@ -128,7 +193,7 @@ Article Teaser Display Mode
 Article Teaser Display Mode Read More 
 * -------------------------
 */
-.node-article.node-teaser  
+.node-article.node-teaser{
   .node-readmore{
     position: absolute;
     padding: 0;
@@ -166,3 +231,4 @@ Article Teaser Display Mode Read More
       }
     }
   }
+}

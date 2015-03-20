@@ -3,6 +3,7 @@
 * About front page section and contact page
 * ==================================================
 */
+
 /* 
 * About front page section
 * -------------------------
@@ -11,6 +12,7 @@
   padding: 3em 3vw 2.75vw;
   width: 100%;
   float: left;
+  z-index: 1;
   position: relative;
   text-align: center;
   background: #ffffff; /* Old browsers */
@@ -19,14 +21,44 @@
   background: -webkit-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%); /* Chrome10+,Safari5.1+ */
   background: linear-gradient(to bottom,  #ffffff 0%,#fcfcfc 100%); /* W3C */
   p{
-    line-height: 4.25vw;
+    line-height: 1.75;
     font-size: 1.6vw;
+    margin: 2vw 0;
     float: none;
   }
-  a{
+  a:not(.exempt){
     color: #e74c3c;
-    &:hover{
-      border-bottom: 1px solid #e74c3c;
+    overflow: hidden;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    vertical-align: bottom;
+    text-decoration: none;
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 2px;
+      background: #e74c3c;
+      -webkit-transition: -webkit-transform 0.2s;
+      transition: transform 0.2s;
+      -webkit-transform: scaleY(.5) translateX(-105%);
+      transform: scaleY(.5) translateX(-105%);
+    }
+    &::before,
+    &::after{
+      pointer-events: none;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    &:hover::before,
+    &:focus::before{
+      -webkit-transform: scaleY(1) translateX(0);
+      transform: scaleY(1) translateX(0);
     }
   }
 }
