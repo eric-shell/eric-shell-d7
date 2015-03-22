@@ -394,6 +394,7 @@ h1 {
 */
 .page-node-1 p {
   font-size: 1.3vw;
+  text-align: justify;
 }
 .page-node-1 .submitted {
   display: none;
