@@ -426,6 +426,11 @@ h1 {
   font-size: 1.3vw;
   padding-right: 2.75vw;
 }
+.sidebar #social-bg {
+  float: left;
+  width: 100%;
+  background: #efefef;
+}
 .sidebar ul {
   padding-top: 1vw;
 }

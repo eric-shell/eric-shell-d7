@@ -51,10 +51,13 @@
 
 	      <ul>
 			    <li><a class="social-link" id="resume" href="../../../sites/default/files/resume.pdf">Download Resume</a></li>
-			    <li><a class="social-link" id="github" href="http://www.github.com/eric-shell"><span class="platform">Github</span></a></li>
-			    <li><a class="social-link" id="flickr" href="http://www.flickr.com/photos/ericshell"><span class="platform">Flickr</span></a></li>
-			    <li><a class="social-link" id="vimeo" href="http://www.vimeo.com/eshell"><span class="platform">Vimeo</span></a></li>
-			    <li><a class="social-link" id="instagram" href="http://www.instagram.com/ericshell"><span class="platform">Instagram</span></a></li>
+
+          <div id="social-bg">
+  			    <li><a class="social-link" id="github" href="http://www.github.com/eric-shell"><span class="platform">Github</span></a></li>
+  			    <li><a class="social-link" id="flickr" href="http://www.flickr.com/photos/ericshell"><span class="platform">Flickr</span></a></li>
+  			    <li><a class="social-link" id="vimeo" href="http://www.vimeo.com/eshell"><span class="platform">Vimeo</span></a></li>
+  			    <li><a class="social-link" id="instagram" href="http://www.instagram.com/ericshell"><span class="platform">Instagram</span></a></li>
+          </div>
 	      </ul>
 
 	    </section>
