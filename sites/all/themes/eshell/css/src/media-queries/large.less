@@ -36,3 +36,34 @@
 		width: 35%;
 	}
 }
+
+@media screen and (min-width: 1400px) {
+	ul.flippy{
+	  li{
+	    a{
+	      position: fixed;
+	      z-index: 2;
+	      top: ~'calc(50% - 2em)';
+	      padding: 1.5em;
+	      float: none;
+	      width: auto;
+	      &:hover{
+          background: #4f7b84;
+        	color: #fff;
+	      }
+	    }
+	    &.next a{
+	      left: -100px;
+	      &.pager-visible{
+	        left: 0;
+	      }
+	    }
+	    &.prev a{
+	      right: -100px;
+	      &.pager-visible{
+	        right: 0;
+	      }
+	    }
+	  }
+	}
+}
