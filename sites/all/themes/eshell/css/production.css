@@ -873,6 +873,37 @@ Article Teaser Display Mode Read More
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+ul.flippy {
+  float: left;
+  width: 100%;
+}
+ul.flippy li {
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 50%;
+}
+ul.flippy li a {
+  color: #000;
+  padding: 1.5em;
+  background: #efefef;
+  float: left;
+  width: 100%;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+ul.flippy li a:hover {
+  background: #4f7b84;
+  color: #fff;
+  -webkit-transition: all 0s ease-in-out;
+  -moz-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+}
+ul.flippy li.prev {
+  text-align: right;
+  float: right;
+}
 /*
 * taxonomy.less begin
 * Taxonomy search result pages and content
@@ -922,6 +953,32 @@ Article Teaser Display Mode Read More
   }
   .sidebar {
     width: 35%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  ul.flippy li a {
+    position: fixed;
+    z-index: 2;
+    top: calc(50% - 2em);
+    padding: 1.5em;
+    float: none;
+    width: auto;
+  }
+  ul.flippy li a:hover {
+    background: #4f7b84;
+    color: #fff;
+  }
+  ul.flippy li.next a {
+    left: -100px;
+  }
+  ul.flippy li.next a.pager-visible {
+    left: 0;
+  }
+  ul.flippy li.prev a {
+    right: -100px;
+  }
+  ul.flippy li.prev a.pager-visible {
+    right: 0;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 799px) {
