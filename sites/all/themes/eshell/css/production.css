@@ -214,9 +214,18 @@ h1 {
 }
 #logo a {
   position: relative;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  transition: all .2s ease;
 }
 #logo a:hover {
   border: 0;
+  -moz-transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: all 0s ease;
+  -moz-transition: all 0s ease;
+  transition: all 0s ease;
 }
 #main {
   width: 100%;
