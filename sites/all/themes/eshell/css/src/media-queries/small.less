@@ -36,20 +36,34 @@
 			}
 		}
 	}
+	#header{
+		padding: 1em 0;
+		text-align: center;
+	}
+	#logo {
+	  width: 100%;
+	  height: auto;
+	  font-size: 1.5em;
+	  line-height: 1;
+	  letter-spacing: -1px;
+	}
+	.front #header{
+		margin: 0;
+	}
 
-	/* About */
+	/* about front page section */
 	#me{
 		display: none;
 	}
 	#about{
 		padding: 2em 3vw;
 		p{
-			font-size: 5vw;
+			font-size: 1em;
 			line-height: 1.5;
 		}
 	}
 
-	/* Article Teaser Styles */
+	/* article teaser view mode */
 	.node-article.node-teaser{
 		.node-title{
   		width: 100%;
@@ -71,36 +85,44 @@
 		}
 	}
 
-	/* Article Full Node Styles */
-	.node-type-article #page-title{
-	  width: 100%;
-	  padding-left: 10%;
-	  font-size: 1.8em;
-	}
+	/* article default full view mode */
 	.node-article.view-mode-full{
-		.submitted{
-			display: none;
+		#article-header{
+			padding: 0 1.5em;
+			.node-title a{
+				float: left;
+				width: 100%;
+				font-size: 1.2em;
+			}
+			.submitted{
+				display: none;
+			}
 		}
 		p{
-			font-size: 1em;
-			padding: 1.5em 10%;
+			font-size: 1.1em;
+			padding: 1em 1.5em;
 		}
+	}
+	#article-filters{
 		.group-filters{
-			padding: 1em 10%;
-			margin-top: 1vw;
-			background: rgba(0, 0, 0, 0.8);
-			.field-item {
-				width: 100%;
+			.field-item{
 				float: left;
-				padding: .25em 0;
+				width: 100%;
 				a{
-					color: #fff;
+					font-size: 1em;
 				}
 			}
 		}
+	  .field-name-field-media-type,
+	  .field-name-field-tags{
+	  		float: none;
+	  }
+	}
+	ul.flippy li a{
+		font-size: 1em;
 	}
 
-	/* About */
+	/* about and contact page */
 	.page-node-1{
 		p{
 			font-size: 1em;
@@ -126,7 +148,7 @@
 		}
 	}
 
-	/* Taxonomy Pages */
+	/* taxonomy pages */
 	.page-taxonomy #page-title{
 		font-size: 7vw;
 		padding: 4vw;

@@ -1,15 +1,14 @@
 /*
 * admin.less begin
-* Administration elements and tools
+* administration elements and tools
 * ==================================================
 */
 
 /* 
-* Log in screen
+* login screen
 * -------------------------
 */
 .page-user-login{
-	#page-title,
 	.tabs-primary,
 	.description{
   	display: none;
@@ -22,7 +21,7 @@
 }
 
 /* 
-* Display messages for all users
+* display messages for all users
 * -------------------------
 */
 #messages{
@@ -50,19 +49,20 @@
   }
 }
 /* 
-* Primary and secondary administration tabs
+* primary and secondary administration tabs
 * -------------------------
 */
 .tabs-primary{
   float: left;
   width: 100%;
+  padding: 1em 1em 0;
   ul{
     margin-bottom: 1em;
     float: left;
   }
   li{
     float: left;
-    padding: 1em 0 0;
+    padding:0;
     a{
       float: left;
       padding: .5em;
@@ -74,22 +74,12 @@
       -moz-transition: all .2s ease;
       transition: all .2s ease;
       &:hover{
-        background: #e74c3c;
+        background: #4f7b84;
         color: #fff;
         -webkit-transition: all 0s ease;
         -moz-transition: all 0s ease;
         transition: all 0s ease;
       }
     }
-    &.is-active a{
-      background: #4f7b84;
-      color: #fff;
-    }
-  }
-}
-.page-taxonomy .tabs-primary{
-  padding: 1em;
-  li{
-    padding: 0;
   }
 }
