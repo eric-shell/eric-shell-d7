@@ -235,6 +235,7 @@ h2 {
 .pager {
   float: right;
   width: auto;
+  font-size: 1em;
   text-transform: capitalize;
   background: #ffffff;
   /* Old browsers */
@@ -585,7 +586,7 @@ span.platform {
 .tabs-primary {
   float: left;
   width: 100%;
-  padding: 1em 1em 0;
+  padding: 0 0 1em 1.5em;
 }
 .tabs-primary ul {
   margin-bottom: 1em;
@@ -665,6 +666,11 @@ body.node-type-article {
   -webkit-transform: scaleY(1) translateX(0);
   transform: scaleY(1) translateX(0);
 }
+.node-article .field-name-field-video {
+  float: left;
+  width: 100%;
+  margin: .5em 0 0;
+}
 /* 
 * field groups
 * -------------------------
@@ -730,6 +736,7 @@ body.node-type-article {
   float: none;
   margin: auto;
   max-width: 1300px;
+  padding-bottom: .75em;
 }
 .node-article.view-mode-full #article-header {
   padding: 0 18vw;
@@ -1150,7 +1157,6 @@ article {
   .pager li.pager-next,
   .pager li.pager-previous {
     display: block;
-    font-size: 4.5vw;
     padding: 0;
   }
   .pager li.pager-next {
@@ -1218,6 +1224,9 @@ article {
   .node-article.view-mode-full p {
     font-size: 1.1em;
     padding: 1em 1.5em;
+  }
+  #article-filters .group-filters {
+    width: 100%;
   }
   #article-filters .group-filters .field-item {
     float: left;
