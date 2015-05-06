@@ -1,4 +1,4 @@
-@media screen and (min-width: 481px) and (max-width: 799px) {
+@media screen and (min-width: 481px) and (max-width: 899px) {
 	p.img{
 		max-width: calc(100% + 4em);
 		margin-left: -2em;
@@ -16,30 +16,30 @@
 	.pager-ellipsis{
 		padding: 4.5vw 1vw;
 	}
-
-	/* About */
-	#me{
-		display: none;
+	#header{
+		padding: 1em 0;
 	}
-	#about{
-		padding: 3em 3vw;
-		p{
-			font-size: 3.5vw;
-			line-height: 1.5;
-		}
+	#logo {
+	  width: 100%;
+	  height: auto;
+	  font-size: 2em;
+	  line-height: 1;
+	}
+	.front #header{
+		margin: 0;
 	}
 
-	/* Article Teaser Styles */
+	/* article teaser view mode */
 	.node-article.node-teaser{
 		.node-title{
-	  		width: 100%;
-	  		padding: 3vw;
-	  		position: absolute;
+  		width: 100%;
+  		padding: 3vw;
+  		position: absolute;
 			top: 0;
 			background: rgba(255,255,255,.9);
-	  		a{
-	  			font-size: 5vw;
-	  		}
+  		a{
+  			font-size: 5vw;
+  		}
 		}
 		.submitted,
 		.field-name-body{
@@ -56,6 +56,9 @@
 				font-size: 2.75vw;
 				margin-right: 3vw;
 				color: #fff;
+				&::before{
+					background: #fff;
+				}
 			}
 		}
 		.node-readmore{
@@ -63,40 +66,53 @@
 		}
 	}
 
-	/* Article Full Node Styles */
-	.node-type-article #page-title{
-	  width: 100%;
-	  padding-left: 10%;
-	  font-size: 5vw;
-	}
+	/* article default full view mode */
 	.node-article.view-mode-full{
-		.submitted{
-			width: 100%;
-			float: left;
-			margin: 0;
-			position: relative;
-			top: 0;
-		}
 		p{
 			font-size: 2.2vw;
-			padding: 1em 10%;
+			padding: 1em 9vw;
 		}
+	}
+	.node-article.view-mode-full{
+  	#article-header{
+    	padding: 0 9vw;
+	    .node-title a{
+	      font-size: 4.5vw;
+	    }
+	    .submitted{
+	      font-size: 2vw;
+	      margin: 1em 0 0;
+	    }
+    }
+	}
+	#article-filters{
 		.group-filters{
-			padding: 1em 10%;
-			margin-top: 1vw;
-			background: rgba(0, 0, 0, 0.8);
-			.field-item {
-				width: 100%;
-				float: left;
-				padding: .25em 0;
+			.field-item{
 				a{
-					color: #fff;
+					font-size: 1.2em;
 				}
 			}
 		}
+	  .field-name-field-media-type,
+	  .field-name-field-tags{
+	  		float: none;
+	  }
+	}
+	ul.flippy li a{
+		font-size: 1.2em;
 	}
 
-	/* About */
+	/* about and contact page */
+	#me{
+		display: none;
+	}
+	#about{
+		padding: 3em 3vw;
+		p{
+			font-size: 3.5vw;
+			line-height: 1.5;
+		}
+	}
 	.node-1{
 		width: 65%;
 	}
@@ -114,7 +130,7 @@
 		margin: 0 0 0.5vw;
 	}
 
-	/* Taxonomy Pages */
+	/* taxonomy pages */
 	.page-taxonomy #page-title{
 		font-size: 6vw;
 		padding: 3vw;
