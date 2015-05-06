@@ -748,6 +748,7 @@ body.node-type-article {
   float: right;
   font-size: 1.3vw;
   margin-top: .5em;
+  text-transform: uppercase;
 }
 .node-article.view-mode-full p {
   font-size: 1.3vw;
