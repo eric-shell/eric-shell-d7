@@ -12,7 +12,7 @@
   <?php endif; ?>
 
   <?php
-    print render($content['video']);
+    print render($content['field_video']);
     print render($content['body']);
   ?>
 </article>
