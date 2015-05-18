@@ -48,13 +48,13 @@ ul li {
   float: left;
 }
 ::-webkit-input-placeholder {
-  color: primary;
+  color: #4f7b84;
 }
 ::-moz-placeholder {
-  color: primary;
+  color: #4f7b84;
 }
 :-ms-input-placeholder {
-  color: primary;
+  color: #4f7b84;
 }
 input,
 button,
@@ -268,7 +268,7 @@ h2 {
 .pager li a:active {
   border: 0;
   color: #fff;
-  background: primary;
+  background: #4f7b84;
   -webkit-transition: all 0s ease;
   -moz-transition: all 0s ease;
   transition: all 0s ease;
