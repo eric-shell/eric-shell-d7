@@ -19,15 +19,6 @@ module.exports = function(grunt) {
            }
         }
      },
-     /* 
-     csscomb: {
-        main: {
-            files: {
-                'production.css': ['clean.css'],
-            }
-        }
-    },
-    */
      watch: {
         files: [
           '../css/src/base.less',
@@ -41,9 +32,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-assemble-less');
-  //grunt.loadNpmTasks('grunt-csscomb');
   
   grunt.registerTask('default', ['concat', 'less']);
 
-  //grunt.registerTask('clean', ['csscomb']);
 };
