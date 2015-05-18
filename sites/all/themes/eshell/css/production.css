@@ -48,13 +48,13 @@ ul li {
   float: left;
 }
 ::-webkit-input-placeholder {
-  color: #4f7b84;
+  color: primary;
 }
 ::-moz-placeholder {
-  color: #4f7b84;
+  color: primary;
 }
 :-ms-input-placeholder {
-  color: #4f7b84;
+  color: primary;
 }
 input,
 button,
@@ -268,7 +268,7 @@ h2 {
 .pager li a:active {
   border: 0;
   color: #fff;
-  background: #4f7b84;
+  background: primary;
   -webkit-transition: all 0s ease;
   -moz-transition: all 0s ease;
   transition: all 0s ease;
@@ -897,12 +897,15 @@ article {
   text-transform: uppercase;
   float: left;
   border: 0;
-}
-.node-article.node-teaser .node-readmore:hover {
-  background: rgba(255, 255, 255, 0.9);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+.node-article.node-teaser .node-readmore:hover {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0s ease-in-out;
+  -moz-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
 }
 .node-article.node-teaser .node-readmore:hover a {
   opacity: 1;

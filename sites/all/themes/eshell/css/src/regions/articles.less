@@ -5,7 +5,7 @@
 */
 
 body.node-type-article{
-  background: #181818;
+  background: @gray;
 }
 
 /* 
@@ -73,7 +73,7 @@ body.node-type-article{
     a{
       line-height: 2;
       text-transform: uppercase;
-      color: #4f7b84;
+      color: @primary;
       overflow: hidden;
       font-weight: 500;
       position: relative;
@@ -88,7 +88,7 @@ body.node-type-article{
         left: 0;
         width: 100%;
         height: 1px;
-        background: #4f7b84;
+        background: @primary;
         -webkit-transition: -webkit-transform 0.2s;
         transition: transform 0.2s;
         -webkit-transform: scaleY(.5) translateX(-105%);
@@ -152,7 +152,7 @@ body.node-type-article{
 #article-filters{
   float: left;
   width: 100%;
-  background: #181818;
+  background: @gray;
   padding: 2em;
   display:flex;
   flex-direction: row;
@@ -188,7 +188,7 @@ ul.flippy{
     width: 50%;
     a{
       color: #fff;
-      background: #4f7b84;
+      background: @primary;
       text-align: center;
       font-size: 1.3vw;
       padding: 1.5em;
@@ -284,12 +284,15 @@ article{
       text-transform: uppercase;
       float: left;
       border: 0;
-    }
-    &:hover{
-      background: rgba(255,255,255,.9);
       -webkit-transition: all 0.2s ease-in-out;
       -moz-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
+    }
+    &:hover{
+      background: rgba(255,255,255,.8);
+      -webkit-transition: all 0s ease-in-out;
+      -moz-transition: all 0s ease-in-out;
+      transition: all 0s ease-in-out;
       a{
         opacity: 1;
         text-align: center;

@@ -27,7 +27,7 @@
     float: none;
   }
   a:not(.exempt){
-    color: #e74c3c;
+    color: @secondary;
     overflow: hidden;
     font-weight: 500;
     position: relative;
@@ -42,7 +42,7 @@
       left: 0;
       width: 100%;
       height: 2px;
-      background: #e74c3c;
+      background: @secondary;
       -webkit-transition: -webkit-transform 0.2s;
       transition: transform 0.2s;
       -webkit-transform: scaleY(.5) translateX(-105%);
@@ -166,7 +166,7 @@
             background-position: 100% 0;
           }
           &:hover{
-            background: #4f7b84;
+            background: @primary;
             color: #fff;
             &:before{
               background-position: 100% 100%;
