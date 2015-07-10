@@ -74,12 +74,14 @@
 <head profile="<?php print $grddl_profile; ?>">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <link rel="shortcut icon" href="/sites/all/themes/eshell/assets/images/favicon.ico" type="image/ico">
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, minimum-scale=1, user-scalable=yes">
   <meta http-equiv="cleartype" content="on">
   <meta name="author" content="Eric Shell" />
+  <link rel="shortcut icon" href="/sites/all/themes/eshell/assets/images/favicon.ico" type="image/ico">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+  <!--<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900,400italic,900italic' rel='stylesheet' type='text/css'>-->
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
