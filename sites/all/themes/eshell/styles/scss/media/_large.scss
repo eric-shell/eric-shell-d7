@@ -51,16 +51,16 @@
 	ul.flippy{
 	  li{
 	    a{
-      	color: @primary;
+      	color: $primary;
       	background: #efefef;
 	      position: fixed;
 	      z-index: 2;
-	      top: ~'calc(50% - 2em)';
+	      top: calc(50% - 2em);
 	      padding: 1.5em;
 	      float: none;
 	      width: auto;
 	      &:hover{
-         	background: @primary;
+         	background: $primary;
         		color: #fff;
 	      }
 	    }

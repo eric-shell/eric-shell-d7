@@ -6,9 +6,9 @@
 
 // variables
 // -------------------------
-@primary: #4f7b84; 
-@secondary: #e74c3c;
-@gray: #181818;
+$primary: #4f7b84; 
+$secondary: #e74c3c;
+$gray: #181818;
 
 /* 
 * base Formatting
@@ -55,13 +55,13 @@ ul{
   }
 }
 ::-webkit-input-placeholder{
-  color: @primary;
+  color: $primary;
 }
 ::-moz-placeholder{
-  color: @primary;
+  color: $primary;
 }
 :-ms-input-placeholder{  
-  color: @primary;
+  color: $primary;
 }
 input,
 button,
@@ -120,10 +120,10 @@ p{
   margin: 1vw 0;
 }
 a{
-  color: @primary;
+  color: $primary;
   text-decoration: none;
   &.highlight{
-    color: @secondary;
+    color: $secondary;
   }
   &:focus{
     outline: 0;
@@ -143,7 +143,7 @@ h2{
 .field-name-body,
 .field-name-field-body{
   a:not(.exempt){
-    color: @primary;
+    color: $primary;
     overflow: hidden;
     font-weight: 500;
     position: relative;
@@ -161,7 +161,7 @@ h2{
       z-index: -1;
       width: 100%;
       height: 1px;
-      background: @primary;
+      background: $primary;
       -webkit-transition: -webkit-transform 0.2s;
       transition: transform 0.2s;
       -webkit-transform: scaleY(.5) translateX(-105%);
@@ -253,7 +253,7 @@ h2{
   li{
     float: left;
     &.pager-current{
-      background: @primary;
+      background: $primary;
       color: #fff;
     }
     a{
@@ -267,7 +267,7 @@ h2{
       &:active{
         border: 0;
         color: #fff;
-        background: @primary;
+        background: $primary;
         -webkit-transition: all 0s ease;
         -moz-transition: all 0s ease;
         transition: all 0s ease;
@@ -289,5 +289,5 @@ h2{
 }
 .pager-ellipsis{
   padding: 1.5em .5em;
-  color: @primary;
+  color: $primary;
 }
