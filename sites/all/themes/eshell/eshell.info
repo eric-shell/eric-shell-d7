@@ -1,4 +1,4 @@
-screenshot  = screenshot.png
+screenshot  = assets/images/theme.png
 name        = Eric Shell's Theme
 description = Custom Zen subtheme built for Eric's Shell's professional website.
 core        = 7.x
