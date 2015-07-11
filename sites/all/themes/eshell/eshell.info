@@ -7,9 +7,7 @@ base theme  = zen
 stylesheets[all][] = styles/styles.min.css
 scripts[] = scripts/scripts.min.js
 
-regions[top]            = Page Top
 regions[content]        = Content
-regions[bottom]         = Page Bottom
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
 
