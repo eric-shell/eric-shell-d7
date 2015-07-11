@@ -39,7 +39,7 @@
 	    <section class="sidebar">
 
         <div id="profile-photo">
-          <img src="sites/all/themes/eshell/images/eric-shell.jpg">
+          <img src="sites/all/themes/eshell/assets/images/eric-shell.jpg">
         </div>
 
 	      <ul>
