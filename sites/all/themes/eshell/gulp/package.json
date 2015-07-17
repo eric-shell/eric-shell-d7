@@ -1,5 +1,5 @@
 {
-  "name": "Wheel Collective Task Manager",
+  "name": "eshell",
   "version": "1.0.0",
   "description": "Collection of gulp plugins to properly port code to their respective development format",
   "main": "gulpfile.js",
