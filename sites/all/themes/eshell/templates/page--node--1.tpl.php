@@ -1,18 +1,5 @@
 <section id="site">
-  <section id="header">
-    <section class="wrapper">
-      <section class="content">
-
-        <div id="logo">
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><?php print t('Eric Shell'); ?></a>
-        </div>
-
-      </section>
-      <!-- header content end -->
-    </section>
-    <!-- header wrapper end -->
-  </section>
-  <!-- header end -->
+  <?php include "header.tpl.php"; ?>
 
   <section id="main">
 
