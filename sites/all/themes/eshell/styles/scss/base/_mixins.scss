@@ -5,9 +5,9 @@
 
 @mixin tags{
   a{
-    line-height: 2;
+    line-height: 1.5;
     text-transform: uppercase;
-    color: $primary;
+    color: $dark;
     overflow: hidden;
     font-weight: 500;
     position: relative;
@@ -15,28 +15,24 @@
     outline: none;
     vertical-align: bottom;
     text-decoration: none;
-    &::before{
+    &:before{
       content: '';
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
       height: 2px;
-      background: $primary;
-      -webkit-transition: -webkit-transform 0.2s;
+      background: $dark;
       transition: transform 0.2s;
-      -webkit-transform: scaleY(.5) translateX(-105%);
       transform: scaleY(.5) translateX(-105%);
     }
-    &::before,
-    &::after{
+    &:before,
+    &:after{
       pointer-events: none;
-      -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
     }
-    &:hover::before,
-    &:focus::before{
-      -webkit-transform: scaleY(1) translateX(0);
+    &:hover:before,
+    &:focus:before{
       transform: scaleY(1) translateX(0);
     }
   }

@@ -1,18 +1,63 @@
-/*
-* article.scss begin
-* ==================================================
-*/
+//
+// article.scss begin
+// ==================================================
+//
 
+// Article teaser padding 
+$teaser-lg: 4vw;
+$teaser-md: 2vw;
+$teaser-sm: 1rem;
+
+// 
+// Article teaser
+// -------------------------
+//
 .article-container{
   float:left;
   width: 100%;
   display: flex;
 }
+.node-article{
+  .node-title{
+    float: left;
+    a{
+      font-family: 'Lato', sans-serif;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 2.5vw;
+      color: $dark;
+      overflow: hidden;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      vertical-align: bottom;
+      text-decoration: none;
+      &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #000;
+        transition: transform 0.2s;
+        transform: scaleY(.5) translateX(-105%);
+      }
+      &::before,
+      &::after{
+        pointer-events: none;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      &:hover::before,
+      &:focus::before{
+        transform: scaleY(1) translateX(0);
+      }
+    }
+  }
+}
 
-/* 
-* article teaser
-* -------------------------
-*/
+// Article teaser body
 .article-content{
   position: relative;
   padding: $teaser-lg;
@@ -26,6 +71,7 @@
   .field-name-body{
     float: left;
     width: 100%;
+    text-align: justify;
   }
   .node-filters{
     position: absolute;
@@ -36,9 +82,14 @@
       float: left;
       margin-right: 1vw;
       @include tags;
+      &:last-child{
+        margin-right: 0;
+      }
     }
   }
 }
+
+// Article teaser imagery
 .article-image{
   position: relative;
   float: left;
@@ -90,58 +141,6 @@
 }
 
 /* 
-* article titles
-* -------------------------
-*/
-.node-article{
-  .node-title{
-    float: left;
-    a{
-      font-family: 'Lato', sans-serif;
-      text-transform: uppercase;
-      font-weight: 900;
-      font-size: 2.5vw;
-      color: #000;
-      overflow: hidden;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      vertical-align: bottom;
-      text-decoration: none;
-      &::before{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: #000;
-        -webkit-transition: -webkit-transform 0.2s;
-        transition: transform 0.2s;
-        -webkit-transform: scaleY(.5) translateX(-105%);
-        transform: scaleY(.5) translateX(-105%);
-      }
-      &::before,
-      &::after{
-        pointer-events: none;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-      &:hover::before,
-      &:focus::before{
-        -webkit-transform: scaleY(1) translateX(0);
-        transform: scaleY(1) translateX(0);
-      }
-    }
-  }
-  .field-name-field-video{
-    float: left;
-    width: 100%;
-    margin: .5em 0 0;
-  }
-}
-
-/* 
 * article default full display mode
 * -------------------------
 */
@@ -156,6 +155,11 @@
     max-width: 1300px;
     padding-bottom: .75em;
   }
+}
+.field-name-field-video{
+  float: left;
+  width: 100%;
+  margin: .5em 0 0;
 }
 .node-article.view-mode-full{
   #article-header{
