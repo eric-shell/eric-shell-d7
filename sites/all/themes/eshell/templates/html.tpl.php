@@ -81,7 +81,7 @@
   <meta name="author" content="Eric Shell" />
   <link rel="shortcut icon" href="/sites/all/themes/eshell/assets/images/favicon.ico" type="image/ico">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
-  <!--<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900,400italic,900italic' rel='stylesheet' type='text/css'>-->
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:900' rel='stylesheet' type='text/css'>
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <script>

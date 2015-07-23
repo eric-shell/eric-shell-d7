@@ -1,19 +1,8 @@
 /*
-* base.less begin
-* page structure and formatting styles
+* common.scss begin
 * ==================================================
 */
 
-// variables
-// -------------------------
-$primary: #4f7b84; 
-$secondary: #e74c3c;
-$gray: #181818;
-
-/* 
-* base Formatting
-* -------------------------
-*/
 *,
 *:after,
 *:before{
@@ -190,45 +179,6 @@ h2{
   float: left;
   width: 100%;
   background: #fff;
-}
-#header{
-  width: 100%;
-  float: left;
-  background: url(../assets/images/header.jpg) center;
-  padding: 2em 0;
-  margin-bottom: 1.5em;
-  .wrapper{
-    padding: 0 2em;
-  }
-}
-#logo{
-  width: 152px;
-  height: 87px;
-  color: #fff;
-  font-family: 'Lato';
-  font-weight: 900;
-  font-size: 56px;
-  text-transform: uppercase;
-  letter-spacing: -2px;
-  line-height: .8;
-  float: left;
-  a{
-    position: relative;
-    transform-origin: left;
-    text-shadow: 0 0 15px rgba(0,0,0,.3);
-    -webkit-transition: all .2s ease;
-    -moz-transition: all .2s ease;
-    transition: all .2s ease;
-    &:hover{
-      border: 0;
-      -moz-transform: scale(1.02);
-      -webkit-transform: scale(1.02);
-      transform: scale(1.02);
-      -webkit-transition: all 0s ease;
-      -moz-transition: all 0s ease;
-      transition: all 0s ease;
-    }
-  }
 }
 
 /* 

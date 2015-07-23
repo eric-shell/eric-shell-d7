@@ -1,11 +1,10 @@
 /*
-* article.less begin
-* article content type styles
+* artlce.scss begin
 * ==================================================
 */
 
 body.node-type-article{
-  background: $gray;
+  background: $dark;
 }
 
 /* 
@@ -152,7 +151,7 @@ body.node-type-article{
 #article-filters{
   float: left;
   width: 100%;
-  background: $gray;
+  background: $dark;
   padding: 2em;
   display:flex;
   flex-direction: row;

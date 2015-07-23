@@ -4,15 +4,11 @@
 @import "vendor/normalize";
 
 // Main stylesheet
-@import "regions/base";
+@import "base/variables";
+@import "base/common";
+
+// Layout
+@import "layout/header";
 
 // Regions
-@import "regions/about";
-@import "regions/admin";
-@import "regions/articles";
-@import "regions/taxonomy";
-
-// Responsive
-@import "media/small";
-@import "media/medium";
-@import "media/large";
+@import "feature/article";

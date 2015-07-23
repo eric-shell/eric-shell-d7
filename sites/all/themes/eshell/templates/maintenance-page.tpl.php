@@ -22,8 +22,6 @@
 
   <section id="site">
 
-    <?php include "header.tpl.php"; ?>
-
     <section id="main">
 
       <section class="content">

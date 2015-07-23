@@ -1,5 +1,5 @@
 <section id="site">
-  <?php include "header.tpl.php"; ?>
+  <?php include "navigation.tpl.php"; ?>
 
   <section id="main">
 
