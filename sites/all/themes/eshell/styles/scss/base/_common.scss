@@ -181,6 +181,32 @@ h2{
 }
 
 /* 
+* messages
+* -------------------------
+*/
+.messages{
+  padding: 1rem;
+  background: $dark;
+  color: $light;
+  a{
+    color: $light;
+    text-decoration: underline;
+  }
+  &.error{
+    background: $secondary;
+    color: #fff;
+    a{
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+#admin-menu{
+  box-shadow: none;
+}
+
+/* 
 * pagers
 * -------------------------
 */
