@@ -125,6 +125,9 @@ $teaser-sm: 1rem;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
+  span{
+    display: none;
+  }
   &:hover{
     background: rgba(255,255,255,.8);
     -webkit-transition: all 0s ease-in-out;

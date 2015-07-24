@@ -24,7 +24,8 @@
   </header>
 
   <main id="main" role="content">
-    <?php print render($page['content']); ?>
+    <?php print render($page['photos']); ?>
+    <?php print render($page['articles']); ?>
   </main>
   <!-- main end -->
 

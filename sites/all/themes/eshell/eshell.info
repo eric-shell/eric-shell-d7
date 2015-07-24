@@ -7,8 +7,10 @@ base theme  = zen
 stylesheets[all][] = styles/styles.min.css
 scripts[] = scripts/scripts.min.js
 
-regions[content]        = Content
 regions[page_top]       = Page top
+regions[content]        = Content
+regions[photos]         = Photos
+regions[articles]       = Articles
 regions[page_bottom]    = Page bottom
 
 ; Zen subtheme settings
