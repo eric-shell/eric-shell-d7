@@ -8,4 +8,28 @@
     float: left;
     width: 33.333%;
   }
+  .photo-container{
+    position: relative;
+    overflow: hidden;
+    &:hover,
+    &:focus{
+      .photo-title{
+        bottom: 0;
+        transition: .1s all ease-in-out;
+      }
+    }
+  }
+  .photo-title{
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255,255,255,.8);
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: 'Lato';
+    left: 0;
+    bottom: -4rem;
+    text-transform: uppercase;
+    transition: .2s all ease-in-out;
+  }
 }
