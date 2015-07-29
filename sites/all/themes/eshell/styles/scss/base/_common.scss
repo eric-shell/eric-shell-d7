@@ -7,8 +7,6 @@
 *:after,
 *:before{
   box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
   padding: 0;
   margin: 0;
 }
@@ -24,6 +22,9 @@ body{
   font-smooth:always;
   font-family: 'Lato', sans-serif;
   background: #fff;
+}
+*:focus{
+  outline: 0;
 }
 label{
   display: none;
@@ -110,12 +111,6 @@ p{
 a{
   color: $primary;
   text-decoration: none;
-  &.highlight{
-    color: $secondary;
-  }
-  &:focus{
-    outline: 0;
-  }
 }
 h1{
   font-size: 4vw;

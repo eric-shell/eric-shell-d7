@@ -12,6 +12,20 @@
     align-items: center;
     justify-content: center;
   }
+  #header-right{
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-bottom: 0px solid transparent;
+      border-left: 0px solid transparent;
+      border-right: 14vw solid transparent;
+      border-top: 26.8vw solid #A84B37;
+      height: 0;
+      width: 0;
+    }
+  }
   #profile{
     z-index: 2;
     position: absolute;
@@ -25,19 +39,18 @@
     width: 33vw;
   }
   #intro{
-    padding: 0 7vw;
+    padding: 0 10vw;
     text-align: justify;
     p{
       color: $dark;
-      font-size: 1.28vw;
+      font-size: 1.3vw;
+      line-height: 2.2;
     }
-    a{
-      font-size: .9rem;
-      padding: .75rem 2.5rem;
-      border-radius: 43px;
-      color: #fff;
-      background: $alternate;
-      text-transform: uppercase;
-    }
+  }
+  #learn-more{
+    position: absolute;
+    bottom: 22.5%;
+    right: calc(50% - 5.25rem);
+    @include cta;
   }
 }
