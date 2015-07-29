@@ -1,7 +1,7 @@
 <article class="article-teaser node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="article-container">
 
-    <?php if($zebra == 'even'): ?>
+    <?php if($zebra == 'odd'): ?>
 
     <div class="article-image">
       <?php print render($content['field_image']); ?>
@@ -22,7 +22,7 @@
 
     <?php endif; ?>
 
-    <?php if($zebra == 'odd'): ?>
+    <?php if($zebra == 'even'): ?>
 
     <div class="article-content">
       <?php if (!$page && $title): ?>
