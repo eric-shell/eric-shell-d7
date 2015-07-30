@@ -6,7 +6,7 @@
   // Container
   #header-container{
     float: left;
-    height: 50vw;
+    height: calc(50vw - .9375rem);
     width: 100%;
     position: relative;
     background: #fff;
@@ -34,31 +34,8 @@
   }
   #logo{
     z-index: 5;
-    width: 33vw;
-    margin-left: 8.75vw;
-  }
-
-  // Slice marks
-  #slice{
-    position: absolute;
-    z-index: 2;
-    left: 38vw;
-    top: 0;
-    width: 66.66667%;
-    height: 50vw;
-
-    &:before{
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      border-top: 0px solid transparent;
-      border-left: 22.5vw solid transparent;
-      border-right: 0px solid transparent;
-      border-bottom: 50vw solid #fff;
-      height: 0;
-      width: 0;
-    }
+    width: 33.25vw;
+    margin-left: 8vw;
   }
 
   // Intro
@@ -67,14 +44,13 @@
     z-index: 3;
     right: 0;
     top: 0;
-    width: 40%;
+    width: 50%;
     height: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
     .content{
-      padding: 0 10vw 0 0;
+      padding: 0 10vw;
       text-align: justify;
       p{
         color: $dark;
@@ -87,7 +63,6 @@
     position: absolute;
     bottom: 22.5%;
     right: calc(50% - 5.25rem);
-    margin-right: 5vw;
     @include cta;
   }
 }

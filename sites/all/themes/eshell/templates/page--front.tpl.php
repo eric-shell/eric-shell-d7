@@ -14,8 +14,6 @@
         <a href="<?php print $front_page; ?>" title="<?php print t('Eric Shell'); ?>" rel="home" id="logo"><img src="/sites/all/themes/eshell/assets/images/logo.svg" title="<?php print t('Eric Shell'); ?>" alt="<?php print t('Eric Shell'); ?>"></a>
       </div>
 
-      <div id="slice"></div>
-
       <div id="intro">
         <div class="content">
           <?php print render($node->body['und']['0']['value']); ?>
