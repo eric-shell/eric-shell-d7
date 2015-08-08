@@ -1,11 +1,7 @@
-//
-// variables.scss begin
-// ==================================================
-//
-
 // Colors
 $light: #f3d5ae;
 $dark: #2e2f33;
 $primary: #07274f; 
 $secondary: #e9704f;
 $alternate: #53b3c7;
+$gradient: linear-gradient(-45deg, $primary 0%, $secondary 100%);

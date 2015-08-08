@@ -1,8 +1,4 @@
-/*
-* common.scss begin
-* ==================================================
-*/
-
+// General Overrides
 *,
 *:after,
 *:before{
@@ -17,87 +13,61 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
+  font-size: 16px;
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+  font-smooth:always;
   font-smoothing:subpixel-antialiased;
   text-rendering:optimizeLegibility;
-  font-smooth:always;
-  font-family: 'Lato', sans-serif;
-  background: #fff;
 }
 *:focus{
   outline: 0;
-}
-label{
-  display: none;
 }
 img{
   max-width: 100%;
   height: auto;
   float: left;
 }
-ul{
-  list-style: none;
-  padding: 0;
-  li{
-    margin: auto;
-    list-style: none;
-    float: left;
-  }
+#admin-menu{
+  box-shadow: none;
 }
-::-webkit-input-placeholder{
-  color: $primary;
-}
-::-moz-placeholder{
-  color: $primary;
-}
-:-ms-input-placeholder{  
-  color: $primary;
-}
+
+// Input fields
 input,
 button,
 textarea{
   outline: 0;
+  border: 0;
   width: 100%;
-  border: 0px;
   padding: 1vw;
   font-size: 1.2vw;
-  background: #efefef;
-  font-family: 'Lato', sans-serif;
-  -webkit-appearance: none;
-  border-radius: 0;
+  border-radius: 3px;
   line-height: 1.5;
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
+  -webkit-appearance: none;
   transition: all .2s ease;
+  &:focus,
+  &:hover{
+    transition: all .2s ease;
+  }
 }
 input[type='submit']{
   color: #fff;
-  background: #68c06d;
-  &:hover{
-    background: #44b94a;
-    -webkit-transition: all 0s ease;
-    -moz-transition: all 0s ease;
-    transition: all 0s ease;
-  }
+  background: $alternate;
+  border-radius: 47px;
+  text-transform: uppercase;
 }
 .form-item{
-  margin: 0 0 .5vw 0;
-}
-.form-textarea:hover,
-.form-item input:hover,
-.webform-component input:hover{
-  background: #f7f7f7;
-  -webkit-transition: all 0s ease;
-  -moz-transition: all 0s ease;
-  transition: all 0s ease;
-}
-.resizable-textarea .grippie{
-  display: none;
+  margin: 0 0 .5rem 0;
+  input{
+    background: rgba(255,255,255,.85);
+    &:focus,
+    &:hover{
+      background: rgba(255,255,255,.95);
+    }
+  }
 }
 
-/* 
-* text formatting
-* -------------------------
-*/
+// Type formatting
 p{
   font-size: 1.2vw;
   font-family: 'Lato', sans-serif;
@@ -112,6 +82,15 @@ a{
   color: $primary;
   text-decoration: none;
 }
+ul{
+  list-style: none;
+  padding: 0;
+}
+li{
+  margin: auto;
+  list-style: none;
+  float: left;
+}
 h1{
   font-size: 4vw;
   font-family: 'Lato', sans-serif;
@@ -125,7 +104,7 @@ h2{
 }
 .field-name-body,
 .field-name-field-body{
-  a:not(.exempt){
+  a{
     color: $primary;
     overflow: hidden;
     font-weight: 500;
@@ -145,9 +124,7 @@ h2{
       width: 100%;
       height: 1px;
       background: $primary;
-      -webkit-transition: -webkit-transform 0.2s;
       transition: transform 0.2s;
-      -webkit-transform: scaleY(.5) translateX(-105%);
       transform: scaleY(.5) translateX(-105%);
     }
     &::before,
@@ -170,9 +147,9 @@ h2{
 */
 #site{
   z-index: 10;
-  float: left;
+  display: inline-block;
   width: 100%;
-  background: #fff;
+  height: 100%;
 }
 
 /* 
@@ -197,10 +174,6 @@ h2{
   }
 }
 
-#admin-menu{
-  box-shadow: none;
-}
-
 /* 
 * pagers
 * -------------------------
@@ -215,11 +188,7 @@ h2{
   font-size: 1em;
   line-height: 1;
   text-transform: capitalize;
-  background: #ffffff; /* Old browsers */
-  background: -moz-linear-gradient(top,  #ffffff 0%, #fcfcfc 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fcfcfc)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%); /* Chrome10+,Safari5.1+ */
-  background: linear-gradient(to bottom,  #ffffff 0%,#fcfcfc 100%); /* W3C */
+  background: #fff;
   li{
     float: left;
     &.pager-current{
@@ -230,16 +199,12 @@ h2{
       display: block;
       padding: 1.5em;
       float: left;
-      -webkit-transition: all .2s ease;
-      -moz-transition: all .2s ease;
       transition: all .2s ease;
       &:hover,
       &:active{
         border: 0;
         color: #fff;
         background: $primary;
-        -webkit-transition: all 0s ease;
-        -moz-transition: all 0s ease;
         transition: all 0s ease;
       }
     }
@@ -248,8 +213,6 @@ h2{
     display: block;
     padding: 1.5em;
     float: left;
-    -webkit-transition: all .2s ease;
-    -moz-transition: all .2s ease;
     transition: all .2s ease;
   }
 }
