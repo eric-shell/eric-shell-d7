@@ -36,6 +36,7 @@
     z-index: 5;
     width: 33.25vw;
     margin-left: 8vw;
+    animation: fadeFromLeft 1s ease-in-out;
   }
 
   // Intro
@@ -49,6 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeFromRight 1s ease-in-out;
     .content{
       padding: 0 10vw;
       text-align: justify;
