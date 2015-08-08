@@ -157,6 +157,8 @@ h2{
 * -------------------------
 */
 .messages{
+  float: left;
+  width: 100%;
   padding: 1rem;
   background: $dark;
   color: $light;
