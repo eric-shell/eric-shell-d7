@@ -11,6 +11,7 @@
   .photo-container{
     position: relative;
     overflow: hidden;
+    z-index: 30;
     &:hover,
     &:focus{
       .photo-title{

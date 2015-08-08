@@ -36,7 +36,7 @@
     z-index: 5;
     width: 33.25vw;
     margin-left: 8vw;
-    animation: fadeFromLeft 1s ease-in-out;
+    animation: fadeFromLeft 1.5s ease-in-out;
   }
 
   // Intro
@@ -50,7 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fadeFromRight 1s ease-in-out;
+    animation: fadeFromRight 1.5s ease-in-out;
     .content{
       padding: 0 10vw;
       text-align: justify;
@@ -67,4 +67,22 @@
     right: calc(50% - 5.25rem);
     @include cta;
   }
+}
+
+// Small slice custom positioning
+// Calculated from second photo post
+.views-row-2 .photo-teaser:before {
+  content: '';
+  float: left;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 14vw 6.25vw;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  top: -13.95vw;
+  left: 0;
+  z-index: 20;
+  transform: rotate(8deg);
+  transform-origin: left bottom;
 }
