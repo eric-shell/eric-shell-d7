@@ -183,6 +183,7 @@ h2{
 .item-list{
   float: left;
   width: 100%;
+  background: $dark;
 }
 .pager{
   float: right;
@@ -190,23 +191,24 @@ h2{
   font-size: 1em;
   line-height: 1;
   text-transform: capitalize;
-  background: #fff;
+  background: $dark;
   li{
     float: left;
     &.pager-current{
-      background: $primary;
+      background: $alternate;
       color: #fff;
     }
     a{
       display: block;
       padding: 1.5em;
+      color: #fff;
       float: left;
       transition: all .2s ease;
       &:hover,
       &:active{
         border: 0;
         color: #fff;
-        background: $primary;
+        background: $secondary;
         transition: all 0s ease;
       }
     }
@@ -224,5 +226,5 @@ h2{
 }
 .pager-ellipsis{
   padding: 1.5em .5em;
-  color: $primary;
+  color: #fff;
 }

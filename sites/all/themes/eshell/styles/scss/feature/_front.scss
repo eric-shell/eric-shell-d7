@@ -1,0 +1,7 @@
+// Front page
+.cta-gallery{
+  float: left;
+  position: relative;
+  margin: -2.65rem 0 0 .5rem;
+  @include cta;
+}
