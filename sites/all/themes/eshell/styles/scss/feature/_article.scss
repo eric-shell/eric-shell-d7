@@ -25,7 +25,7 @@ $teaser-sm: 1rem;
       text-transform: uppercase;
       font-weight: 900;
       font-size: 2.5vw;
-      color: $dark;
+      color: $midnight;
       overflow: hidden;
       position: relative;
       display: inline-block;
@@ -186,7 +186,7 @@ $teaser-sm: 1rem;
 #article-filters{
   float: left;
   width: 100%;
-  background: $dark;
+  background: $midnight;
   padding: 2em;
   display:flex;
   flex-direction: row;
@@ -222,7 +222,7 @@ ul.flippy{
     width: 50%;
     a{
       color: #fff;
-      background: $primary;
+      background: $violet;
       text-align: center;
       font-size: 1.3vw;
       padding: 1.5em;

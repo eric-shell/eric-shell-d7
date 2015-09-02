@@ -8,11 +8,11 @@
     padding: .75rem 2.5rem;
     border-radius: 43px;
     color: #fff;
-    background: $alternate;
+    background: $cyan;
     text-transform: uppercase;
     &:hover,
     &:focus{
-      background: linear-gradient(-45deg, $primary 0%, $secondary 100%);
+      background: linear-gradient(-45deg, $violet 0%, $crimson 100%);
     }
   }
 }
@@ -21,7 +21,7 @@
   a{
     line-height: 1.5;
     text-transform: uppercase;
-    color: $dark;
+    color: $midnight;
     overflow: hidden;
     font-size: 1.25vw;
     font-weight: 500;
@@ -37,7 +37,7 @@
       left: 0;
       width: 100%;
       height: 2px;
-      background: $dark;
+      background: $midnight;
       transition: transform 0.2s;
       transform: scaleY(.5) translateX(-105%);
     }
