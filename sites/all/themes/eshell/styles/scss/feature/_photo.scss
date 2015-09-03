@@ -1,8 +1,16 @@
-//
-// photo.scss begin
-// ==================================================
-//
+// Photo node
+.node-type-photo{
+  .field-name-field-image{
+    display: flex;
+    justify-content: center;
+    img{
+      max-height: calc(100vh - 2rem);
+      min-width: 100%;
+    }
+  }
+}
 
+// Photo teaser
 .view-photos{
   .node-photo{
     float: left;

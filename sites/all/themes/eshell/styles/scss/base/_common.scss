@@ -16,11 +16,9 @@ body{
   font-size: 16px;
   background: #fff;
   font-family: 'Lato', sans-serif;
-  font-smooth:always;
-  font-smoothing:subpixel-antialiased;
   text-rendering:optimizeLegibility;
 }
-*:focus{
+a:focus{
   outline: 0;
 }
 img{
