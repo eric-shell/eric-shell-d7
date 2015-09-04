@@ -212,35 +212,3 @@ $teaser-sm: 1rem;
     }
   }
 }
-ul.flippy{
-  float: left;
-  width: 100%;
-  li{
-    padding: 0;
-    margin: 0;
-    float: left;
-    width: 50%;
-    a{
-      color: #fff;
-      background: $violet;
-      text-align: center;
-      font-size: 1.3vw;
-      padding: 1.5em;
-      float: left;
-      width: 100%;
-      -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out;
-      &:hover{
-        background: #efefef;
-        color: #000;
-        -webkit-transition: all 0s ease-in-out;
-        -moz-transition: all 0s ease-in-out;
-        transition: all 0s ease-in-out;
-      }
-    }  
-    &.prev{
-      float: right;
-    }
-  }
-}
