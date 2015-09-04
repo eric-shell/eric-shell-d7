@@ -1,8 +1,54 @@
-//
-// pager.scss begin
-// ==================================================
-//
+// View pagers
+.item-list{
+  float: left;
+  width: 100%;
+  background: $midnight;
+}
+.pager{
+  float: right;
+  width: auto;
+  font-size: 1em;
+  line-height: 1;
+  text-transform: capitalize;
+  background: $midnight;
+  li{
+    float: left;
+    &.pager-current{
+      background: $cyan;
+      color: #fff;
+    }
+    a{
+      display: block;
+      padding: 1.5em;
+      color: #fff;
+      float: left;
+      transition: all .2s ease;
+      &:hover,
+      &:active{
+        border: 0;
+        color: #fff;
+        background: $crimson;
+        transition: all 0s ease;
+      }
+    }
+  }
+  .pager-current{
+    display: block;
+    padding: 1.5em;
+    float: left;
+    transition: all .2s ease;
+  }
+}
+.pager-next,
+.pager-previous{
+  display: none;
+}
+.pager-ellipsis{
+  padding: 1.5em .5em;
+  color: #fff;
+}
 
+// Content pagers
 .flippy{
   position: relative;
   img{
