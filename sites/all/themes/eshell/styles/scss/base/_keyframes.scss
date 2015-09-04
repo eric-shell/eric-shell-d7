@@ -1,4 +1,4 @@
-// Fade in from top
+// Keyframes
 @keyframes fadeIn{
   0%{
     opacity: 0;
@@ -10,7 +10,6 @@
   }
 }
 
-// Fade from left
 @keyframes fadeFromLeft{
   0%{
     opacity: 0;
@@ -22,7 +21,6 @@
   }
 }
 
-// Fade from right
 @keyframes fadeFromRight{
   0%{
     opacity: 0;

@@ -1,17 +1,75 @@
-//
-// article.scss begin
-// ==================================================
-//
+// Photo node
+.node-article{
+  float: left;
+  width: 100%;
+}
+.node-type-article{
+  article{
+    float: none;
+    margin: auto;
+    max-width: 1300px;
+    padding-bottom: .75em;
+  }
+}
+.field-name-field-video{
+  float: left;
+  width: 100%;
+  margin: .5em 0 0;
+}
+.node-article.view-mode-full{
+  #article-header{
+    padding: 0 18vw;
+    .node-title{
+      float: left;
+    }
+    .submitted{
+      float: right;
+      font-size: 1.3vw;
+      margin-top: .5em;
+      text-transform: uppercase;
+    }
+  }
+  p{
+    font-size: 1.3vw;
+    text-align: justify;
+    padding: 0 18vw;
+  }
+}
+#article-filters{
+  float: left;
+  width: 100%;
+  background: $midnight;
+  padding: 2em;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  .field-name-field-media-type,
+  .field-name-field-tags{
+    float: left;
+  }
+  .group-filters{
+    width: auto;
+    .field-item{
+      margin-right: 1.5em;
+      a{
+        color: #fff;
+        font-size: 1.3em;
+        &::before{
+          background: #fff;
+        }
+      }
+    }
+  }
+}
 
-// Article teaser padding 
+// Article teaser
 $teaser-lg: 4vw;
 $teaser-md: 2vw;
 $teaser-sm: 1rem;
 
-// 
-// Article teaser
-// -------------------------
-//
 .article-container{
   float:left;
   width: 100%;
@@ -139,76 +197,6 @@ $teaser-sm: 1rem;
       -webkit-transition: all 0.2s ease-in-out;
       -moz-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
-    }
-  }
-}
-
-/* 
-* article default full display mode
-* -------------------------
-*/
-.node-article{
-  float: left;
-  width: 100%;
-}
-.node-type-article{
-  article{
-    float: none;
-    margin: auto;
-    max-width: 1300px;
-    padding-bottom: .75em;
-  }
-}
-.field-name-field-video{
-  float: left;
-  width: 100%;
-  margin: .5em 0 0;
-}
-.node-article.view-mode-full{
-  #article-header{
-    padding: 0 18vw;
-    .node-title{
-      float: left;
-    }
-    .submitted{
-      float: right;
-      font-size: 1.3vw;
-      margin-top: .5em;
-      text-transform: uppercase;
-    }
-  }
-  p{
-    font-size: 1.3vw;
-    text-align: justify;
-    padding: 0 18vw;
-  }
-}
-#article-filters{
-  float: left;
-  width: 100%;
-  background: $midnight;
-  padding: 2em;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  .field-name-field-media-type,
-  .field-name-field-tags{
-    float: left;
-  }
-  .group-filters{
-    width: auto;
-    .field-item{
-      margin-right: 1.5em;
-      a{
-        color: #fff;
-        font-size: 1.3em;
-        &::before{
-          background: #fff;
-        }
-      }
     }
   }
 }

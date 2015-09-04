@@ -26,6 +26,12 @@ img{
   height: auto;
   float: left;
 }
+#site{
+  z-index: 10;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 #admin-menu{
   box-shadow: none;
 }
@@ -131,21 +137,7 @@ h2{
   }
 }
 
-/* 
-* structural containers
-* -------------------------
-*/
-#site{
-  z-index: 10;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-
-/* 
-* messages
-* -------------------------
-*/
+// Messages
 .messages{
   float: left;
   width: 100%;
