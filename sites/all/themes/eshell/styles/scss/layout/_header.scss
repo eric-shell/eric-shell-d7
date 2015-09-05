@@ -1,9 +1,6 @@
-// Global header
 #header{
   float: left;
   width: 100%;
-
-  // Container
   #header-container{
     float: left;
     height: calc(50vw - .9375rem);
@@ -13,7 +10,7 @@
     overflow: hidden;
   }
 
-  // Profile
+  // Banner image
   #profile{
     position: absolute;
     z-index: 1;
@@ -39,7 +36,7 @@
     animation: fadeFromLeft 1.5s ease-in-out;
   }
 
-  // Intro
+  // About me and more info link
   #intro{
     position: absolute;
     z-index: 3;
@@ -70,7 +67,7 @@
 }
 
 // Small slice custom positioning
-// Calculated from second photo post
+// Calculated using second photo post
 .views-row-2 .photo-teaser:before {
   content: '';
   float: left;
