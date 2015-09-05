@@ -1,0 +1,91 @@
+// User Login Page
+.page-user-login{
+  background: $gradient;
+  #user-login{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: columns;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+    & > div{
+      max-width: 25rem;
+    }
+    label,
+    .description{
+      display: none;
+    }
+  }
+}
+
+// Messages
+.messages{
+  float: left;
+  width: 100%;
+  padding: 1rem;
+  background: $midnight;
+  color: $peach;
+  a{
+    color: $peach;
+    text-decoration: underline;
+  }
+  &.error{
+    background: $crimson;
+    color: #fff;
+    a{
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Pagers
+.item-list{
+  float: left;
+  width: 100%;
+  background: $midnight;
+}
+.pager{
+  float: right;
+  width: auto;
+  font-size: 1em;
+  line-height: 1;
+  text-transform: capitalize;
+  background: $midnight;
+  li{
+    float: left;
+    &.pager-current{
+      background: $cyan;
+      color: #fff;
+    }
+    a{
+      display: block;
+      padding: 1.5em;
+      color: #fff;
+      float: left;
+      transition: all .2s ease;
+      &:hover,
+      &:active{
+        border: 0;
+        color: #fff;
+        background: $crimson;
+        transition: all 0s ease;
+      }
+    }
+  }
+  .pager-current{
+    display: block;
+    padding: 1.5em;
+    float: left;
+    transition: all .2s ease;
+  }
+}
+.pager-next,
+.pager-previous{
+  display: none;
+}
+.pager-ellipsis{
+  padding: 1.5em .5em;
+  color: #fff;
+}

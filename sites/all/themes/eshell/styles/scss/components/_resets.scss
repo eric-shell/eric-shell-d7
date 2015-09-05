@@ -1,0 +1,52 @@
+// Reset padding for all elements
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+// Set initals for the document
+html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Set initals for the body
+body{
+  font-size: 100%;
+  font-family: 'Lato', sans-serif;
+  text-rendering:optimizeLegibility;
+}
+
+// Force all images to be responsive
+img{
+  max-width: 100%;
+  height: auto;
+  float: left;
+}
+
+// Correct admin menu display
+#admin-menu{
+  box-shadow: none;
+  ul {
+    font-size: 11px;
+  }
+  a{
+    font-size: 11px;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  }
+}
+
+// Removing outline on focus inherited by browsers
+a:focus{
+  outline: 0;
+}
+
+// Hiding Drupal invisible elements
+.element-invisible {
+  display: none;
+}

@@ -4,17 +4,18 @@
 @import "vendor/normalize";
 
 // Main stylesheet
-@import "base/variables";
-@import "base/mixins";
-@import "base/common";
-@import "base/keyframes";
+@import "components/variables";
+@import "components/mixins";
+@import "components/resets";
+@import "components/type";
+@import "components/keyframes";
 
 // Layout
 @import "layout/header";
 
 // Features
-@import "feature/login";
-@import "feature/front";
-@import "feature/pager";
-@import "feature/article";
-@import "feature/photo";
+@import "features/core";
+@import "features/front";
+@import "features/pager";
+@import "features/article";
+@import "features/photo";
