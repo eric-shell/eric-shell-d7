@@ -45,4 +45,3 @@
 
   </div>
 </article>
-<!-- article teaser end -->

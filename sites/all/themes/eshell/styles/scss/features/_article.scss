@@ -10,9 +10,6 @@
     max-width: 1300px;
     padding-bottom: .75em;
   }
-  img{
-    margin: 1rem 0;
-  }
 }
 .field-name-field-video{
   float: left;
@@ -30,6 +27,11 @@
       font-size: 1.3vw;
       margin-top: .5em;
       text-transform: uppercase;
+    }
+  }
+  .field-name-body{
+    img{
+      margin: 1rem 0;
     }
   }
   p{
