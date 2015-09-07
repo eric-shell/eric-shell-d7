@@ -15,6 +15,9 @@
         transition: .1s all cubic-bezier(0.5, 0, 0, 1);
       }
     }
+    a{
+      color: $midnight;
+    }
   }
   .photo-title{
     position: absolute;
