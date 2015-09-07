@@ -4,23 +4,30 @@
   max-width: 1300px;
 }
 
-// User Login Page
-.page-user-login{
-  background: $gradient;
-  #user-login{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: columns;
-    justify-content: center;
-    align-items: center;
-    animation: fadeIn 1s cubic-bezier(0.5, 0, 0, 1);
-    & > div{
-      max-width: 25rem;
-    }
-    label,
-    .description{
-      display: none;
+// Tabs
+.tabs:not(ul){
+  margin: 0 auto;
+  padding: 0 18vw;
+  max-width: 1300px;
+}
+ul.tabs{
+  li{
+    float: left;
+    display: inline-block;
+    a{
+      float: left;
+      color: #fff;
+      padding: .75rem 1rem;
+      background: $midnight;
+      transition: all .2s cubic-bezier(0.5, 0, 0, 1);
+      &:focus,
+      &:hover{
+        background: $cyan;
+        transition: all 0s cubic-bezier(0.5, 0, 0, 1);
+      }
+      &.active{
+        background: $cyan;
+      }
     }
   }
 }
@@ -94,6 +101,27 @@
 .pager-ellipsis{
   padding: 1.5em .5em;
   color: #fff;
+}
+
+// User Login Page
+.page-user-login{
+  background: $gradient;
+  #user-login{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: columns;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s cubic-bezier(0.5, 0, 0, 1);
+    & > div{
+      max-width: 25rem;
+    }
+    label,
+    .description{
+      display: none;
+    }
+  }
 }
 
 // Content pagers
