@@ -147,8 +147,12 @@ ul.tabs{
     a{
       float: left;
       width: 100%;
+      color: $midnight;
+      font-weight: 900;
       position: relative;
       &:before{
+        background: $midnight;
+        color: #fff;
         position: absolute;
         font-size: 30px;
         display: flex;
@@ -156,6 +160,9 @@ ul.tabs{
         align-items: center;
         width: 30px;
         height: 100%;
+      }
+      &:hover:before{
+        opacity: 0;
       }
     }
   }
@@ -170,7 +177,6 @@ ul.tabs{
       &:before{
         content:'<';
         right: -30px;
-        background: #fff;
       }
     }
   }
@@ -185,7 +191,6 @@ ul.tabs{
       &:before{
         content:'>';
         left: -30px;
-        background: #fff;
       }
     }
   }
