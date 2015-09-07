@@ -1,67 +1,58 @@
-// Article node
+// Article nodes
 .node-article{
-  float: left;
-  width: 100%;
-}
-.node-type-article{
-  article{
-    float: none;
-    margin: auto;
-    max-width: 1300px;
-    padding-bottom: .75em;
+
+  // Content width set
+  #node-header,
+  #node-content{
+    float: left;
+    width: 100%;
   }
-}
-.field-name-field-video{
-  float: left;
-  width: 100%;
-  margin: .5em 0 0;
-}
-.node-article.view-mode-full{
-  #article-header{
-    padding: 1rem 18vw;
-    .node-title{
+
+  // Node title and date
+  #node-header{
+    padding: 0 0 1rem;
+    .container{
+      padding: 1rem 18vw;
+    }
+    h1{
       float: left;
+      padding: 0;
+      @include title;
     }
     .submitted{
       float: right;
-      font-size: 1.3vw;
-      margin-top: .5em;
-      text-transform: uppercase;
+      padding: 2vw 0 0;
     }
   }
-  .field-name-body{
+
+  // Node body contents
+  #node-content{
+    p{
+      padding: 1rem 18vw;
+    }
     img{
-      margin: 1rem 0;
+      padding: 1rem 0;
     }
   }
-  p{
-    font-size: 1.3vw;
-    text-align: justify;
-    padding: 0 18vw;
-  }
-}
-#article-filters{
-  float: left;
-  width: 100%;
-  background: $midnight;
-  padding: 2em;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  .field-name-field-media-type,
-  .field-name-field-tags{
+
+  // Node filters
+  #node-filters{
     float: left;
-  }
-  .group-filters{
-    width: auto;
+    width: 100%;
+    padding: 2em;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    background: $midnight;
+    .field-items{
+      float: left;
+    }
     .field-item{
-      margin-right: 1.5em;
+      @include tags;
+      display: inline-block;
       a{
         color: #fff;
-        font-size: 1.3em;
+        margin: 0 1rem 0 0;
         &:before{
           background: #fff;
         }
