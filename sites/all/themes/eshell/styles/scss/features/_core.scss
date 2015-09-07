@@ -132,12 +132,14 @@ ul.tabs{
     width: auto;
   }
   .flippy-nav{
-    float: left;
+    position: absolute;
     width: 100%;
-    clear: both;
-    padding: .25rem 0;
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: rgba(255,255,255,.8);
-    text-align: center;
   }
   li{
     position: fixed;
@@ -150,6 +152,8 @@ ul.tabs{
         position: absolute;
         font-size: 30px;
         display: flex;
+        justify-content: center;
+        align-items: center;
         width: 30px;
         height: 100%;
       }
@@ -165,7 +169,7 @@ ul.tabs{
     a{
       &:before{
         content:'<';
-        right: -35px;
+        right: -30px;
         background: #fff;
       }
     }
@@ -180,7 +184,7 @@ ul.tabs{
     a{
       &:before{
         content:'>';
-        left: -35px;
+        left: -30px;
         background: #fff;
       }
     }
