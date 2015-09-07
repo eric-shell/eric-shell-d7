@@ -10,6 +10,9 @@
     max-width: 1300px;
     padding-bottom: .75em;
   }
+  img{
+    margin: 1rem 0;
+  }
 }
 .field-name-field-video{
   float: left;
@@ -18,7 +21,7 @@
 }
 .node-article.view-mode-full{
   #article-header{
-    padding: 0 18vw;
+    padding: 1rem 18vw;
     .node-title{
       float: left;
     }
