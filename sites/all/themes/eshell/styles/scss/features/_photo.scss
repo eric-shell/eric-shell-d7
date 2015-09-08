@@ -1,11 +1,79 @@
 // Photo node
-.node-type-photo{
-  .field-name-field-image{
+.photo-full{
+
+  // Content width set
+  #node-header,
+  #node-content{
+    float: left;
+    width: 100%;
+  }
+
+  // node photo container
+  #node-photo-container{
+    float: left;
+    width: 100%;
+    background: $midnight;
+    .field-name-field-image{
+      margin: 0 auto;
+      max-width: 1300px;
+      max-height: 80vh;
+    }
+  }
+
+  // Node title and date
+  #node-header{
+    padding: 0 0 1rem;
+    .container{
+      padding: 0 18vw;
+    }
+    h1{
+      float: left;
+      padding: 0;
+      @include title;
+    }
+    .submitted{
+      float: right;
+      padding: 2vw 0 0;
+    }
+  }
+
+  // Node body contents
+  #node-content{
+    .field-name-field-image{
+      display: flex;
+      justify-content: center;
+      img{
+        max-height: calc(100vh - 2rem);
+        min-width: 100%;
+      }
+    }
+    .field-name-body{
+      padding: 1rem 18vw;
+    }
+  }
+
+  // Node filters
+  #node-filters{
+    float: left;
+    width: 100%;
+    padding: 2em;
+    margin: 1rem 0 0;
     display: flex;
     justify-content: center;
-    img{
-      max-height: calc(100vh - 2rem);
-      min-width: 100%;
+    background: $midnight;
+    .field-items{
+      float: left;
+    }
+    .field-item{
+      @include tags;
+      display: inline-block;
+      a{
+        color: #fff;
+        margin: 0 1rem 0 0;
+        &:before{
+          background: #fff;
+        }
+      }
     }
   }
 }

@@ -11,6 +11,9 @@
   max-width: 1300px;
 }
 ul.tabs{
+  float: left;
+  width: 100%;
+  clear: both;
   li{
     float: left;
     display: inline-block;
