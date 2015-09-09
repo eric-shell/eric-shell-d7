@@ -8,15 +8,21 @@
     width: 100%;
   }
 
-  // node photo container
+  // Node photo container
   #node-photo-container{
     float: left;
     width: 100%;
+    max-height: 80vh;
     background: $midnight;
     .field-name-field-image{
+      display: flex;
+      justify-content: center;
       margin: 0 auto;
       max-width: 1300px;
-      max-height: 80vh;
+      img{
+        max-height: 80vh;
+        width: auto;
+      }
     }
   }
 
