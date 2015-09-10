@@ -19,7 +19,7 @@
           <?php print render($node->body['und']['0']['value']); ?>
         </div>
         <div id="learn-more">
-          <a href="#">Learn more</a>
+          <a href="/contact">Learn more</a>
         </div>
       </div>
       
