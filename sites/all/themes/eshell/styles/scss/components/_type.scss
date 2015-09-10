@@ -48,7 +48,6 @@ input{
   outline: 0;
   padding: 1vw;
   font-size: 1.2vw;
-  border-radius: 3px;
   -webkit-appearance: none;
   transition: all .5s cubic-bezier(0.75, 0, 0.1, 1);
   &:focus,
@@ -59,15 +58,14 @@ input{
 button,
 textarea,
 input[type='text'],
-input[type='date'],
-input[type='email'],
-input[type='search']{
-  background: #fff;
-  border: 2px solid #eee;
-  padding: calc(.5rem - 2px);
+input[type='email']{
+  float: left;
+  width: 100%;
+  font-size: 1.2vw;
+  border-bottom: 2px solid $midnight;
+  padding: 1em;
   &:focus{
-    border-color: #ddd;
-    box-shadow: 0 0 5px rgba(20,20,20,.25);
+    background: #eee
   }
 }
 input[type='submit']{
@@ -79,6 +77,9 @@ input[type='submit']{
   &:hover{
     background: $gradient;
   }
+}
+.webform-component-textarea .grippie{
+  display: none;
 }
 
 // Body anchor tags

@@ -1,0 +1,21 @@
+// Article nodes
+.node-webform{
+  .submitted{
+    display: none;
+  }
+
+  .field-name-field-body{
+    max-width: 1300px;
+    margin: auto;
+    p{
+      padding: 1rem 18vw;
+    }
+  }
+
+  .webform-client-form{
+    padding: 1rem 18vw;
+    max-width: 1300px;
+    margin: auto;
+  }
+
+}

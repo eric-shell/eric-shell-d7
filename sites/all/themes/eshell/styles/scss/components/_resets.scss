@@ -42,6 +42,7 @@ img{
 }
 
 // Removing outline on focus inherited by browsers
+:focus,
 a:focus{
   outline: 0;
 }
