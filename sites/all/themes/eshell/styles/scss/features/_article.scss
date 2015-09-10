@@ -8,6 +8,13 @@
     width: 100%;
   }
 
+  // Node embeded video
+  #node-video{
+    float: left;
+    width: 100%;
+    background: $midnight;
+  }
+
   // Node title and date
   #node-header{
     padding: 0 0 1rem;
@@ -27,15 +34,20 @@
 
   // Node body contents
   #node-content{
+    overflow-x: hidden;
     p{
       padding: 1rem 18vw;
     }
     .photo-container{
       float: left;
       width: 100%;
-      margin: 1rem 0;
       position: relative;
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem auto;
+      max-width: 1300px;
       img{
+        max-height: 90vh;
         position: relative;
         z-index: 20;
       }

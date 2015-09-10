@@ -1,4 +1,10 @@
 <article class="article-full node-<?php print $node->nid; ?> <?php print $classes; ?>"<?php print $attributes; ?>>
+  <div id="node-video">
+    <div class="container">
+      <?php print render($content['field_video']); ?>
+    </div>
+  </div>
+
   <div id="node-header">
     <div class="container">
       <h1<?php print $title_attributes; ?>>
@@ -12,7 +18,6 @@
 
   <div id="node-content">
     <div class="container">
-      <?php print render($content['field_video']); ?>
       <?php print render($content['body']); ?>
     </div>
   </div>

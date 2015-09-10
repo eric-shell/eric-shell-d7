@@ -1,5 +1,10 @@
 // Photo node
-.photo-full{
+.node-type-photo{
+
+  // Admin tabs
+  .tabs:not(ul){
+    padding: 0;
+  }
 
   // Content width set
   #node-header,
@@ -12,7 +17,7 @@
   #node-photo-container{
     float: left;
     width: 100%;
-    max-height: 80vh;
+    max-height: 90vh;
     background: $midnight;
     .field-name-field-image{
       display: flex;
@@ -20,7 +25,7 @@
       margin: 0 auto;
       max-width: 1300px;
       img{
-        max-height: 80vh;
+        max-height: 90vh;
         width: auto;
       }
     }
@@ -54,7 +59,9 @@
       }
     }
     .field-name-body{
-      padding: 1rem 18vw;
+      float: left;
+      width: 100%;
+      padding: 0 18vw .5rem;
     }
   }
 
