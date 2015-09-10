@@ -130,6 +130,7 @@ ul.tabs{
 // Content pagers
 .flippy{
   position: relative;
+  z-index: 500;
   img{
     height: 80px;
     width: auto;
