@@ -1,8 +1,4 @@
 jQuery(document).ready(function () {
-   // removes anchor tag from images in body text
-   jQuery('.field-name-body p img').each(function() {
-      jQuery(this).unwrap();
-   }); 
 
    jQuery(document).scroll(function() {
       // controls visbility of article pager
