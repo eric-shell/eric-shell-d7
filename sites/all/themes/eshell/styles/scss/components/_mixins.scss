@@ -1,3 +1,16 @@
+@mixin full{
+  float: left;
+  width: 100%;
+  clear: both;
+}
+
+// Site container
+@mixin container{
+  max-width: $container;
+  padding: 0 .9375rem;
+  margin: 0 auto;
+}
+
 // Call to action buttons
 @mixin cta{
   a{
