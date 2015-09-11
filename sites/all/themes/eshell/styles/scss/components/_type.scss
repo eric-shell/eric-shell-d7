@@ -43,7 +43,8 @@ h1{
 }
 
 // Inputs
-input{
+input,
+textarea{
   border: 0;
   outline: 0;
   padding: 1vw;
@@ -62,24 +63,38 @@ input[type='email']{
   float: left;
   width: 100%;
   font-size: 1.2vw;
-  border-bottom: 2px solid $midnight;
+  border-bottom: 2px solid #e7e7e7;
+  transition: all .2s cubic-bezier(0.75, 0, 0.1, 1);
+  box-shadow: none;
   padding: 1em;
   &:focus{
-    background: #eee
+    position: relative;
+    background: #fafafa;
+    transition: background .2s cubic-bezier(0.75, 0, 0.1, 1);
   }
 }
 input[type='submit']{
+  margin-top: 1rem;
+  font-size: 1.2vw;
+  padding: .75rem 2.5rem;
+  border-radius: 43px;
+  color: #fff;
   background: $cyan;
-  padding: .5rem;
-  border-radius: 47px;
   text-transform: uppercase;
-  &:focus,
-  &:hover{
-    background: $gradient;
+  transition: none;
+  &:hover,
+  &:focus{
+    background: linear-gradient(-45deg, $violet 0%, $crimson 100%);
+    transition: none;
   }
 }
 .webform-component-textarea .grippie{
   display: none;
+}
+.form-actions{
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 // Body anchor tags
