@@ -4,7 +4,7 @@
   </div>
 
   <div id="node-header">
-    <div class="container">
+    <div class="container-sm">
       <h1<?php print $title_attributes; ?>>
         <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
       </h1>
@@ -15,14 +15,16 @@
   </div>
 
   <div id="node-content">
-    <div class="container">
+    <div class="container-sm">
       <?php print render($content['body']); ?>
     </div>
   </div>
 
   <div id="node-filters">
-    <?php print render($content['field_media_type']); ?>
-    <?php print render($content['field_tags']); ?>
+    <div class="container-sm center">
+      <?php print render($content['field_media_type']); ?>
+      <?php print render($content['field_tags']); ?>
+    </div>
   </div>
 </article>
 

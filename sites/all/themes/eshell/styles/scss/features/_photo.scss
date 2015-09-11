@@ -1,22 +1,9 @@
 // Photo node
 .node-type-photo{
 
-  // Admin tabs
-  .tabs:not(ul){
-    padding: 0;
-  }
-
-  // Content width set
-  #node-header,
-  #node-content{
-    float: left;
-    width: 100%;
-  }
-
   // Node photo container
   #node-photo-container{
-    float: left;
-    width: 100%;
+    @include full;
     max-height: 90vh;
     background: $midnight;
     .field-name-field-image{
@@ -34,9 +21,6 @@
   // Node title and date
   #node-header{
     padding: 0 0 1rem;
-    .container{
-      padding: 0 18vw;
-    }
     h1{
       float: left;
       padding: 0;
@@ -59,16 +43,13 @@
       }
     }
     .field-name-body{
-      float: left;
-      width: 100%;
-      padding: 0 18vw .5rem;
+      @include full;
     }
   }
 
   // Node filters
   #node-filters{
-    float: left;
-    width: 100%;
+    @include full;
     padding: 2em;
     margin: 1rem 0 0;
     display: flex;
