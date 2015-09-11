@@ -4,13 +4,13 @@
 }
 
 // Site container
-.container{
-  @include container;
+.container-lg{
+  @include container-lg;
 }
 
 // Inner content
-.inner{
-  @include inner;
+.container-sm{
+  @include container-sm;
 }
 
 // Group center align

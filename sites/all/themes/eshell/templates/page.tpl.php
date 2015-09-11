@@ -2,7 +2,7 @@
 
   <section id="main">
 
-    <div class="inner">
+    <div class="container-sm">
       <?php if ($messages): ?>
         <div id="messages"><?php print $messages; ?></div>
       <?php endif; ?>

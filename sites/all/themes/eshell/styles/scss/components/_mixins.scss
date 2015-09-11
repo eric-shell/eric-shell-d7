@@ -5,13 +5,13 @@
 }
 
 // Site container
-@mixin container{
+@mixin container-lg{
   max-width: 1300px;
   margin: 0 auto;
 }
 
 // Site slim container
-@mixin inner{
+@mixin container-sm{
   max-width: 720px;
   margin: 0 auto;
 }
