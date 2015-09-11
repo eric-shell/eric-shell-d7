@@ -8,6 +8,17 @@
   @include container;
 }
 
+// Inner content
+.inner{
+  @include inner;
+}
+
+// Group center align
+.center{
+  display: flex;
+  justify-content: center;
+}
+
 // Tabs
 .tabs:not(ul){
   margin: 0 auto;

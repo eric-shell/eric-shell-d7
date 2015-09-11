@@ -1,26 +1,16 @@
 // Article nodes
 .node-type-article{
 
-  // Content width set
-  #node-header,
-  #node-content{
-    float: left;
-    width: 100%;
-  }
 
   // Node embeded video
   #node-video{
-    float: left;
-    width: 100%;
     background: $midnight;
   }
 
   // Node title and date
   #node-header{
     padding: 0 0 1rem;
-    .container{
-      padding: 0 18vw;
-    }
+
     h1{
       float: left;
       padding: 0;
@@ -35,12 +25,10 @@
   // Node body contents
   #node-content{
     overflow-x: hidden;
-    p{
-      padding: 1rem 18vw;
-    }
+
+    // Photo display
     .photo-container{
-      float: left;
-      width: 100%;
+      @include full;
       margin: 1rem 0;
       position: relative;
       &:before{
@@ -57,16 +45,26 @@
         max-height: 90vh;
       }
     }
+
+    // Content display
+    .field-name-body{
+      .field-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    p{
+      max-width: 720px;
+      padding: 1rem 0;
+    }
   }
 
   // Node filters
   #node-filters{
-    float: left;
-    width: 100%;
-    padding: 2em;
+    @include full;
+    padding: 2em 0;
     margin: 1rem 0 0;
-    display: flex;
-    justify-content: center;
     background: $midnight;
     .field-items{
       float: left;
