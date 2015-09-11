@@ -34,3 +34,5 @@
 
 </section>
 <!-- site end -->
+
+<?php include "navigation.tpl.php"; ?>

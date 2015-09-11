@@ -1,0 +1,27 @@
+#nav{
+  float: left;
+  width: 100%;
+  clear: both;
+  padding: 2rem 0;
+  background: $crimson;
+  #home{
+    float: left;
+    width: 100px;
+  }
+  #block-system-main-menu{
+    padding: 1rem 0;
+    float: right;
+  }
+  li{
+    float: left;
+    &:first-child{
+      margin-left: 0;
+    }
+    a{
+      float: left;
+      color: #fff;
+      font-size: 1.25vw;
+      margin-left: 1em;
+    }
+  }
+}

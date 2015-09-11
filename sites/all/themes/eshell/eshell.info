@@ -8,6 +8,7 @@ stylesheets[all][] = styles/styles.min.css
 scripts[] = scripts/scripts.min.js
 
 regions[page_top]       = Page top
+regions[main_menu]      = Main menu
 regions[content]        = Content
 regions[photos]         = Photos
 regions[articles]       = Articles

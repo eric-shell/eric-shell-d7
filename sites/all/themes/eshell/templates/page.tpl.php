@@ -1,5 +1,4 @@
 <section id="site">
-  <?php include "navigation.tpl.php"; ?>
 
   <section id="main">
 
@@ -19,3 +18,5 @@
   <!-- main end -->
 </section>
 <!-- site end -->
+
+<?php include "navigation.tpl.php"; ?>
