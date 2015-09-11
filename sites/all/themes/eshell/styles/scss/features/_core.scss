@@ -20,15 +20,8 @@
 }
 
 // Tabs
-.tabs:not(ul){
-  margin: 0 auto;
-  padding: 0 18vw;
-  max-width: 1300px;
-}
 ul.tabs{
-  float: left;
-  width: 100%;
-  clear: both;
+  @include full;
   li{
     float: left;
     display: inline-block;

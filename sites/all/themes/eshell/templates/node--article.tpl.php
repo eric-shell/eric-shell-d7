@@ -6,7 +6,7 @@
   </div>
 
   <div id="node-header" class="full">
-    <div class="container inner">
+    <div class="inner">
       <h1<?php print $title_attributes; ?>>
         <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
       </h1>
