@@ -27,7 +27,6 @@
 
     // Photo display
     .photo-container{
-      @include full;
       margin: 1rem 0;
       position: relative;
       &:before{

@@ -24,6 +24,12 @@
   display: none;
 }
 
+// Buttons
+.type-cta{
+  margin-top: -3.3rem;
+  @include cta;
+}
+
 // Tabs
 ul.tabs{
   width: 100%;
@@ -223,9 +229,4 @@ ul.tabs{
       }
     }
   }
-}
-
-.type-cta{
-  margin-top: -3.3rem;
-  @include cta;
 }
