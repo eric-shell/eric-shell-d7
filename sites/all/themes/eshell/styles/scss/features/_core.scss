@@ -215,3 +215,8 @@ ul.tabs{
     }
   }
 }
+
+.type-cta{
+  margin-top: -2.6rem;
+  @include cta;
+}
