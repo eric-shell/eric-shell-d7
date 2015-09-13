@@ -64,11 +64,40 @@ ul.tabs{
   }
 }
 
+// User Login Page
+.page-user-login{
+  background: $gradient;
+  #user-login{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: columns;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s cubic-bezier(0.5, 0, 0, 1);
+    & > div{
+      max-width: 25rem;
+    }
+    label,
+    .description{
+      display: none;
+    }
+  }
+}
+
 // Pagers
-.item-list{
-  float: left;
-  width: 100%;
+.view{
+  @include full;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: $midnight;
+  .view-content{
+    width: 100%;
+  }
+  .item-list{
+    @include container-sm;
+  }
 }
 .pager{
   float: right;
@@ -110,29 +139,8 @@ ul.tabs{
   display: none;
 }
 .pager-ellipsis{
-  padding: 1.5em .5em;
+  padding: 1.5em .98em;
   color: #fff;
-}
-
-// User Login Page
-.page-user-login{
-  background: $gradient;
-  #user-login{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: columns;
-    justify-content: center;
-    align-items: center;
-    animation: fadeIn 1s cubic-bezier(0.5, 0, 0, 1);
-    & > div{
-      max-width: 25rem;
-    }
-    label,
-    .description{
-      display: none;
-    }
-  }
 }
 
 // Content pagers
@@ -206,12 +214,4 @@ ul.tabs{
       }
     }
   }
-}
-
-// Gallery links
-.cta-gallery{
-  float: left;
-  position: relative;
-  margin: -2.65rem 0 0 .5rem;
-  @include cta;
 }
