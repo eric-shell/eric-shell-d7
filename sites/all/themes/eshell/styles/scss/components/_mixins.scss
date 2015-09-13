@@ -20,6 +20,7 @@
 // Call to action buttons
 @mixin cta{
   a{
+    float: left;
     font-size: 1rem;
     padding: .75rem 2.5rem;
     border-radius: 43px;

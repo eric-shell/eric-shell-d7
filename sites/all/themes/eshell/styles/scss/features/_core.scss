@@ -19,9 +19,17 @@
   justify-content: center;
 }
 
+// Ajax throbber
+.ajax-progress{
+  display: none;
+}
+
 // Tabs
 ul.tabs{
-  @include full;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: $midnight;
   li{
     float: left;
     display: inline-block;
@@ -48,10 +56,11 @@ ul.tabs{
   float: left;
   width: 100%;
   padding: 1rem;
+  text-align: center;
   background: $midnight;
-  color: $peach;
+  color: #fff;
   a{
-    color: $peach;
+    color: #fff;
     text-decoration: underline;
   }
   &.error{
@@ -217,6 +226,6 @@ ul.tabs{
 }
 
 .type-cta{
-  margin-top: -2.6rem;
+  margin-top: -3.3rem;
   @include cta;
 }

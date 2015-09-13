@@ -1,8 +1,10 @@
 <section id="site">
 
-  <?php if ($messages): ?>
-    <div id="messages"><?php print $messages; ?></div>
-  <?php endif; ?>
+  <div class="site-options">
+    <?php if ($messages): ?>
+      <div id="messages"><?php print $messages; ?></div>
+    <?php endif; ?>
+  </div>
 
   <header id="header" role="header">
     <div id="header-container">

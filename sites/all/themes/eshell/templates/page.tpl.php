@@ -2,7 +2,7 @@
 
   <section id="main">
 
-    <div class="container-sm">
+    <div class="site-options">
       <?php if ($messages): ?>
         <div id="messages"><?php print $messages; ?></div>
       <?php endif; ?>

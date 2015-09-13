@@ -1,9 +1,11 @@
 <section id="site">
   <?php include "navigation.tpl.php"; ?>
 
-  <?php if ($messages): ?>
-    <div id="messages"><?php print $messages; ?></div>
-  <?php endif; ?>
+  <div class="site-options">
+    <?php if ($messages): ?>
+      <div id="messages"><?php print $messages; ?></div>
+    <?php endif; ?>
+  </div>
 
   <?php print render($page['content']); ?>
 
