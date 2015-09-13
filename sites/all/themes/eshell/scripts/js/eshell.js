@@ -1,5 +1,11 @@
 jQuery(document).ready(function () {
 
+   // removes anchor tag from images in body text
+   jQuery('.field-name-body .field-item div').each(function() {
+      jQuery(this).addClass('photo-container');
+   }); 
+
+
    jQuery(document).scroll(function() {
       // controls visbility of article pager
       var article_pager = false;
