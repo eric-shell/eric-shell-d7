@@ -6,22 +6,23 @@
   background: $crimson;
   #home{
     float: left;
-    width: 100px;
+    width: 110px;
   }
   #block-system-main-menu{
     padding: 1rem 0;
     float: right;
   }
   li{
-    float: left;
+    @include tags;
+    margin-right: 2rem;
+    a{
+      color: #fff;
+      &:before{
+        background: #fff;
+      }
+    }
     &:first-child{
       margin-left: 0;
-    }
-    a{
-      float: left;
-      color: #fff;
-      font-size: 1.25vw;
-      margin-left: 2rem;
     }
   }
 }

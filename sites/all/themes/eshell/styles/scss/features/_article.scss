@@ -61,8 +61,10 @@
   // Node filters
   #node-filters{
     @include full;
-    padding: 2em 0;
+    padding: 2em;
     margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
     background: $midnight;
     .field-items{
       float: left;
