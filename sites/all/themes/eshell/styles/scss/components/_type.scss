@@ -109,6 +109,7 @@ input[type='submit']{
     position: relative;
     display: inline-block;
     outline: none;
+    z-index: 10;
     vertical-align: bottom;
     text-decoration: none;
     &:before{
