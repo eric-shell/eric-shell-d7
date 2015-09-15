@@ -212,7 +212,6 @@
  *   );
  * @endcode
  */
-$databases = array();
 
 /**
  * Access control for update.php script.
@@ -244,7 +243,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = '';
+$drupal_hash_salt = 'OzQ8Gxzea7P2IHtT1Q_MDS1zr9R2HwR7_CSeJTiwvTI';
 
 /**
  * Base URL (optional).
@@ -273,7 +272,7 @@ $drupal_hash_salt = '';
  *
  * To see what PHP settings are possible, including whether they can be set at
  * runtime (by using ini_set()), read the PHP documentation:
- * http://www.php.net/manual/en/ini.list.php
+ * http://www.php.net/manual/ini.list.php
  * See drupal_environment_initialize() in includes/bootstrap.inc for required
  * runtime settings and the .htaccess file for non-runtime settings. Settings
  * defined there should not be duplicated here so as to avoid conflict issues.
@@ -309,7 +308,7 @@ ini_set('session.cookie_lifetime', 2000000);
  * output filter may not have sufficient memory to process it.  If you
  * experience this issue, you may wish to uncomment the following two lines
  * and increase the limits of these variables.  For more information, see
- * http://php.net/manual/en/pcre.configuration.php.
+ * http://php.net/manual/pcre.configuration.php.
  */
 # ini_set('pcre.backtrack_limit', 200000);
 # ini_set('pcre.recursion_limit', 200000);
@@ -517,12 +516,12 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * server response time when loading 404 error pages and prevents the 404 error
  * from being logged in the Drupal system log. In order to prevent valid pages
  * such as image styles and other generated content that may match the
- * '404_fast_paths' regular expression from returning 404 errors, it is
- * necessary to add them to the '404_fast_paths_exclude' regular expression
- * above. Make sure that you understand the effects of this feature before
- * uncommenting the line below.
+ * '404_fast_html' regular expression from returning 404 errors, it is necessary
+ * to add them to the '404_fast_paths_exclude' regular expression above. Make
+ * sure that you understand the effects of this feature before uncommenting the
+ * line below.
  */
-# drupal_fast_404();
+drupal_fast_404();
 
 /**
  * External access proxy settings:
@@ -566,12 +565,7 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  */
 # $conf['allow_authorize_operations'] = FALSE;
 
-/**
- * Smart start:
- *
- * If you would prefer to be redirected to the installation system when a
- * valid settings.php file is present but no tables are installed, remove
- * the leading hash sign below.
- */
-# $conf['pressflow_smart_start'] = TRUE;
-
+$local_settings = dirname(__FILE__) . '/local.settings.php';
+if (file_exists($local_settings)) {
+  include $local_settings;
+}

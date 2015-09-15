@@ -1,11 +1,8 @@
 sites/*/files
 
 # Ignore configuration files that may contain sensitive information.
-sites/personal.local
-sites/sites.php
-sites/default/*settings.php
+sites/default/local.settings.php
 sites/all/themes/*/gulp/node_modules/*
-sites/all/themes/*/css/production.less
 
 # OS generated files #
 ######################
