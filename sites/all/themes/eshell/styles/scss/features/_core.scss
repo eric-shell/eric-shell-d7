@@ -59,28 +59,31 @@ ul.tabs{
 
 // Messages
 .messages{
-  float: left;
-  width: 100%;
+  @include full;
+  color: #fff;
+  font-size: 16px;
   padding: 1rem;
   text-align: center;
-  background: $midnight;
-  color: #fff;
+  &.status{
+    background: $success;
+  }
+  &.warning{
+    color: #fff;
+    background: $warning;
+  }
+  &.error{
+    color: #fff;
+    background: $error;
+  }
+  p{
+    color: #fff;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
   a{
     color: #fff;
     text-decoration: underline;
-  }
-  p{
-    width: 100%;
-    color: #fff;
-    text-align: center;
-  }
-  &.error{
-    background: $crimson;
-    color: #fff;
-    a{
-      color: #fff;
-      text-decoration: underline;
-    }
   }
 }
 

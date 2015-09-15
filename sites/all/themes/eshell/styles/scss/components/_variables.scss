@@ -1,7 +1,14 @@
-// Variables
-$peach: #f3d5ae;
+// Prompt colors
+$success: #17171a;
+$warning: #D2A53F;
+$error: #A3493A;
+
+// Theme Colors
 $midnight: #17171a;
-$violet: #022651; 
-$crimson: #A3493A;
-$cyan: #53b3c7;
+$violet: #022651;    // Compliment to peach
+$peach: #f3d5ae;     // Compliment to violet
+$crimson: #A3493A;   // Compliment to cyan
+$cyan: #53b3c7;      // Compliment to crimson
+
+// Gradients
 $gradient: linear-gradient(-45deg, $violet 0%, $crimson 100%);
