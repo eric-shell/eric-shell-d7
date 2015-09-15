@@ -1,7 +1,6 @@
 // Body text
 p{
-  float: left;
-  width: 100%;
+  @include full;
   font-size: 1.2vw;
   font-weight: 400;
   color: $midnight;
@@ -61,8 +60,7 @@ button,
 textarea,
 input[type='text'],
 input[type='email']{
-  float: left;
-  width: 100%;
+  @include full;
   font-size: 1.2vw;
   border-bottom: 2px solid #e7e7e7;
   transition: all .2s cubic-bezier(0.75, 0, 0.1, 1);

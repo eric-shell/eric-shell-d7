@@ -1,8 +1,7 @@
 .page-taxonomy{
   #page-title{
+    @include full;
     color: #fff;
-    float: left;
-    width: 100%;
     padding: .5em 0;
     text-align: center;
     text-transform: uppercase;

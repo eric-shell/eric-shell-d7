@@ -36,13 +36,11 @@
 
 // Article teasers
 .article-teaser{
-  float: left;
-  width: 100%;
+  @include full;
   background: #fff;
 }
 .article-container{
-  float: left;
-  width: 100%;
+  @include full;
   display: flex;
 }
 .article-content{
@@ -51,13 +49,11 @@
   padding: 4vw;
   position: relative;
   .node-title{
-    float: left;
-    width: 100%;
+    @include full;
     @include title;
   }
   .field-name-body{
-    float: left;
-    width: 100%;
+    @include full;
     text-align: justify;
   }
   .node-filters{
