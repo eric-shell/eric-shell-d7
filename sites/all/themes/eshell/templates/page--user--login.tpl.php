@@ -1,5 +1,4 @@
 <section id="site">
-  <?php include "navigation.tpl.php"; ?>
 
   <div class="site-options">
     <?php if ($messages): ?>
