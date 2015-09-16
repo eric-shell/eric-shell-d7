@@ -51,3 +51,42 @@ a:focus{
 .element-invisible {
   display: none;
 }
+
+// Begin responsive styles
+// --------------------------------------------------
+
+@media #{$xlarge-up}{
+  .hide-for-xlarge-up{
+    display: none;
+  }
+}
+@media #{$xlarge}{
+  .hide-for-xlarge{
+    display: none;
+  }
+}
+@media #{$large-up}{
+  .hide-for-large-up{
+    display: none;
+  }
+}
+@media #{$large}{
+  .hide-for-large{
+    display: none;
+  }
+}
+@media #{$medium-up}{
+  .hide-for-medium-up{
+    display: none;
+  }
+}
+@media #{$medium}{
+  .hide-for-medium{
+    display: none;
+  }
+}
+@media #{$small}{
+  .hide-for-small{
+    display: none;
+  }
+}

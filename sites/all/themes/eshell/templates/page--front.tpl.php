@@ -1,5 +1,9 @@
 <section id="site">
 
+  <div class="hide-for-xlarge-up">
+    <?php include "navigation.tpl.php"; ?>
+  </div>
+
   <div class="site-options">
     <?php if ($messages): ?>
       <div id="messages"><?php print $messages; ?></div>

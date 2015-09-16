@@ -45,6 +45,7 @@
     width: 50%;
     height: 50vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     animation: fadeFromRight 1.5s ease-in-out;
@@ -85,4 +86,137 @@
   z-index: 20;
   transform: rotate(8deg);
   transform-origin: left bottom;
+}
+
+// Begin responsive work
+// --------------------------------------------------
+
+@media #{$large}{
+  #header{
+    #header-container{
+      height: auto;
+    }
+
+    // Banner image
+    #profile{
+      display: none;
+    }
+
+    // About me and more info link
+    #intro{
+      height: auto;
+      width: 100%;
+      position: relative;
+      .content{
+        padding: 3rem 2rem 2rem;
+        p{
+          font-size: 1rem;
+          line-height: 2.2;
+          text-align: left;
+          max-width: 720px;
+        }
+      }
+      #learn-more{
+        position: relative;
+        padding: 0 0 3rem;
+        bottom: auto;
+        right: auto;
+        a{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  // Small slice custom positioning
+  // Calculated using second photo post
+  .views-row-2 .photo-teaser:before {
+    display: none;
+  }
+}
+
+@media #{$medium}{
+  #header{
+    #header-container{
+      height: auto;
+    }
+
+    // Banner image
+    #profile{
+      display: none;
+    }
+
+    // About me and more info link
+    #intro{
+      height: auto;
+      width: 100%;
+      position: relative;
+      .content{
+        padding: 3rem 2rem 2rem;
+        p{
+          font-size: 1rem;
+          line-height: 2.2;
+          text-align: left;
+        }
+      }
+      #learn-more{
+        position: relative;
+        padding: 0 0 3rem;
+        bottom: auto;
+        right: auto;
+        a{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  // Small slice custom positioning
+  // Calculated using second photo post
+  .views-row-2 .photo-teaser:before {
+    display: none;
+  }
+}
+
+@media #{$small}{
+  #header{
+    #header-container{
+      height: auto;
+    }
+
+    // Banner image
+    #profile{
+      display: none;
+    }
+
+    // About me and more info link
+    #intro{
+      height: auto;
+      width: 100%;
+      position: relative;
+      .content{
+        padding: 3rem 2rem 2rem;
+        p{
+          font-size: 1rem;
+          line-height: 2.2;
+          text-align: left;
+        }
+      }
+      #learn-more{
+        position: relative;
+        padding: 0 0 3rem;
+        bottom: auto;
+        right: auto;
+        a{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  // Small slice custom positioning
+  // Calculated using second photo post
+  .views-row-2 .photo-teaser:before {
+    display: none;
+  }
 }
