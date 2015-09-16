@@ -18,3 +18,64 @@
     margin: auto;
   }
 }
+
+
+// Begin responsive work
+// --------------------------------------------------
+
+@media #{$large}{
+  .node-webform{
+    .field-name-field-body{
+      padding: 2rem;
+      p{
+        font-size: 1rem;
+        text-align: left;
+      }
+    }
+    .webform-client-form{
+      padding: 1rem 2rem 3rem;
+      input,
+      textarea{
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media #{$medium}{
+  .node-webform{
+    .field-name-field-body{
+      padding: 2rem;
+      p{
+        font-size: 1rem;
+        text-align: left;
+      }
+    }
+    .webform-client-form{
+      padding: 1rem 2rem 3rem;
+      input,
+      textarea{
+        font-size: 1rem;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media #{$small}{
+  .node-webform{
+    .field-name-field-body{
+      padding: 2rem;
+      p{
+        font-size: 1.2rem;
+      }
+    }
+    .webform-client-form{
+      padding: 1rem 2rem 3rem;
+      input,
+      textarea{
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
