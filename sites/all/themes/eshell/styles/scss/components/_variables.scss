@@ -12,3 +12,21 @@ $cyan: #53b3c7;      // Compliment to crimson
 
 // Gradients
 $gradient: linear-gradient(-45deg, $violet 0%, $crimson 100%);
+
+// Screen size breakpoints
+$screen-small: 480px;
+$screen-medium: 720px;
+$screen-large: 1000px;
+$screen-xlarge: 1300px;
+
+// Individual media queries
+$small: 'screen and (max-width: #{$screen-small})';
+$medium: 'screen and (min-width: #{$screen-small}) and (max-width: #{$screen-medium})';
+$large: 'screen and (min-width: #{$screen-medium}) and (max-width: #{$screen-large})';
+$xlarge: 'screen and (min-width: #{$screen-large}) and (max-width: #{$screen-xlarge})';
+$xxlarge: 'screen and (min-width: #{$screen-xlarge})';
+
+// Scaling media queries
+$medium-up: 'screen and (min-width: #{$screen-small})';
+$large-up: 'screen and (min-width: #{$screen-medium})';
+$xlarge-up: 'screen and (min-width: #{$screen-large})';
