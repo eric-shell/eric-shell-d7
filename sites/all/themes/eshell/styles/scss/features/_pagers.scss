@@ -1,0 +1,117 @@
+.pager{
+  float: right;
+  width: auto;
+  font-size: 1em;
+  line-height: 1;
+  text-transform: capitalize;
+  background: $midnight;
+  li{
+    float: left;
+    &.pager-current{
+      background: $cyan;
+      color: #fff;
+    }
+    a{
+      display: block;
+      padding: 1.5em;
+      color: #fff;
+      float: left;
+      transition: all .2s cubic-bezier(0.5, 0, 0, 1);
+      &:hover,
+      &:active{
+        border: 0;
+        color: #fff;
+        background: $crimson;
+        transition: all 0s cubic-bezier(0.5, 0, 0, 1);
+      }
+    }
+  }
+  .pager-current{
+    display: block;
+    padding: 1.5em;
+    float: left;
+    transition: all .2s cubic-bezier(0.5, 0, 0, 1);
+  }
+}
+.pager-next,
+.pager-previous{
+  display: none;
+}
+.pager-ellipsis{
+  padding: 1.5em .98em;
+  color: #fff;
+}
+
+// Content pagers
+.flippy{
+  position: relative;
+  z-index: 500;
+  img{
+    height: 80px;
+    max-width: 120px;
+    width: auto;
+  }
+  .flippy-nav{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,.8);
+  }
+  li{
+    position: fixed;
+    top: calc(50vh - 60px);
+    a{
+      float: left;
+      width: 100%;
+      color: $midnight;
+      font-weight: 900;
+      position: relative;
+      &:before{
+        background: $midnight;
+        color: #fff;
+        position: absolute;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 100%;
+      }
+      &:hover:before{
+        opacity: 0;
+      }
+    }
+  }
+  .next{
+    left: -120px;
+    transition: all .2s cubic-bezier(0.5, 0, 0, 1);
+    &:hover{
+      left: 0;
+      transition: all .2s cubic-bezier(0.5, 0, 0, 1);
+    }
+    a{
+      &:before{
+        content:'<';
+        right: -30px;
+      }
+    }
+  }
+  .prev{
+    right: -120px;
+    transition: all .2s cubic-bezier(0.5, 0, 0, 1);
+    &:hover{
+      right: 0;
+      transition: all .2s cubic-bezier(0.5, 0, 0, 1);
+    }
+    a{
+      &:before{
+        content:'>';
+        left: -30px;
+      }
+    }
+  }
+}
