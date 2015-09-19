@@ -43,12 +43,20 @@ h1{
 }
 
 // Inputs
+::-webkit-input-placeholder{
+  color: #c7c7c7;
+}
+::-moz-placeholder{
+  color: #c7c7c7;
+}
+
 input,
 textarea{
   border: 0;
   outline: 0;
   padding: 1vw;
   font-size: 1rem;
+  color: $midnight;
   -webkit-appearance: none;
   transition: all .5s cubic-bezier(0.75, 0, 0.1, 1);
   &:focus,
