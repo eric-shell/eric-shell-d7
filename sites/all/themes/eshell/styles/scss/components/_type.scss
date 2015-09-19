@@ -1,7 +1,7 @@
 // Body text
 p{
   @include full;
-  font-size: 1.2vw;
+  font-size: 1rem;
   font-weight: 400;
   color: $midnight;
   line-height: 2;
@@ -48,7 +48,7 @@ textarea{
   border: 0;
   outline: 0;
   padding: 1vw;
-  font-size: 1.2vw;
+  font-size: 1rem;
   -webkit-appearance: none;
   transition: all .5s cubic-bezier(0.75, 0, 0.1, 1);
   &:focus,
@@ -59,9 +59,10 @@ textarea{
 button,
 textarea,
 input[type='text'],
-input[type='email']{
+input[type='email'],
+input[type='password']{
   @include full;
-  font-size: 1.2vw;
+  font-size: 1rem;
   border-bottom: 2px solid #e7e7e7;
   transition: all .2s cubic-bezier(0.75, 0, 0.1, 1);
   box-shadow: none;
@@ -74,7 +75,7 @@ input[type='email']{
 }
 input[type='submit']{
   margin-top: 1rem;
-  font-size: 1.2vw;
+  font-size: 1rem;
   padding: .75rem 2.5rem;
   border-radius: 43px;
   color: #fff;
