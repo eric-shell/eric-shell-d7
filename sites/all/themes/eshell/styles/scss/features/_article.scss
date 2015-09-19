@@ -12,7 +12,8 @@
 
     h1{
       float: left;
-      padding: 0;
+      padding: 1rem 0 0;
+      font-size: auto;
       @include title;
     }
     .submitted{
@@ -80,6 +81,53 @@
         &:before{
           background: #fff;
         }
+      }
+    }
+  }
+}
+
+// Begin responsive work
+// --------------------------------------------------
+
+@media #{$large}{
+  .node-type-article{
+    #node-header{
+      h1{
+        font-size: 2.25rem;
+      }
+      .submitted{
+        padding-top: 1.6rem;
+      }
+    }
+  }
+}
+
+@media #{$medium}{
+  .node-type-article{
+    #node-header{
+      h1{
+        font-size: 2rem;
+        width: 100%;
+        clear: both;
+      }
+      .submitted{
+        float: left;
+      }
+    }
+  }
+}
+
+@media #{$small}{
+  .node-type-article{
+    #node-header{
+      h1{
+        font-size: 1.75rem;
+        width: 100%;
+        clear: both;
+      }
+      .submitted{
+        float: left;
+        font-size: .8rem;
       }
     }
   }
