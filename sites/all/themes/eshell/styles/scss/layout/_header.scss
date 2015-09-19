@@ -1,10 +1,10 @@
 #header{
-  float: left;
   width: 100%;
+  display: block;
   #header-container{
-    float: left;
-    height: calc(50vw - .9375rem);
     width: 100%;
+    height: calc(50vw - .9375rem);
+    display: flex;
     position: relative;
     background: #fff;
     overflow: hidden;
@@ -12,47 +12,46 @@
 
   // Banner image
   #profile{
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
     width: 66.66666%;
     height: 50vw;
     display: flex;
     align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
   }
   #headshot{
-    z-index: 2;
-    position: absolute;
     width: 100%;
     height: 100%;
+    position: absolute;
+    z-index: 2;
     top: 0;
     left: 0;
   }
   #logo{
-    z-index: 5;
     width: 33.25vw;
+    z-index: 5;
     margin-left: 8vw;
     animation: fadeFromLeft 1.5s ease-in-out;
   }
 
   // About me and more info link
   #intro{
-    position: absolute;
-    z-index: 3;
-    right: 0;
-    top: 0;
     width: 50%;
     height: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
     animation: fadeFromRight 1.5s ease-in-out;
     .content{
       padding: 0 10vw;
       p{
-        color: $midnight;
         font-size: 1.3vw;
         line-height: 2.2;
       }
@@ -60,13 +59,9 @@
   }
   #learn-more{
     position: absolute;
-    bottom: 22.5%;
     right: calc(50% - 5.25rem);
-    @include cta;
-    a{
-      font-size: 1.5vw;
-      padding: 1rem 3rem;
-    }
+    bottom: 22.5%;
+    @include cta-lg;
   }
 }
 
@@ -83,7 +78,7 @@
   position: absolute;
   top: -13.9vw;
   left: 0;
-  z-index: 20;
+  z-index: 10;
   transform: rotate(8deg);
   transform-origin: left bottom;
 }

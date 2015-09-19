@@ -19,12 +19,31 @@
   margin: 0 auto;
 }
 
-// Call to action buttons
+// Call to action large buttons
+@mixin cta-lg{
+  a{
+    float: left;
+    font-size: 1.2rem;
+    padding: .75rem 2.5rem;
+    border-radius: 43px;
+    color: #fff;
+    background: $cyan;
+    text-transform: uppercase;
+    transition: background 0.2s cubic-bezier(0.5, 0, 0, 1);
+    &:hover,
+    &:focus{
+      background: $crimson;
+      transition: none;
+    }
+  }
+}
+
+// Call to action small buttons
 @mixin cta{
   a{
     float: left;
     font-size: 1rem;
-    padding: .75rem 2.5rem;
+    padding: 1rem 3rem;
     border-radius: 43px;
     color: #fff;
     background: $cyan;
@@ -66,6 +85,21 @@
     &:hover:before,
     &:focus:before{
       transform: scaleY(1) translateX(0);
+    }
+  }
+  @media #{$large}{
+    a{
+      font-size: 1rem;
+    }
+  }
+  @media #{$medium}{
+    a{
+      font-size: 1rem;
+    }
+  }
+  @media #{$small}{
+    a{
+      font-size: 1rem;
     }
   }
 }
