@@ -8,11 +8,10 @@
 
   // Node title and date
   #node-header{
-    padding: 0 0 .75rem;
+    padding: 1rem 0 .75rem;
 
     h1{
       float: left;
-      padding: 1rem 0 0;
       font-size: auto;
       @include title;
     }
@@ -111,7 +110,7 @@
         clear: both;
       }
       .submitted{
-        float: left;
+        display: none;
       }
     }
   }
@@ -126,8 +125,7 @@
         clear: both;
       }
       .submitted{
-        float: left;
-        font-size: .8rem;
+        display: none;
       }
     }
   }

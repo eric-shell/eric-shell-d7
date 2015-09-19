@@ -3,7 +3,7 @@
     <?php print render($content['field_image']); ?>
   </div>
 
-  <div id="node-header">
+  <div id="node-header" class="full">
     <div class="container-sm">
       <h1<?php print $title_attributes; ?>>
         <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
