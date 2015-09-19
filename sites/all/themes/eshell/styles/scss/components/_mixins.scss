@@ -6,14 +6,16 @@
 
 // Site container
 @mixin container-lg{
-  max-width: 1300px;
+  max-width: 1364px;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
 // Site slim container
 @mixin container-sm{
   width: 100%;
-  max-width: 720px;
+  max-width: 784px;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
