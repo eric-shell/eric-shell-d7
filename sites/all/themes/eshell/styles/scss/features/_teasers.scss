@@ -176,11 +176,14 @@
 @media #{$medium}{
   // Remove pagers
   .front{
-    .pager li{
-      visibility: hidden;
+    .pager{
+      display: none;
     }
   }
   .type-cta{
+    background: $midnight;
+    padding: .75rem 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     a{
@@ -248,11 +251,14 @@
 @media #{$small}{
   // Remove pagers
   .front{
-    .pager li{
-      visibility: hidden;
+    .pager{
+      display: none;
     }
   }
   .type-cta{
+    background: $midnight;
+    padding: .75rem 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     a{
