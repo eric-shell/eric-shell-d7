@@ -117,6 +117,7 @@ ul.tabs{
   background: $midnight;
   .view-content{
     width: 100%;
+    background: #000;
   }
   .item-list{
     @include container-sm;
