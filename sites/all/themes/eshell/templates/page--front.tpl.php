@@ -7,7 +7,6 @@
   </div>
 
   <header id="header" role="header">
-    
     <div id="header-container">
 
       <div id="profile">
@@ -27,7 +26,6 @@
       </div>
       
     </div>
-
   </header>
 
   <main id="main" role="content">
