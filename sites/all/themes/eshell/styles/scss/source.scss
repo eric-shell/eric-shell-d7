@@ -4,22 +4,21 @@
 @import "vendor/normalize";
 
 // Main stylesheet
-@import "components/variables";
-@import "components/mixins";
-@import "components/resets";
-@import "components/type";
-@import "components/keyframes";
+@import "base/variables";
+@import "base/mixins";
+@import "base/resets";
+@import "base/type";
+@import "base/keyframes";
+@import "base/common";
 
 // Layout
 @import "layout/header";
-@import "layout/navigation";
 
 // Features
-@import "features/core";
-@import "features/pagers";
-@import "features/teasers";
-@import "features/article";
-@import "features/photo";
-@import "features/taxonomy";
-@import "features/webform";
+@import "components/pagers";
+@import "components/teasers";
+@import "components/article";
+@import "components/photo";
+@import "components/taxonomy";
+@import "components/webform";
 

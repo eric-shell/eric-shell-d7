@@ -7,10 +7,6 @@
   </div>
 
   <header id="header" role="header">
-
-    <div class="hide-for-xlarge-up">
-      <?php include "navigation.tpl.php"; ?>
-    </div>
     
     <div id="header-container">
 

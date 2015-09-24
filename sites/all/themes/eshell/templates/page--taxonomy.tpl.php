@@ -1,5 +1,4 @@
 <section id="site">
-  <?php include "navigation.tpl.php"; ?>
 
   <section id="main">
 
