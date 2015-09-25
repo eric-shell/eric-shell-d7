@@ -17,7 +17,7 @@ a{
 }
 
 // Ordered and unordered lists
-ul,
+ul:not(.contextual-links),
 ol{
   padding: 0;
   li{
