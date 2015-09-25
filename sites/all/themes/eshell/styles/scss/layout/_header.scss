@@ -50,16 +50,14 @@
     right: 0;
     animation: fadeFromRight 1.5s ease-in-out;
     .content{
-      padding: 0 10vw;
+      padding: 6rem 10vw 0;
       p{
         font-size: 1.3vw;
       }
     }
   }
   .button{
-    position: absolute;
-    right: calc(50% - 5.25rem);
-    bottom: 22.5%;
+    margin: 3.25rem 0 0;
     font-size: 1.2rem;
     padding: .75rem 2.5rem;
     @include button;
