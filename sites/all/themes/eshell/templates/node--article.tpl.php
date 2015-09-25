@@ -23,7 +23,7 @@
   </div>
 
   <div id="node-filters" class="full">
-    <div class="container-sm center">
+    <div class="container-sm">
       <?php print render($content['field_media_type']); ?>
       <?php print render($content['field_tags']); ?>
     </div>
