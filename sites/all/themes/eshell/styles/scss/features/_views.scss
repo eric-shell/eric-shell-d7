@@ -95,9 +95,7 @@
     padding: 4vw;
   }
   .node-title{
-    font-weight: 900;
-    font-size: 2.5vw;
-    text-transform: uppercase;
+    @include title;
   }
   .field-name-body{
     p{
