@@ -26,7 +26,6 @@
     <?php print render($page['photos']); ?>
     <?php print render($page['articles']); ?>
   </main>
-  <!-- main end -->
 
 </section>
 <!-- site end -->

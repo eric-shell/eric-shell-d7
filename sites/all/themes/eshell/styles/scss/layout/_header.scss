@@ -5,6 +5,7 @@
     width: 100%;
     height: calc(50vw - .9375rem);
     display: flex;
+    flex-direction: column;
     position: relative;
     background: #fff;
     overflow: hidden;
@@ -64,7 +65,7 @@
 
 // Small slice custom positioning
 // Calculated using second photo post
-.view-photos .views-row-2:before {
+.view-photos .views-row-2:before{
   content: '';
   z-index: 5;
   float: left;
@@ -79,4 +80,124 @@
   z-index: 10;
   transform: rotate(8deg);
   transform-origin: left bottom;
+}
+
+// Begin responsive work
+// --------------------------------------------------
+
+@media #{$large}{
+  #header{
+    flex-direction: column;
+    #header-container{
+      height: auto;
+    }
+    #header-image,
+    #header-content{
+      position: relative;
+      height: auto;
+      width: 100%;
+    }
+    #header-image{
+      padding: 1rem;
+      background: $crimson;
+      #logo{
+        margin: 0;
+        width: 80px;
+      }
+      #headshot{
+        display: none;
+      }
+    }
+    #header-content{
+      padding: 1rem;
+      p{
+        font-size: 1rem;
+        padding: 0;
+      }
+      .button{
+        margin: 1rem 0 0;
+      }
+    }
+  }
+  .view-photos .views-row-2:before{
+    display: none;
+  }
+}
+
+@media #{$medium}{
+  #header{
+    flex-direction: column;
+    #header-container{
+      height: auto;
+    }
+    #header-image,
+    #header-content{
+      position: relative;
+      height: auto;
+      width: 100%;
+    }
+    #header-image{
+      padding: 1rem;
+      background: $crimson;
+      #logo{
+        margin: 0;
+        width: 80px;
+      }
+      #headshot{
+        display: none;
+      }
+    }
+    #header-content{
+      padding: 1rem;
+      p{
+        font-size: 1rem;
+        padding: 0;
+      }
+      .button{
+        margin: 1rem 0 0;
+      }
+    }
+  }
+  .view-photos .views-row-2:before{
+    display: none;
+  }
+}
+
+@media #{$small}{
+  #header{
+    flex-direction: column;
+    #header-container{
+      height: auto;
+    }
+    #header-image,
+    #header-content{
+      position: relative;
+      height: auto;
+      width: 100%;
+    }
+    #header-image{
+      padding: 1rem;
+      background: $crimson;
+      #logo{
+        margin: 0;
+        width: 80px;
+      }
+      #headshot{
+        display: none;
+      }
+    }
+    #header-content{
+      padding: 1rem;
+      p{
+        font-size: 1rem;
+        padding: 0;
+      }
+      .button{
+        margin: 1rem 0 0;
+      }
+    }
+  }
+  .view-photos .views-row-2:before{
+    display: none;
+  }
 }
