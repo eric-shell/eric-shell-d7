@@ -60,6 +60,7 @@
 
 // Article teasers
 .view-articles{
+  overflow: hidden;
   .article-teaser{
     display: -webkit-box; // There's a bug with display:flex;
   }
