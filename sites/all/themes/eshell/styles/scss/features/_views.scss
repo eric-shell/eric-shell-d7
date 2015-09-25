@@ -95,6 +95,7 @@
     padding: 4vw;
   }
   .node-title{
+    text-transform: uppercase;
     @include title;
   }
   .field-name-body{
@@ -189,6 +190,8 @@
     }
     .node-title{
       font-size: 1.5rem;
+      width: 100%;
+      padding: 0;
       a{
         float: left;
         width: 100%;
@@ -228,6 +231,8 @@
     }
     .node-title{
       font-size: 1.5rem;
+      width: 100%;
+      padding: 0;
       a{
         float: left;
         width: 100%;
@@ -267,6 +272,8 @@
     }
     .node-title{
       font-size: 1.2rem;
+      width: 100%;
+      padding: 0;
       a{
         float: left;
         width: 100%;
