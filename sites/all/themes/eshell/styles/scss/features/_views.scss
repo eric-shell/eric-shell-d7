@@ -63,6 +63,7 @@
     position: relative;
   }
   .article-image{
+    z-index: 5;
     &:focus,
     &:hover{
       ul.links a{
@@ -90,6 +91,7 @@
     }
   }
   .article-content{
+    z-index: 10;
     padding: 4vw;
   }
   .node-title{
@@ -175,6 +177,33 @@
       font-size: 1rem;
     }
   }
+
+  // Article teasers
+  .view-articles{
+    .article-section{
+      width: 100%;
+      padding: 0;
+    }
+    .article-content{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .node-title{
+      font-size: 1.5rem;
+      a{
+        float: left;
+        width: 100%;
+        padding: 1.5rem;
+        background: rgba(255,255,255,.8);
+      }
+    }
+    ul.links,
+    .field-name-body,
+    .field-name-field-tags{
+      display: none;
+    }
+  }
 }
 
 @media #{$medium}{
@@ -187,6 +216,33 @@
       font-size: .8rem;
     }
   }
+
+  // Article teasers
+  .view-articles{
+    .article-section{
+      width: 100%;
+      padding: 0;
+    }
+    .article-content{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .node-title{
+      font-size: 1.5rem;
+      a{
+        float: left;
+        width: 100%;
+        padding: 1.5rem;
+        background: rgba(255,255,255,.8);
+      }
+    }
+    ul.links,
+    .field-name-body,
+    .field-name-field-tags{
+      display: none;
+    }
+  }
 }
 
 @media #{$small}{
@@ -196,7 +252,34 @@
       width: 100%;
     }
     .photo-title{
-      font-size: 1rem;
+      display: none;
+    }
+  }
+
+  // Article teasers
+  .view-articles{
+    .article-section{
+      width: 100%;
+      padding: 0;
+    }
+    .article-content{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .node-title{
+      font-size: 1.2rem;
+      a{
+        float: left;
+        width: 100%;
+        padding: 1.2rem;
+        background: rgba(255,255,255,.8);
+      }
+    }
+    ul.links,
+    .field-name-body,
+    .field-name-field-tags{
+      display: none;
     }
   }
 }
