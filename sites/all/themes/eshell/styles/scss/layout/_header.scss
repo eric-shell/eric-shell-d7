@@ -11,7 +11,7 @@
   }
 
   // Banner image
-  #profile{
+  #header-image{
     width: 66.66666%;
     height: 50vw;
     display: flex;
@@ -20,24 +20,24 @@
     z-index: 1;
     top: 0;
     left: 0;
-  }
-  #headshot{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-  }
-  #logo{
-    width: 33.25vw;
-    z-index: 5;
-    margin-left: 8vw;
-    animation: fadeFromLeft 1.5s ease-in-out;
+    #headshot{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+    }
+    #logo{
+      width: 33.25vw;
+      z-index: 5;
+      margin-left: 8vw;
+      animation: fadeFromLeft 1.5s ease-in-out;
+    }
   }
 
   // About me and more info link
-  #intro{
+  #header-content{
     width: 50%;
     height: 50vw;
     display: flex;
@@ -49,18 +49,16 @@
     top: 0;
     right: 0;
     animation: fadeFromRight 1.5s ease-in-out;
-    .content{
+    p{
+      font-size: 1.3vw;
       padding: 6rem 10vw 0;
-      p{
-        font-size: 1.3vw;
-      }
     }
-  }
-  .button{
-    margin: 3.25rem 0 0;
-    font-size: 1.2rem;
-    padding: .75rem 2.5rem;
-    @include button;
+    .button{
+      margin: 3.25rem 0 0;
+      font-size: 1.2rem;
+      padding: .75rem 2.5rem;
+      @include button;
+    }
   }
 }
 
@@ -81,137 +79,4 @@
   z-index: 10;
   transform: rotate(8deg);
   transform-origin: left bottom;
-}
-
-// Begin responsive work
-// --------------------------------------------------
-
-@media #{$large}{
-  #header{
-    #header-container{
-      height: auto;
-    }
-
-    // Banner image
-    #profile{
-      display: none;
-    }
-
-    // About me and more info link
-    #intro{
-      height: auto;
-      width: 100%;
-      position: relative;
-      .content{
-        padding: 3rem 2rem 2rem;
-        p{
-          font-size: 1rem;
-          line-height: 2.2;
-          text-align: left;
-          max-width: 720px;
-        }
-      }
-      #learn-more{
-        position: relative;
-        padding: 0 0 3rem;
-        bottom: auto;
-        right: auto;
-        a{
-          font-size: 1.2rem;
-        }
-      }
-    }
-  }
-
-  // Small slice custom positioning
-  // Calculated using second photo post
-  .views-row-2 .photo-teaser:before {
-    display: none;
-  }
-}
-
-@media #{$medium}{
-  #header{
-    #header-container{
-      height: auto;
-    }
-
-    // Banner image
-    #profile{
-      display: none;
-    }
-
-    // About me and more info link
-    #intro{
-      height: auto;
-      width: 100%;
-      position: relative;
-      .content{
-        padding: 3rem 2rem 2rem;
-        p{
-          font-size: 1rem;
-          line-height: 2.2;
-          text-align: left;
-        }
-      }
-      #learn-more{
-        position: relative;
-        padding: 0 0 3rem;
-        bottom: auto;
-        right: auto;
-        a{
-          font-size: 1.2rem;
-        }
-      }
-    }
-  }
-
-  // Small slice custom positioning
-  // Calculated using second photo post
-  .views-row-2 .photo-teaser:before {
-    display: none;
-  }
-}
-
-@media #{$small}{
-  #header{
-    #header-container{
-      height: auto;
-    }
-
-    // Banner image
-    #profile{
-      display: none;
-    }
-
-    // About me and more info link
-    #intro{
-      height: auto;
-      width: 100%;
-      position: relative;
-      .content{
-        padding: 3rem 2rem 2rem;
-        p{
-          font-size: 1rem;
-          line-height: 2.2;
-          text-align: left;
-        }
-      }
-      #learn-more{
-        position: relative;
-        padding: 0 0 3rem;
-        bottom: auto;
-        right: auto;
-        a{
-          font-size: 1.2rem;
-        }
-      }
-    }
-  }
-
-  // Small slice custom positioning
-  // Calculated using second photo post
-  .views-row-2 .photo-teaser:before {
-    display: none;
-  }
 }
