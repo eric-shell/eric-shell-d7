@@ -3,6 +3,9 @@
   width: 100%;
   clear: both;
 }
+.full{
+  @include full;
+}
 
 // Site container
 @mixin container-lg{
@@ -10,12 +13,18 @@
   padding: 0 2rem;
   margin: 0 auto;
 }
+.container-lg{
+  @include container-lg;
+}
 
 // Site slim container
 @mixin container-sm{
   width: 100%;
   padding: 0 2rem;
   margin: 0 auto;
+}
+.container-sm{
+  @include container-sm;
 }
 
 // Call to action large buttons

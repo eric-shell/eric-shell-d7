@@ -47,8 +47,9 @@ a:focus{
   outline: 0;
 }
 
-// Hiding Drupal invisible elements
-.element-invisible {
+// Hiding Drupal invisible elements and loading gifs
+.element-invisible,
+.ajax-progress{
   display: none;
 }
 
