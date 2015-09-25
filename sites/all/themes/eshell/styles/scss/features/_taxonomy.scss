@@ -1,9 +1,10 @@
 .page-taxonomy{
   #page-title{
-    @include full;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     color: #fff;
     padding: .5em 0;
-    text-align: center;
     text-transform: uppercase;
     background: $midnight;
   }
