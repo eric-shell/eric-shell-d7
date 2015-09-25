@@ -1,24 +1,28 @@
 // Fade in from top
 @keyframes fadeIn{
   0%{
+    position: relative;
     opacity: 0;
-    margin-top: -.5rem;
+    top: -1rem;
   }
   100%{
+    position: relative;
     opacity: 1;
-    margin-top: 0;
+    top: 0;
   }
 }
 
 // Fade in from left
 @keyframes fadeFromLeft{
   0%{
+    position: relative;
     opacity: 0;
-    margin-left: 7.5vw;
+    left: -1rem;
   }
   100%{
+    position: relative;
     opacity: 1;
-    margin-left: 8vw;
+    left: 0;
   }
 }
 
@@ -26,10 +30,10 @@
 @keyframes fadeFromRight{
   0%{
     opacity: 0;
-    margin-right: -.5rem;
+    right: -.5rem;
   }
   100%{
     opacity: 1;
-    margin-right: 0;
+    right: 0;
   }
 }
