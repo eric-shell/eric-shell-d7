@@ -1,4 +1,24 @@
-// Article nodes
+// User Login Page
+.page-user-login{
+  height: 100vh;
+  #user-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0 2rem;
+    & > div{
+      max-width: 27rem;
+    }
+  }
+  label,
+  .description{
+    display: none;
+  }
+}
+
+// Webform nodes
 .node-webform{
   .submitted{
     display: none;
