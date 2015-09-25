@@ -13,7 +13,7 @@
     h1{
       float: left;
       font-size: auto;
-      @include title;
+      //@include title;
     }
     .submitted{
       float: right;
@@ -72,7 +72,7 @@
       float: left;
     }
     .field-item{
-      @include tags;
+      //@include tags;
       display: inline-block;
       a{
         color: #fff;
