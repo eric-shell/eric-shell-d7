@@ -16,8 +16,8 @@ $gradient: linear-gradient(-45deg, $violet 0%, $crimson 100%);
 // Screen size breakpoints
 $screen-small: 480px;
 $screen-medium: 720px;
-$screen-large: 1000px;
-$screen-xlarge: 1300px;
+$screen-large: 960px;
+$screen-xlarge: 1200px;
 
 // Individual media queries
 $small: 'screen and (max-width: #{$screen-small})';
