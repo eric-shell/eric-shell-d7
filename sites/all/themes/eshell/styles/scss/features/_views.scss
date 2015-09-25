@@ -66,6 +66,7 @@
 .view-articles{
   overflow: hidden;
   .article-teaser{
+    position: relative;
     display: -webkit-box; // There's a bug with display:flex;
   }
   .article-section{
