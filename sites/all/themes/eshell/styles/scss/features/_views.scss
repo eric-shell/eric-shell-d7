@@ -246,9 +246,30 @@
       display: none;
     }
   }
+
+  // Pagers
+  .pager{
+    .pager-first,
+    .pager-last,
+    .pager-item,
+    .pager-current,
+    .pager-ellipsis{
+      display: none;
+    }
+    .pager-next,
+    .pager-previous{
+      display: block;
+    }
+  }
 }
 
 @media #{$small}{
+  .view-footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
   // Photo teasers
   .view-photos{
     .views-row{
@@ -284,6 +305,27 @@
     ul.links,
     .field-name-body,
     .field-name-field-tags{
+      display: none;
+    }
+  }
+
+  // Pagers
+  .pager{
+    .pager-first,
+    .pager-last,
+    .pager-item,
+    .pager-current,
+    .pager-ellipsis{
+      display: none;
+    }
+    .pager-next,
+    .pager-previous{
+      display: block;
+    }
+  }
+
+  .front{
+    .pager{
       display: none;
     }
   }
