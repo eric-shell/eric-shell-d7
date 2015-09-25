@@ -106,13 +106,13 @@
   }
   .field-name-field-tags{
     position: absolute;
-    bottom: 4vw;
+    bottom: 3.5vw;
     left: 4vw;
     .field-item{
       display: inline;
     }
     a{
-      text-transform: uppercase;
+      @include tags;
       font-size: 1.25vw;
       margin-right: 1vw;
     }

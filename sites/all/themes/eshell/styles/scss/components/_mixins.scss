@@ -77,3 +77,40 @@
     transform: scaleY(1) translateX(0);
   }
 }
+
+// Custom tag behavior
+@mixin tags{
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  line-height: 2;
+  z-index: 10;
+  vertical-align: bottom;
+  &:before{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: -1;
+    width: 105%;
+    height: 2px;
+    background: $midnight;
+    transition: transform 0.2s cubic-bezier(0.5, 0, 0, 1);
+    transform: scaleY(1) translateX(-105%);
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: -2;
+    width: 105%;
+    height: 2px;
+    background: transparent;
+  }
+  &:hover:before,
+  &:focus:before{
+    transform: scaleY(1) translateX(0);
+  }
+}
