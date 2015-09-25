@@ -57,11 +57,13 @@
       }
     }
   }
-  #learn-more{
+  .button{
     position: absolute;
     right: calc(50% - 5.25rem);
     bottom: 22.5%;
-    @include cta-lg;
+    font-size: 1.2rem;
+    padding: .75rem 2.5rem;
+    @include button;
   }
 }
 

@@ -20,9 +20,7 @@
         <div class="content">
           <?php print render($node->body['und']['0']['value']); ?>
         </div>
-        <div id="learn-more">
-          <a href="/contact">Learn more</a>
-        </div>
+        <a href="/contact" class="button">Learn more</a>
       </div>
       
     </div>

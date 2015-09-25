@@ -12,6 +12,16 @@
   .item-list{
     @include container-sm;
   }
+  .view-footer{
+    max-width: 784px;
+    width: 100%;
+    .button{
+      margin-top: -54px;
+      font-size: 1rem;
+      padding: .8rem 2.5rem;
+      @include button;
+    }
+  }
 }
 
 // Photo teasers
@@ -196,16 +206,6 @@
       display: none;
     }
   }
-  .type-cta{
-    background: $midnight;
-    padding: .75rem 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    a{
-      display: table;
-    }
-  }
 
   // Photo teasers
   .view-photos{
@@ -269,16 +269,6 @@
   .front{
     .pager{
       display: none;
-    }
-  }
-  .type-cta{
-    background: $midnight;
-    padding: .75rem 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    a{
-      display: table;
     }
   }
 
