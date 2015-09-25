@@ -7,24 +7,14 @@
   @include full;
 }
 
-// Site container
-@mixin container-lg{
-  max-width: 1364px;
-  padding: 0 2rem;
-  margin: 0 auto;
-}
-.container-lg{
-  @include container-lg;
-}
-
 // Site slim container
-@mixin container-sm{
+@mixin container{
   width: 100%;
   padding: 0 2rem;
   margin: 0 auto;
 }
-.container-sm{
-  @include container-sm;
+.container{
+  @include container;
 }
 
 // Call to action large buttons

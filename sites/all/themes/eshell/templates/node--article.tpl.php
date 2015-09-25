@@ -1,12 +1,10 @@
 <article class="article-full node-<?php print $node->nid; ?> <?php print $classes; ?>"<?php print $attributes; ?>>
   <div id="node-video" class="full">
-    <div class="container-lg">
-      <?php print render($content['field_video']); ?>
-    </div>
+    <?php print render($content['field_video']); ?>
   </div>
 
   <div id="node-header" class="full">
-    <div class="container-sm">
+    <div class="container">
       <h1<?php print $title_attributes; ?>>
         <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
       </h1>
@@ -17,13 +15,11 @@
   </div>
 
   <div id="node-content" class="full">
-    <div class="container-lg">
-      <?php print render($content['body']); ?>
-    </div>
+    <?php print render($content['body']); ?>
   </div>
 
   <div id="node-filters" class="full">
-    <div class="container-sm">
+    <div class="container">
       <?php print render($content['field_media_type']); ?>
       <?php print render($content['field_tags']); ?>
     </div>
