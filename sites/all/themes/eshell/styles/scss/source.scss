@@ -4,11 +4,11 @@
 @import "vendor/normalize";
 
 // Main stylesheets
+@import "components/keyframes";
 @import "components/variables";
 @import "components/mixins";
 @import "components/resets";
 @import "components/type";
-@import "components/keyframes";
 
 // Layout
 @import "layout/header";
