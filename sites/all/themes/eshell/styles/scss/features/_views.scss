@@ -55,7 +55,7 @@
 // Article teasers
 .view-articles{
   .article-teaser{
-    display: flex;
+    display: -webkit-box; // There's a bug with display:flex;
   }
   .article-section{
     width: 50%;
