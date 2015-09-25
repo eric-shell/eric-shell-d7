@@ -5,7 +5,13 @@
   .view-content{
     background: #fff;
   }
+  .item-list{
+    max-width: 720px;
+    margin: auto;
+  }
   .view-footer{
+    max-width: 720px;
+    margin: auto;
     .button{
       font-size: 1rem;
       padding: .8rem 2.5rem;
@@ -269,7 +275,7 @@
     width: 100%;
     justify-content: center;
   }
-  
+
   // Photo teasers
   .view-photos{
     .views-row{
