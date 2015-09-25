@@ -29,18 +29,6 @@ img{
   float: left;
 }
 
-// Correct admin menu display
-#admin-menu{
-  box-shadow: none;
-  ul {
-    font-size: 11px;
-  }
-  a{
-    font-size: 11px;
-    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
-  }
-}
-
 // Removing outline on focus inherited by browsers
 :focus,
 a:focus{
@@ -53,41 +41,71 @@ a:focus{
   display: none;
 }
 
-// Begin responsive styles
-// --------------------------------------------------
+// Correct admin menu display
+#admin-menu{
+  box-shadow: none;
+  ul {
+    font-size: 11px;
+  }
+  a{
+    font-size: 11px;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  }
+}
 
-@media #{$xlarge-up}{
-  .hide-for-xlarge-up{
-    display: none;
+// Defining Drupal message theming
+.messages{
+  @include full;
+  color: #fff;
+  font-size: 16px;
+  padding: 1rem;
+  text-align: center;
+  &.status{
+    background: $success;
+  }
+  &.warning{
+    color: #fff;
+    background: $warning;
+  }
+  &.error{
+    color: #fff;
+    background: $error;
+  }
+  p{
+    color: #fff;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+  a{
+    color: #fff;
+    text-decoration: underline;
   }
 }
-@media #{$xlarge}{
-  .hide-for-xlarge{
-    display: none;
-  }
-}
-@media #{$large-up}{
-  .hide-for-large-up{
-    display: none;
-  }
-}
-@media #{$large}{
-  .hide-for-large{
-    display: none;
-  }
-}
-@media #{$medium-up}{
-  .hide-for-medium-up{
-    display: none;
-  }
-}
-@media #{$medium}{
-  .hide-for-medium{
-    display: none;
-  }
-}
-@media #{$small}{
-  .hide-for-small{
-    display: none;
+
+// Defining Drupal admin tabs
+.tabs-primary{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: $midnight;
+  li{
+    float: left;
+    display: inline-block;
+    a{
+      float: left;
+      color: #fff;
+      padding: .75rem 1rem;
+      background: $midnight;
+      transition: all .2s cubic-bezier(0.5, 0, 0, 1);
+      &:focus,
+      &:hover{
+        background: $cyan;
+        transition: all 0s cubic-bezier(0.5, 0, 0, 1);
+      }
+      &.active{
+        background: $cyan;
+      }
+    }
   }
 }
