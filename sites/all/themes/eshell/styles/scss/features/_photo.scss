@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: space-between;
     max-width: 720px;
-    padding: 1rem 0 .5rem;
+    padding: 1.5rem 0 .5rem;
     margin: auto;
     .node-title{
       @include title;
@@ -83,3 +83,43 @@
 
 // Begin responsive work
 // --------------------------------------------------
+
+@media #{$medium}{
+  .node-type-photo{
+
+    // Node title and date
+    #node-header{
+      padding: 1.5rem 2rem .5rem;
+      .node-title{
+        font-size: 30px;
+      }
+    }
+
+    // Node body contents
+    #node-content{
+      p{
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}
+
+@media #{$small}{
+  .node-type-photo{
+
+    // Node title and date
+    #node-header{
+      padding: 1.5rem 2rem .5rem;
+      .node-title{
+        font-size: 25px;
+      }
+    }
+
+    // Node body contents
+    #node-content{
+      p{
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}
