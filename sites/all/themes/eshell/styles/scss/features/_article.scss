@@ -8,16 +8,16 @@
 
   // Node title and date
   #node-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     max-width: 720px;
-    margin: 2rem auto 0;
+    margin: 2rem auto .5rem;
     .node-title{
       @include title;
       font-size: 35px;
       text-transform: uppercase;
-    }
-    .submitted{
-      float: right;
-      padding: 7px 0 0;
     }
   }
 
@@ -58,7 +58,8 @@
 
   // Node filters
   #node-filters{
-    @include full;
+    float: left;
+    width: 100%;
     padding: 2em;
     margin: 1rem 0 0;
     background: $midnight;
@@ -84,3 +85,43 @@
 
 // Begin responsive work
 // --------------------------------------------------
+
+@media #{$medium}{
+  .node-type-article{
+
+    // Node title and date
+    #node-header{
+      padding: 0 2rem;
+      .node-title{
+        font-size: 30px;
+      }
+    }
+
+    // Node body contents
+    #node-content{
+      p{
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}
+
+@media #{$small}{
+  .node-type-article{
+
+    // Node title and date
+    #node-header{
+      padding: 0 2rem;
+      .node-title{
+        font-size: 25px;
+      }
+    }
+
+    // Node body contents
+    #node-content{
+      p{
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}

@@ -1,12 +1,3 @@
-@mixin full{
-  float: left;
-  width: 100%;
-  clear: both;
-}
-.full{
-  @include full;
-}
-
 // Site slim container
 @mixin container{
   width: 100%;
