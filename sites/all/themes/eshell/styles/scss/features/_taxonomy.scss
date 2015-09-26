@@ -12,14 +12,13 @@
   }
 
   // Results
-  .content{
+  .view-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background: #000;
   }
-  .photo-teaser,
-  .article-teaser{
+  .views-row{
     width: 33.33333%;
     position: relative;
     overflow: hidden;
@@ -31,7 +30,6 @@
     }
   }
   .article-teaser{
-    width: 33.33333%;
     ul.links,
     .field-name-body,
     .field-name-field-tags{
