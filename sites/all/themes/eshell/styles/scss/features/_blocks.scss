@@ -1,0 +1,15 @@
+#block-menu-menu-social-media{
+  background: $violet;
+  padding: 1rem;
+  .menu{
+    display: flex;
+    justify-content: center;
+    max-width: 720px;
+    margin: auto;
+    a{
+      float: left;
+      color: #c0c0cc;
+      padding: 1rem;
+    }
+  }
+}
