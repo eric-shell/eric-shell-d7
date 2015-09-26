@@ -10,7 +10,7 @@ function eshell_preprocess_node(&$vars) {
   }
 
   // Displays date on pages with simpler format
-  $vars['submitted'] = t('@date', array('@date' => date("M jS", $vars['created'])));
+  $vars['submitted'] = t('@date', array('@date' => date("F jS, Y", $vars['created'])));
 }
 
 // User login placeholders

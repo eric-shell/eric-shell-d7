@@ -3,14 +3,12 @@
     <?php print render($content['field_video']); ?>
   </div>
 
-  <div id="node-header" class="full">
-    <div class="container">
-      <h1<?php print $title_attributes; ?>>
-        <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
-      </h1>
-      <div class="submitted">
-        <?php print $submitted; ?>
-      </div>
+  <div id="node-header">
+    <h1<?php print $title_attributes; ?>>
+      <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
+    </h1>
+    <div class="submitted">
+      <?php print $submitted; ?>
     </div>
   </div>
 
