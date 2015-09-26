@@ -5,7 +5,7 @@
   </div>
 
   <?php if (!$page && $title): ?>
-    <a class="photo-title" href="<?php print $node_url; ?>">View <?php print $title; ?></a>
+    <a class="node-title" href="<?php print $node_url; ?>">View <?php print $title; ?></a>
   <?php endif; ?>
   
 </article>

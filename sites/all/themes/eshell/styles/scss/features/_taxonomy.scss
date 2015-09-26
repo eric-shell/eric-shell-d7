@@ -15,9 +15,20 @@
   .content{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    background: #000;
   }
-  .photo-teaser{
+  .photo-teaser,
+  .article-teaser{
     width: 33.33333%;
+    position: relative;
+    overflow: hidden;
+    &:focus,
+    &:hover{
+      .node-title{
+        bottom: 0;
+      }
+    }
   }
   .article-teaser{
     width: 33.33333%;
@@ -27,8 +38,59 @@
       display: none;
     }
   }
+  .node-title{
+    position: absolute;
+    left: 0;
+    bottom: -4rem;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.25vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: rgba(255,255,255,.8);
+    transition: .2s all cubic-bezier(0.5, 0, 0, 1);
+  }
   .item-list{
     background: $midnight;
     width: 100%;
+  }
+}
+
+// Begin responsive work
+// --------------------------------------------------
+
+@media #{$large}{
+  .page-taxonomy{
+    .photo-teaser,
+    .article-teaser{
+      width: 50%;
+      .node-title{
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media #{$medium}{
+  .page-taxonomy{
+    .photo-teaser,
+    .article-teaser{
+      width: 50%;
+      .node-title{
+        font-size: .8rem;
+      }
+    }
+  }
+}
+
+@media #{$small}{
+  .page-taxonomy{
+    .photo-teaser,
+    .article-teaser{
+      width: 100%;
+      .node-title{
+        font-size: .8rem;
+      }
+    }
   }
 }
