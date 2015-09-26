@@ -1,5 +1,5 @@
 <article class="article-full node-<?php print $node->nid; ?> <?php print $classes; ?>"<?php print $attributes; ?>>
-  <div id="node-video" class="full">
+  <div id="node-video">
     <?php print render($content['field_video']); ?>
   </div>
 
@@ -12,11 +12,11 @@
     </div>
   </div>
 
-  <div id="node-content" class="full">
+  <div id="node-content">
     <?php print render($content['body']); ?>
   </div>
 
-  <div id="node-filters" class="full">
+  <div id="node-filters">
     <div class="container">
       <?php print render($content['field_media_type']); ?>
       <?php print render($content['field_tags']); ?>

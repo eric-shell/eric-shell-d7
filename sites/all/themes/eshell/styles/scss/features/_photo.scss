@@ -21,21 +21,25 @@
 
   // Node title and date
   #node-header{
-    padding: 1rem 0 0;
-    h1{
-      float: left;
-      clear: both;
-      padding: 0 0 .25em;
-      //@include title;
-    }
-    .submitted{
-      float: right;
-      padding: .4rem 0 0;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 720px;
+    padding: 1rem 0 .5rem;
+    margin: auto;
+    .node-title{
+      @include title;
+      font-size: 35px;
+      text-transform: uppercase;
     }
   }
 
   // Node body contents
   #node-content{
+    max-width: 720px;
+    margin: auto;
     .field-name-field-image{
       display: flex;
       justify-content: center;
@@ -56,21 +60,22 @@
     width: 100%;
     padding: 2em;
     margin: 1rem 0 0;
-    display: flex;
-    justify-content: center;
     background: $midnight;
-    .field-items{
-      float: left;
+    .container{
+      display: flex;
+      justify-content: center;
+      align-content: center;
     }
     .field-item{
-      //@include tags;
-      display: inline-block;
-      a{
-        color: #fff;
-        margin: 0 1rem 0 0;
-        &:before{
-          background: #fff;
-        }
+      float: left;
+    }
+    a{
+      @include tags;
+      color: #fff;
+      margin-right: 1rem;
+      text-transform: uppercase;
+      &:before{
+        background: #fff;
       }
     }
   }
@@ -78,43 +83,3 @@
 
 // Begin responsive work
 // --------------------------------------------------
-
-@media #{$large}{
-  .node-type-photo{
-    #node-header{
-      h1{
-        font-size: 2.25rem;
-      }
-    }
-  }
-}
-
-@media #{$medium}{
-  .node-type-photo{
-    #node-header{
-      h1{
-        font-size: 2rem;
-        width: 100%;
-        clear: both;
-      }
-      .submitted{
-        display: none;
-      }
-    }
-  }
-}
-
-@media #{$small}{
-  .node-type-photo{
-    #node-header{
-      h1{
-        font-size: 1.75rem;
-        width: 100%;
-        clear: both;
-      }
-      .submitted{
-        display: none;
-      }
-    }
-  }
-}

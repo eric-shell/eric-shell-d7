@@ -1,6 +1,7 @@
 // Views foundation
 .view{
-  @include full;
+  float: left;
+  width: 100%;
   background: $midnight;
   .view-content{
     background: #fff;
