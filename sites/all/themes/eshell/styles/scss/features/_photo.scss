@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: space-between;
     max-width: 720px;
-    padding: 1.5rem 0 .5rem;
+    padding: 1rem 0 .5rem;
     margin: auto;
     .node-title{
       @include title;
@@ -98,7 +98,7 @@
     // Node body contents
     #node-content{
       p{
-        padding: 1rem 2rem;
+        padding: 0 2rem;
       }
     }
   }
@@ -118,7 +118,7 @@
     // Node body contents
     #node-content{
       p{
-        padding: 1rem 2rem;
+        padding: 0 2rem;
       }
     }
   }
