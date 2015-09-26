@@ -9,17 +9,15 @@
   // Node title and date
   #node-header{
     max-width: 720px;
-    margin: auto;
-    padding: 1rem 0 .75rem;
-
-    h1 a{
-      float: left;
-      text-transform: uppercase;
+    margin: 2rem auto 0;
+    .node-title{
       @include title;
+      font-size: 35px;
+      text-transform: uppercase;
     }
     .submitted{
       float: right;
-      padding: 2vw 0 0;
+      padding: 7px 0 0;
     }
   }
 

@@ -111,6 +111,8 @@
   }
   .node-title{
     text-transform: uppercase;
+    font-size: 2.5vw;
+    margin-bottom: .5em;
     @include title;
   }
   .field-name-body{
