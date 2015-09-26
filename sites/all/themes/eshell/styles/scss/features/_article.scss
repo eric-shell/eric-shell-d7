@@ -4,6 +4,10 @@
   // Node embeded video
   #node-video{
     background: $midnight;
+    .field-items{
+      margin: auto;
+      max-width: 1300px;
+    }
   }
 
   // Node title and date
