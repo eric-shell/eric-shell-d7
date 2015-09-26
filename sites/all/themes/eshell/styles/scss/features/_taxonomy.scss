@@ -1,4 +1,6 @@
 .page-taxonomy{
+
+  // Taxaonomy term
   #page-title{
     display: flex;
     justify-content: center;
@@ -7,5 +9,26 @@
     padding: .5em 0;
     text-transform: uppercase;
     background: $midnight;
+  }
+
+  // Results
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .photo-teaser{
+    width: 33.33333%;
+  }
+  .article-teaser{
+    width: 33.33333%;
+    ul.links,
+    .field-name-body,
+    .field-name-field-tags{
+      display: none;
+    }
+  }
+  .item-list{
+    background: $midnight;
+    width: 100%;
   }
 }
