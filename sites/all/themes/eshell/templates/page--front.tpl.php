@@ -23,8 +23,14 @@
   </header>
 
   <main id="main" role="content">
-    <?php print render($page['photos']); ?>
-    <?php print render($page['articles']); ?>
+    <section id="content-slider">
+    <div class="slide">
+      <?php print render($page['listing']); ?>
+    </div>
+    <div class="slide">
+      <?php print render($page['photos']); ?>
+      <?php print render($page['articles']); ?>
+    </div>
   </main>
 
 </section>

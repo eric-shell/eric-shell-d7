@@ -4,12 +4,14 @@ description = Custom Zen subtheme built for Eric's Shell's professional website.
 core        = 7.x
 base theme  = zen
 
+scripts[] = scripts/slick.js
+scripts[] = scripts/eshell.js
 stylesheets[all][] = styles/styles.min.css
-scripts[] = scripts/scripts.min.js
 
 regions[page_top]       = Page top
 regions[main_menu]      = Main menu
 regions[content]        = Content
+regions[listing]        = Listing
 regions[photos]         = Photos
 regions[articles]       = Articles
 regions[page_bottom]    = Page bottom
