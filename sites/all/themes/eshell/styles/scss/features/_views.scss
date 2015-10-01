@@ -32,8 +32,17 @@
 // Content listing
 .view-content-listing{
   padding: 3rem;
-  p, a{
+  p{
     color: #fff;
+    a{
+      color: #fff;
+      &:before{
+        background: #fff;
+      }
+      &:after{
+        background: rgba(255,255,255,.4);
+      }
+    }
   }
   .view-content{
     color: #fff;
@@ -43,6 +52,21 @@
   }
   .views-row:not(.views-row-last){
     padding: 0 0 3rem;
+  }
+  .views-field-title a{
+    font-size: 3.5vw;
+    color: #fff;
+    text-transform: uppercase;
+    @include title;
+    &:before{
+      background: #fff;
+    }
+  }
+  .views-field-body p{
+    font-size: 1.25vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
