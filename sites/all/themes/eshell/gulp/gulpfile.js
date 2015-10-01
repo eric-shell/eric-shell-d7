@@ -1,10 +1,10 @@
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    rename = require('gulp-rename'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
-    minify = require('gulp-minify-css'),
-    prefixer = require('gulp-autoprefixer'),
+var gulp = require('gulp')
+    sass = require('gulp-sass')
+    rename = require('gulp-rename')
+    concat = require('gulp-concat')
+    uglify = require('gulp-uglify')
+    minify = require('gulp-minify-css')
+    prefixer = require('gulp-autoprefixer')
     sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', function () {
@@ -27,6 +27,6 @@ gulp.task('sass', function () {
 // });
 
 gulp.task('default', function() {
-  gulp.watch('../styles/scss/**/*.scss', ['sass']),
-  gulp.watch('../scripts/js/**/*.js', ['js']);
+  gulp.watch('../styles/scss/**/*.scss', ['sass']);
+  //gulp.watch('../scripts/js/**/*.js', ['js']);
 });
