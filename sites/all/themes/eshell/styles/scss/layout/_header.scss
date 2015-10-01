@@ -63,25 +63,6 @@
   }
 }
 
-// Small slice custom positioning
-// Calculated using second photo post
-.view-photos .views-row-2:before{
-  content: '';
-  z-index: 5;
-  float: left;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 14vw 6vw;
-  border-color: transparent transparent #fff transparent;
-  position: absolute;
-  top: -13.9vw;
-  left: 0;
-  z-index: 10;
-  transform: rotate(8deg);
-  transform-origin: left bottom;
-}
-
 // Begin responsive work
 // --------------------------------------------------
 
@@ -119,9 +100,6 @@
       }
     }
   }
-  .view-photos .views-row-2:before{
-    display: none;
-  }
 }
 
 @media #{$medium}{
@@ -158,9 +136,6 @@
       }
     }
   }
-  .view-photos .views-row-2:before{
-    display: none;
-  }
 }
 
 @media #{$small}{
@@ -196,8 +171,5 @@
         margin: 2rem 0 0;
       }
     }
-  }
-  .view-photos .views-row-2:before{
-    display: none;
   }
 }
