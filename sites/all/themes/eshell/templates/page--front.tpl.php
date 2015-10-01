@@ -1,10 +1,12 @@
 <section id="site">
 
-  <div class="site-options">
+  <section class="site-options">
+
     <?php if ($messages): ?>
       <div id="messages"><?php print $messages; ?></div>
     <?php endif; ?>
-  </div>
+    
+  </section>
 
   <header id="header" role="header">
     <div id="header-container">
@@ -24,13 +26,17 @@
 
   <main id="main" role="content">
     <section id="content-slider">
-    <div class="slide">
-      <?php print render($page['listing']); ?>
-    </div>
-    <div class="slide">
-      <?php print render($page['photos']); ?>
-      <?php print render($page['articles']); ?>
-    </div>
+
+      <div class="slide">
+        <?php print render($page['listing']); ?>
+      </div>
+
+      <div class="slide">
+        <?php print render($page['photos']); ?>
+        <?php print render($page['articles']); ?>
+      </div>
+
+    </section>
   </main>
 
 </section>

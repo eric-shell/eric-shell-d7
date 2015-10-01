@@ -1,34 +1,30 @@
 (function ($) {
   $( document ).ready(function( $ ) {
 
-   // removes anchor tag from images in body text
-   $('.field-name-body .field-item div').each(function() {
+    // Removeing container from images from WYSIWYG editor
+    $('.field-name-body .field-item div').each(function() {
       $(this).addClass('photo-container');
-   }); 
+    }); 
 
-   $(document).scroll(function() {
-      // controls visbility of article pager
-      var article_pager = false;
-      // calculates height of page elements
-      var current_height = $(document).scrollTop();
-      var content_height = $('#main').position()["top"];
-
-      if(current_height > content_height){
-         article_pager = true;
-      }
-
-      $('.flippy li a').toggleClass('pager-visible', article_pager);
-   });
-
-    // Global slider functionality
+    // Front page slider
     if($('#content-slider').length) {
-      $('#content-slider').slick({
+      $('#content-slider').slick( {
         dots: false,
         arrows: false,
         autoplay: false,
         adaptiveHeight: true,
         centerMode: true,
+        centerPadding: '64px',
+        responsive: [
+          {
+            breakpoint: 720,
+            settings: {
+              centerMode: false,
+            }
+          }
+        ]
       });
     }
+
   });
 })(jQuery);

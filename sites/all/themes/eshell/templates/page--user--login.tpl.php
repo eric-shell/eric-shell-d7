@@ -1,12 +1,20 @@
 <section id="site">
 
-  <div class="site-options">
+  <section class="site-options">
+
     <?php if ($messages): ?>
       <div id="messages"><?php print $messages; ?></div>
     <?php endif; ?>
-  </div>
 
-  <?php print render($page['content']); ?>
+  </section>
+
+  <main id="main" role="content">
+
+    <section class="content">
+      <?php print render($page['content']); ?>
+    </section>
+    
+  </main>
 
 </section>
 <!-- site end -->

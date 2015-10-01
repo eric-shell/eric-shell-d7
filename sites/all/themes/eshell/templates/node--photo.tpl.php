@@ -1,4 +1,5 @@
 <article class="photo-full node-<?php print $node->nid; ?> <?php print $classes; ?>"<?php print $attributes; ?>>
+  
   <div id="node-photo-container">
     <?php print render($content['field_image']); ?>
   </div>
@@ -22,6 +23,7 @@
       <?php print render($content['field_tags']); ?>
     </div>
   </div>
+
 </article>
 
 <?php print render($content["flippy_pager"]); ?>

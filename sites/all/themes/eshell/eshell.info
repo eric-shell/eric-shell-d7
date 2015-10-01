@@ -21,4 +21,3 @@ stylesheets[all][] = system.menus.css
 stylesheets[all][] = system.messages.css
 stylesheets[all][] = system.theme.css
 settings[zen_rebuild_registry] = 0
-
