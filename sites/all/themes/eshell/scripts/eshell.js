@@ -23,10 +23,11 @@
     // Global slider functionality
     if($('#content-slider').length) {
       $('#content-slider').slick({
-        dots: true,
+        dots: false,
         arrows: false,
         autoplay: false,
         adaptiveHeight: true,
+        centerMode: true,
       });
     }
   });

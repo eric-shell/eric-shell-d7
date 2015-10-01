@@ -29,8 +29,26 @@
   }
 }
 
+// Content listing
+.view-content-listing{
+  padding: 3rem;
+  p, a{
+    color: #fff;
+  }
+  .view-content{
+    color: #fff;
+    background: $midnight;
+    max-width: 720px;
+    margin: auto;
+  }
+  .views-row:not(.views-row-last){
+    padding: 0 0 3rem;
+  }
+}
+
 // Photo teasers
 .view-photos{
+  padding-top: 64px;
   .view-content{
     background: #000;
     display: flex;
