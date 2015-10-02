@@ -31,7 +31,7 @@
 
 // Content listing
 .view-content-listing{
-  padding: 3rem;
+  padding: 64px 3rem 3rem;
   p{
     color: #fff;
     a{
@@ -50,8 +50,26 @@
     max-width: 720px;
     margin: auto;
   }
-  .views-row:not(.views-row-last){
-    padding: 0 0 3rem;
+  .views-row{
+    position: relative;
+    &:not(.views-row-last){
+      padding: 0 0 3rem;
+    }
+  }
+  .views-field-type .icon{
+    position: absolute;
+    text-indent: 9999px;
+    overflow: hidden;
+    width: 2.5vw;
+    height: 2.5vw;
+    left: -50px;
+    top: .5vw;
+    &.Article{
+      background: red;
+    }
+    &.Photo{
+      background: blue;
+    }
   }
   .views-field-title a{
     font-size: 3.5vw;
