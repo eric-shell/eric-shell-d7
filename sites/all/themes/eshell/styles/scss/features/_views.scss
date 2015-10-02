@@ -31,7 +31,7 @@
 
 // Content listing
 .view-content-listing{
-  padding: 64px 3rem 3rem;
+  padding: 58px 3rem 3rem;
   p{
     color: #fff;
     a{
@@ -60,15 +60,18 @@
     position: absolute;
     text-indent: 9999px;
     overflow: hidden;
+    background: url(../assets/images/content-types.svg);
+    background-size: 5vw 2.5vw;
+    background-position: 0 0;
     width: 2.5vw;
     height: 2.5vw;
     left: -50px;
     top: .5vw;
     &.Article{
-      background: red;
+      background-position: 2.5vw 0;
     }
     &.Photo{
-      background: blue;
+      background-position: 0 0;
     }
   }
   .views-field-title a{
