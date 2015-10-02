@@ -61,14 +61,14 @@
     text-indent: 9999px;
     overflow: hidden;
     background: url(../assets/images/content-types.svg);
-    background-size: 5vw 2.5vw;
+    background-size: 5.5vw 2.75vw;
     background-position: 0 0;
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2.75vw;
+    height: 2.75vw;
     left: -50px;
-    top: .5vw;
+    top: .3vw;
     &.Article{
-      background-position: 2.5vw 0;
+      background-position: 2.75vw 0;
     }
     &.Photo{
       background-position: 0 0;
