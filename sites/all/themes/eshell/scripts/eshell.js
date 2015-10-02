@@ -12,6 +12,7 @@
         dots: false,
         autoplay: false,
         adaptiveHeight: true,
+        swipeToSlide: true,
         centerMode: true,
         centerPadding: '64px',
         responsive: [
