@@ -1,6 +1,11 @@
 // Photo node
 .node-type-photo{
 
+  // Photo container
+  .photo-full{
+    background: #fff;
+  }
+
   // Node photo container
   #node-photo-container{
     float: left;

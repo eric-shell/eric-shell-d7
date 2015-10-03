@@ -1,6 +1,11 @@
 // Article nodes
 .node-type-article{
 
+  // Article container
+  .article-full{
+    background: #fff;
+  }
+
   // Node embeded video
   #node-video{
     background: $midnight;
@@ -17,7 +22,8 @@
     align-items: center;
     justify-content: space-between;
     max-width: 720px;
-    margin: 2rem auto .5rem;
+    padding: 2rem 0 .5rem;
+    margin: auto;
     .node-title{
       @include title;
       font-size: 35px;
