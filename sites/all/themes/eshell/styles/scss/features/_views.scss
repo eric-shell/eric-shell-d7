@@ -65,7 +65,7 @@
     background-position: 0 0;
     width: 2.75vw;
     height: 2.75vw;
-    left: -50px;
+    left: -3.75vw;
     top: .3vw;
     &.Article{
       background-position: 2.75vw 0;
@@ -88,6 +88,9 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  .views-field-created span{
+    font-size: 1.25vw;
   }
 }
 
@@ -245,6 +248,25 @@
 // --------------------------------------------------
 
 @media #{$large}{
+  // Content listing
+  .view-content-listing{
+    .views-row{
+      &:not(.views-row-last){
+        padding: 0 0 3rem;
+      }
+    }
+    .views-field-title a{
+      font-size: 2rem;
+    }
+    .views-field-body p,
+    .views-field-created span{
+      font-size: 1rem;
+    }
+    .views-field-type{
+      display: none;
+    }
+  }
+
   // Photo teasers
   .view-photos{
     .views-row{
@@ -286,6 +308,26 @@
 }
 
 @media #{$medium}{
+  // Content listing
+  .view-content-listing{
+    padding: 2rem;
+    .views-row{
+      &:not(.views-row-last){
+        padding: 0 0 2rem;
+      }
+    }
+    .views-field-title a{
+      font-size: 1.5rem;
+    }
+    .views-field-body p,
+    .views-field-created span{
+      font-size: 1rem;
+    }
+    .views-field-type{
+      display: none;
+    }
+  }
+
   // Photo teasers
   .view-photos{
     .views-row{
@@ -345,6 +387,26 @@
     display: flex;
     width: 100%;
     justify-content: center;
+  }
+
+  // Content listing
+  .view-content-listing{
+    padding: 1.5rem 1rem;
+    .views-row{
+      &:not(.views-row-last){
+        padding: 0 0 1.5rem;
+      }
+    }
+    .views-field-title a{
+      font-size: 1.2rem;
+    }
+    .views-field-body p,
+    .views-field-created span{
+      font-size: .8rem;
+    }
+    .views-field-type{
+      display: none;
+    }
   }
 
   // Photo teasers
