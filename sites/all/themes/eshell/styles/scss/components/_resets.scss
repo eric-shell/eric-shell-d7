@@ -25,6 +25,11 @@ body{
 #site{
   background: #fff;
 }
+.front{
+  #site{
+    background: $midnight;
+  }
+}
 
 // Force all images to be responsive
 img{
